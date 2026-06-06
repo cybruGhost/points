@@ -4,8 +4,6 @@
     "dist/providers/multiembed.js",
     "dist/providers/vidfast.js",
     "dist/providers/vidsrc.js",
-    "dist/providers/vidsrcto.js",
-    "dist/providers/vidlink.js",
-    "dist/providers/vixsrc.js"
+    "dist/providers/vidsrcto.js"
   ]
 }
