@@ -1,0 +1,25 @@
+{
+  "providers": [
+    "dist/providers/anime/animerealms.js",
+    "dist/providers/goku.js",
+"dist/providers/popembed.js",
+"dist/providers/xpass.js",
+"dist/providers/justhd.js",
+"dist/providers/hexa.js",
+"dist/providers/fmovies.js",
+"dist/providers/videasy.js",
+"dist/providers/vixsrc.js",
+"dist/providers/vidsrcvip.js",
+"dist/providers/uniquestream.js",
+"dist/providers/2embedcc.js",
+"dist/providers/aoneroom.js",
+"dist/providers/vidsrccc.js",
+"dist/providers/vidlink.js",
+"dist/providers/vidsrc.js",
+"dist/providers/tomautoembed.js",
+"dist/providers/ymovies.js",
+"dist/providers/yesmovies.js",
+"dist/providers/ridomovie.js"
+
+	]
+}

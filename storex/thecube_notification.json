@@ -1,0 +1,16 @@
+{
+  "notification": {
+    "url": "https://cyberghost-shop.fourthwall.com/",
+    "show": true,
+    "title": "💖 DONATE HERE 💖",
+    "version": "50",
+    "contents": "🪽 Unlock exclusive passes today\n✨ Get access to premium features and rewards\n📥 Choose your pass and download instantly\n🔥 Limited access features available inside",
+    "isUpdate": true,
+    "is_force": true,
+    "btn_title": "Click me",
+    "image_url": "https://dywyagjcuvxtjgtksyjn.supabase.co/storage/v1/object/public/notification-images/noti_1780732431467.png",
+    "show_text": true,
+    "show_image": true,
+    "force_update": true
+  }
+}

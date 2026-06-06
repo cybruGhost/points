@@ -1,0 +1,49 @@
+{
+  "update_release": {
+    "build": 13,
+    "url": "",
+    "contents": "🎬 TVMovie Improvements Ongoing!\n\n🧹 App cleaning and optimization is currently ongoing to improve streaming quality and stability.\n\n⚠️ Some users may occasionally be required to refresh their app version in order to continue enjoying smooth streaming and the latest fixes.\n\n🛠️ I am also currently fixing the broken in-app update system.\n\n💖 Donations and support help keep the servers, fixes, and development alive.\n\n🌐 https://thecub.netlify.app",
+    "force_update": true,
+    "isUpdate": true
+  },
+  "app_player_config": {
+    "player_apk_url": "https://thecub4.netlify.app/dl/v2.0.20/player.apk",
+    "player_version_build": 18,
+    "player_is_install_force": false,
+    "force_player": false,
+    "background_playback": false
+  },
+  "switch_player_config": {
+    "package_name": "com.drama.simpleplayer",
+    "activity_name": "com.drama.simpleplayer.PlayerActivity",
+    "apk_url": "https://thecub4.netlify.app/dl/v2.0.20/player.apk",
+    "store_url": "https://thecub4.netlify.app/dl/v2.0.20/player.apk",
+    "version_build": 5,
+    "force_player": false,
+    "app_name": "Jennie Player",
+    "sleep_priority_links": 3000,
+    "priority_links": [
+      "SERVER F1",
+      "SERVER F2",
+      "SERVER C1",
+      "SERVER C2",
+      "SERVER A1",
+      "SERVER A2"
+    ]
+  },
+  "tmdb_apikey": {
+    "android_key": "",
+    "ios_key": ""
+  },
+  "ads_config": {
+    "show_ads": false
+  },
+  "subtitle_config": {
+    "id": "eng",
+    "color": "#FFFFFF",
+    "size": 16,
+    "visible": true,
+    "code": "en",
+    "name": "English"
+  }
+}

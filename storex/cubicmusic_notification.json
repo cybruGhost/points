@@ -1,0 +1,15 @@
+{
+  "notification": {
+    "url": "https://github.com/cybruGhost/Cubic-Music/issues/79",
+    "title": "📢 Critical Update: Playback & Downloads Fixed",
+    "contents": "A system crash caused some data loss, delaying the release.\nWe’re sorry for the wait – thank you for your patience! 🙏",
+    "show": true,
+    "show_image": true,
+    "show_text": true,
+    "version": "v1.8.3",
+    "image_url": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1780608907840.png",
+    "force_update": true,
+    "is_force": true,
+    "isUpdate": true
+  }
+}
