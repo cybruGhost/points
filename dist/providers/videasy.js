@@ -36,109 +36,102 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    function generateUUID() {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-            var r = Math.random() * 16 | 0;
-            var v = c === 'x' ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-    }
-    var PROVIDER, DOMAIN, headers, sources, _i, sources_1, item, url, dataDetail, textDetail, urlDecrypt, body, random, decryptData, directQuality, tracks, _a, _b, itemDirect, quality, _c, _d, itemSubtitle, lang, errorSource_1, e_1;
+    var PROVIDER, headers, decryptHeaders, sources, _i, sources_1, item, url, dataDetail, textDetail, urlDecrypt, body, decryptData, directQuality, tracks, _a, _b, itemDirect, quality, _c, _d, itemSubtitle, lang, errorSource_1, e_1;
     return __generator(this, function (_e) {
         switch (_e.label) {
             case 0:
                 PROVIDER = 'AVideasy';
-                DOMAIN = "https://api.videasy.net";
                 headers = {
                     'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                     'referer': "https://player.videasy.net/",
-                    "origin": "".concat(DOMAIN),
+                    'origin': "https://player.videasy.net",
                 };
+                decryptHeaders = {
+                    "content-type": "application/json",
+                    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+                    'Referer': "https://vidsrc-embed.ru/",
+                };
+                // Try mb-flix first (what the WebView confirmed works), then cdn as fallback
+                sources = ["mb-flix", "cdn"];
+                _i = 0, sources_1 = sources;
                 _e.label = 1;
             case 1:
-                _e.trys.push([1, 10, , 11]);
-                sources = ["cdn"];
-                _i = 0, sources_1 = sources;
+                if (!(_i < sources_1.length)) return [3, 10];
+                item = sources_1[_i];
                 _e.label = 2;
             case 2:
-                if (!(_i < sources_1.length)) return [3, 9];
-                item = sources_1[_i];
-                _e.label = 3;
-            case 3:
-                _e.trys.push([3, 7, , 8]);
-                url = "https://api.videasy.net/".concat(item, "/sources-with-title?mediaType=").concat(movieInfo.type, "&year=").concat(movieInfo.year, "&tmdbId=").concat(movieInfo.tmdb_id, "&imdbId=").concat(movieInfo.imdb_id, "&title=").concat(encodeURIComponent(movieInfo.title));
-                if (movieInfo.type == "tv") {
-                    url += "&episodeId=".concat(movieInfo.episode, "&seasonId=").concat(movieInfo.season);
+                _e.trys.push([2, 8, , 9]);
+                url = "https://api.videasy.to/".concat(item, "/sources-with-title?title=").concat(encodeURIComponent(movieInfo.title), "&mediaType=").concat(movieInfo.type, "&year=").concat(movieInfo.year, "&tmdbId=").concat(movieInfo.tmdb_id, "&imdbId=").concat(movieInfo.imdb_id, "&episodeId=1&seasonId=1");
+                if (movieInfo.type === "tv") {
+                    url = "https://api.videasy.to/".concat(item, "/sources-with-title?title=").concat(encodeURIComponent(movieInfo.title), "&mediaType=").concat(movieInfo.type, "&year=").concat(movieInfo.year, "&tmdbId=").concat(movieInfo.tmdb_id, "&imdbId=").concat(movieInfo.imdb_id, "&episodeId=").concat(movieInfo.episode, "&seasonId=").concat(movieInfo.season);
                 }
-                return [4, fetch(url, {
-                        headers: headers
-                    })];
-            case 4:
+                libs.log({ url: url }, PROVIDER, 'FETCH URL');
+                return [4, fetch(url, { headers: headers })];
+            case 3:
                 dataDetail = _e.sent();
                 return [4, dataDetail.text()];
-            case 5:
+            case 4:
                 textDetail = _e.sent();
-                libs.log({ textDetail: textDetail }, PROVIDER, 'TEXT DETAIL');
-                if (!textDetail) {
-                    return [3, 8];
+                libs.log({ textDetail: textDetail ? textDetail.substring(0, 100) : 'empty' }, PROVIDER, 'TEXT DETAIL');
+                if (!textDetail || textDetail.length < 10) {
+                    return [3, 9];
                 }
-                urlDecrypt = "https://enc-dec.app/api/dec-videasy";
                 body = {
                     text: textDetail,
                     id: movieInfo.tmdb_id
                 };
-                random = _.random(0, 1000000);
-                return [4, libs.request_post(urlDecrypt, {
-                        "content-type": "application/json",
-                        'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
-                        Referer: "https://vidsrc-embed.ru/",
-                    }, body)];
-            case 6:
+                return [4, libs.request_post("https://enc-dec.app/api/dec-videasy", decryptHeaders, body)];
+            case 5:
                 decryptData = _e.sent();
                 libs.log({ decryptData: decryptData }, PROVIDER, 'DECRYPT DATA');
-                if (!decryptData || !decryptData.result.sources) {
-                    return [3, 8];
+                if (!decryptData || !decryptData.result || !decryptData.result.sources || !decryptData.result.sources.length) {
+                    return [3, 9];
                 }
                 directQuality = [];
                 tracks = [];
                 for (_a = 0, _b = decryptData.result.sources; _a < _b.length; _a++) {
                     itemDirect = _b[_a];
                     quality = itemDirect.quality;
-                    quality = quality.match(/([0-9]+)/i);
+                    quality = quality ? quality.match(/([0-9]+)/i) : null;
                     quality = quality ? Number(quality[1]) : 1080;
                     directQuality.push({
                         file: itemDirect.url,
                         quality: quality,
                     });
                 }
-                for (_c = 0, _d = decryptData.result.subtitles; _c < _d.length; _c++) {
+                for (_c = 0, _d = decryptData.result.subtitles || []; _c < _d.length; _c++) {
                     itemSubtitle = _d[_c];
-                    lang = itemSubtitle.language;
+                    lang = itemSubtitle.language || itemSubtitle.label || '';
+                    if (!lang) { continue; }
                     tracks.push({
                         file: itemSubtitle.url,
                         kind: 'captions',
                         label: lang
                     });
                 }
-                if (directQuality.length == 0) {
-                    return [3, 8];
+                if (directQuality.length === 0) {
+                    return [3, 9];
                 }
                 directQuality = _.orderBy(directQuality, ['quality'], ['desc']);
                 libs.log({ directQuality: directQuality, tracks: tracks }, PROVIDER, "FINAL QUALITY");
                 libs.embed_callback(directQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, directQuality, headers);
-                return [3, 8];
-            case 7:
-                errorSource_1 = _e.sent();
-                return [3, 8];
+                // Success — stop trying other sources
+                return [3, 10];
+            case 6: return [3, 9];
+            case 7: return [3, 9];
             case 8:
+                errorSource_1 = _e.sent();
+                libs.log({ errorSource_1: errorSource_1 }, PROVIDER, 'SOURCE ERROR');
+                return [3, 9];
+            case 9:
                 _i++;
-                return [3, 2];
-            case 9: return [2];
-            case 10:
+                return [3, 1];
+            case 10: return [2];
+            case 11:
                 e_1 = _e.sent();
                 libs.log({ e: e_1 }, PROVIDER, "ERROR");
                 return [3, 11];
-            case 11: return [2];
+            case 12: return [2];
         }
     });
 }); };
