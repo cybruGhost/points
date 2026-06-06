@@ -46,31 +46,62 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
             return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
         }).join(""));
     }
-    var movieInfo, parseData, token_1, user_id_1, e_1, video1_1, sourceAPI, _loop_1, _i, sourceAPI_1, item;
+    var movieInfo, parseData, responseURL, token_1, user_id_1, e_1, video1_1, sourceAPI, _loop_1, _i, sourceAPI_1, item;
     var _this = this;
     return __generator(this, function (_a) {
-        libs.log(dataCallback, provider, 'DATA CALLBACK');
+        libs.log({ dataCallback: dataCallback }, provider, 'DATA CALLBACK');
         if (!dataCallback) {
             return [2];
         }
         movieInfo = metadata.movieInfo;
         try {
             parseData = JSON.parse(dataCallback);
-            if (!parseData || !parseData.data) {
+            libs.log({ parseData: parseData }, provider, 'PARSE DATA');
+
+            // The WebView sends {kind, status, responseURL, responseText}
+            // Token and user_id come from the redirect URL, not responseText
+            if (!parseData || !parseData.responseURL) {
+                libs.log({ msg: 'no responseURL, skipping' }, provider, 'SKIP');
                 return [2];
             }
-            token_1 = parseData.data.match(/token\=([A-z0-9\-\.]+)/i);
+
+            responseURL = parseData.responseURL;
+            libs.log({ responseURL: responseURL }, provider, 'RESPONSE URL');
+
+            // Extract token and user_id from the redirect URL query params
+            token_1 = responseURL.match(/token=([A-Za-z0-9\-\.]+)/i);
             token_1 = token_1 ? token_1[1] : "";
-            user_id_1 = parseData.data.match(/user_id\=([A-z0-9\-\.]+)/i);
+            user_id_1 = responseURL.match(/user_id=([A-Za-z0-9\-\.]+)/i);
             user_id_1 = user_id_1 ? user_id_1[1] : "";
-            libs.log({ token: token_1, user_id: user_id_1 }, provider, 'TOKEN');
+
+            // Fallback: also try responseText if URL params not found
             if (!token_1 || !user_id_1) {
+                var text = parseData.responseText || "";
+                if (!token_1) {
+                    var t = text.match(/token=([A-Za-z0-9\-\.]+)/i);
+                    token_1 = t ? t[1] : "";
+                }
+                if (!user_id_1) {
+                    var u = text.match(/user_id=([A-Za-z0-9\-\.]+)/i);
+                    user_id_1 = u ? u[1] : "";
+                }
+            }
+
+            libs.log({ token: token_1, user_id: user_id_1 }, provider, 'TOKEN');
+
+            if (!token_1 || !user_id_1) {
+                libs.log({ msg: 'token or user_id missing, skipping' }, provider, 'SKIP');
                 return [2];
             }
+
             e_1 = function (x) {
                 var a = x.substr(2);
                 var v = {
-                    "bk0": "vXch5\/GNVBbrXO\/Xt", "bk1": "qxO\/5lMkx\/N5Gjv5J", "bk2": "OVw\/M39ryrfCs\/yO5", "bk3": "eeAd\/OwcV07\/Wgo7T", "bk4": "UN\/35mMFQjt3\/9vst"
+                    "bk0": "vXch5\/GNVBbrXO\/Xt",
+                    "bk1": "qxO\/5lMkx\/N5Gjv5J",
+                    "bk2": "OVw\/M39ryrfCs\/yO5",
+                    "bk3": "eeAd\/OwcV07\/Wgo7T",
+                    "bk4": "UN\/35mMFQjt3\/9vst"
                 };
                 for (var i = 4; i > -1; i--) {
                     if (v["bk" + i] != "") {
@@ -79,44 +110,38 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
                 }
                 try {
                     var data = b2(a);
-                    var v3 = "/";
-                    var v2 = ".";
-                    var v5 = "5";
-                    var v1 = "0";
-                    var v4 = "m3u8";
-                    data = data.replace(/\{v1\}/ig, v1);
-                    data = data.replace(/\{v2\}/ig, v2);
-                    data = data.replace(/\{v3\}/ig, v3);
-                    data = data.replace(/\{v4\}/ig, v4);
-                    data = data.replace(/\{v5\}/ig, v5);
+                    data = data.replace(/\{v1\}/ig, "0");
+                    data = data.replace(/\{v2\}/ig, ".");
+                    data = data.replace(/\{v3\}/ig, "/");
+                    data = data.replace(/\{v4\}/ig, "m3u8");
+                    data = data.replace(/\{v5\}/ig, "5");
                     return data;
-                }
-                catch (e) {
-                    libs.log({ e: e }, PROVIDER, 'ERROR');
+                } catch (e) {
+                    libs.log({ e: e }, provider, 'DECODE ERROR');
                 }
                 return "";
             };
+
             video1_1 = function (urlSearch) { return __awaiter(_this, void 0, void 0, function () {
                 var headers, parseDetail, subs, parseTitles, _i, parseTitles_1, subItem, lang, parseSub, _a, _b, file, decodeFile, parseDecodeFile, directSizes, patternSize, directQuality, _c, patternSize_1, patternItem, sizeQuality;
                 return __generator(this, function (_d) {
                     switch (_d.label) {
                         case 0:
-                            libs.log({
-                                urlSearch: urlSearch
-                            }, provider, 'URL SEARCH');
+                            libs.log({ urlSearch: urlSearch }, provider, 'URL SEARCH');
                             headers = {
                                 "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
                                 "Origin": "https://player.smashy.stream",
                                 "Referer": "https://player.smashy.stream/",
                             };
                             return [4, libs.request_get(urlSearch, {
-                                    'Sec-Fetch-Site': "cross-site",
-                                    Referer: "https://player.smashy.stream/"
-                                })];
+                                'Sec-Fetch-Site': "cross-site",
+                                Referer: "https://player.smashy.stream/"
+                            })];
                         case 1:
                             parseDetail = _d.sent();
                             libs.log({ parseDetail: parseDetail }, provider, 'PARSE DETAIL VIDEO 1');
-                            if (!parseDetail || !parseDetail.data.sources) {
+                            if (!parseDetail || !parseDetail.data || !parseDetail.data.sources) {
+                                libs.log({ msg: 'no sources in parseDetail' }, provider, 'SKIP');
                                 return [2];
                             }
                             subs = [];
@@ -126,30 +151,20 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
                                     subItem = parseTitles_1[_i];
                                     lang = subItem.match(/\[([^\]]+)/i);
                                     lang = lang ? lang[1] : '';
-                                    parseSub = subItem.replace(/\[[A-z0-9]+\]/i, "").trim();
-                                    if (!lang || !parseSub) {
-                                        continue;
-                                    }
-                                    subs.push({
-                                        file: parseSub,
-                                        label: lang,
-                                        kind: "captions"
-                                    });
+                                    parseSub = subItem.replace(/\[[A-Za-z0-9]+\]/i, "").trim();
+                                    if (!lang || !parseSub) { continue; }
+                                    subs.push({ file: parseSub, label: lang, kind: "captions" });
                                 }
-                            }
-                            catch (e) { }
+                            } catch (e) { }
                             libs.log({ subs: subs }, provider, 'SUBS');
-                            _a = 0, _b = parseDetail.data.sources;
+                            _a = 0; _b = parseDetail.data.sources;
                             _d.label = 2;
                         case 2:
                             if (!(_a < _b.length)) return [3, 5];
                             file = _b[_a];
                             decodeFile = e_1(file.file);
                             libs.log({ decodeFile: decodeFile }, provider, 'DECODE FILE');
-                            if (!decodeFile) {
-                                return [3, 4];
-                            }
-                            if (decodeFile.indexOf('.m3u8') == -1) {
+                            if (!decodeFile || decodeFile.indexOf('.m3u8') === -1) {
                                 return [3, 4];
                             }
                             parseDecodeFile = decodeFile;
@@ -169,14 +184,9 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
                                 sizeQuality = patternItem.match(/\%2F([0-9]+)\%2F/i);
                                 libs.log({ patternItem: patternItem, sizeQuality: sizeQuality }, provider, 'SIZE QUALITY');
                                 sizeQuality = sizeQuality ? Number(sizeQuality[1]) : 720;
-                                directQuality.push({
-                                    file: patternItem,
-                                    quality: sizeQuality
-                                });
+                                directQuality.push({ file: patternItem, quality: sizeQuality });
                             }
-                            if (!directQuality.length) {
-                                return [3, 4];
-                            }
+                            if (!directQuality.length) { return [3, 4]; }
                             directQuality = _.orderBy(directQuality, ['quality'], ['desc']);
                             libs.log({ directQuality: directQuality }, provider, 'DIRECT QUALITY');
                             libs.embed_callback(directQuality[0].file, provider, provider, 'Hls', callback, 1, subs, directQuality, headers);
@@ -188,15 +198,16 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
                     }
                 });
             }); };
+
             sourceAPI = [
                 "https://api.smashystream.top/api/v1/sdayflxcloe/",
             ];
             _loop_1 = function (item) {
                 var urlSearch = "".concat(item).concat(movieInfo.tmdb_id);
-                if (movieInfo.type == 'tv') {
+                if (movieInfo.type === 'tv') {
                     urlSearch = "".concat(item).concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
                 }
-                libs.log({ urlSearch: urlSearch, token: token_1 }, provider, "URL SEARCH");
+                libs.log({ urlSearch: urlSearch, token: token_1 }, provider, "URL SEARCH LOOP");
                 setTimeout(function () {
                     video1_1("".concat(urlSearch, "?token=").concat(token_1, "&user_id=").concat(user_id_1));
                 }, 500);
@@ -205,11 +216,8 @@ callbacksEmbed["smashystream"] = function (dataCallback, provider, host, callbac
                 item = sourceAPI_1[_i];
                 _loop_1(item);
             }
-        }
-        catch (e) {
-            libs.log({
-                e: e
-            }, provider, 'ERROR');
+        } catch (e) {
+            libs.log({ e: e }, provider, 'ERROR');
         }
         return [2];
     });

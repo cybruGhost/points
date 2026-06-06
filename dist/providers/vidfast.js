@@ -13,7 +13,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -35,9 +35,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
+
 function cleanEpisode(value) {
     return value === undefined || value === null ? "" : String(value);
 }
+
 function webviewHeaders(url) {
     var host = libs.url_extractRootDomain ? libs.url_extractRootDomain(url) : "";
     return {
@@ -48,12 +50,12 @@ function webviewHeaders(url) {
         origin: host ? "https://" + host : undefined
     };
 }
+
 function emitWebview(PROVIDER, url, movieInfo, callback) {
-    if (!url) {
-        return;
-    }
+    if (!url) { return; }
     var userAgent = "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36";
     var script = "(function(){try{if(window.__cubeHooked)return;window.__cubeHooked=true;function send(o){try{window.ReactNativeWebView.postMessage(JSON.stringify(o));}catch(e){}};var open=XMLHttpRequest.prototype.open;var sendX=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__cubeUrl=u;return open.apply(this,arguments)};XMLHttpRequest.prototype.send=function(){this.addEventListener('load',function(){send({kind:'xhr',status:this.status,responseURL:this.responseURL||this.__cubeUrl,responseText:this.responseText||''})});return sendX.apply(this,arguments)};var oldFetch=window.fetch;window.fetch=function(input,init){var reqUrl=(typeof input==='string')?input:(input&&input.url);send({kind:'fetch',url:reqUrl});return oldFetch.apply(this,arguments).then(function(res){try{var clone=res.clone();clone.text().then(function(text){send({kind:'fetch-load',status:res.status,responseURL:res.url||reqUrl,responseText:text||''})}).catch(function(e){send({kind:'fetch-error',url:reqUrl,error:String(e)})})}catch(e){send({kind:'fetch-hook-error',url:reqUrl,error:String(e)})}return res})};setTimeout(function(){send({kind:'page',url:location.href,html:document.documentElement?document.documentElement.innerHTML:''})},3500)}catch(e){window.ReactNativeWebView.postMessage(JSON.stringify({kind:'hook-error',error:String(e)}))}})();true;";
+
     libs.log({ url: url }, PROVIDER, "WEBVIEW URL");
     callback({
         callback: {
@@ -72,13 +74,16 @@ function emitWebview(PROVIDER, url, movieInfo, callback) {
             callback: callback
         }
     });
-}source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
+}
+
+source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
     var PROVIDER, url;
     return __generator(this, function (_a) {
-        PROVIDER = "BVidfast";
-        url = movieInfo.type == "tv"
-            ? "https://vidfast.co/tv/tmdb/".concat(movieInfo.tmdb_id, "-").concat(cleanEpisode(movieInfo.season), "-").concat(cleanEpisode(movieInfo.episode))
-            : "https://vidfast.co/movie/tmdb/".concat(movieInfo.tmdb_id);
+        PROVIDER = "BVideasy";
+        // videasy.net uses the same TMDB-based URL pattern as vidfast did
+        url = movieInfo.type === "tv"
+            ? "https://player.videasy.net/tv/".concat(movieInfo.tmdb_id, "/").concat(cleanEpisode(movieInfo.season), "/").concat(cleanEpisode(movieInfo.episode))
+            : "https://player.videasy.net/movie/".concat(movieInfo.tmdb_id);
         emitWebview(PROVIDER, url, movieInfo, callback);
         return [2];
     });
