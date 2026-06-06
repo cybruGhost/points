@@ -8,7 +8,6 @@
     "dist/providers/vixsrc.js",
     "dist/providers/twoembed.js",
     "dist/providers/vidsrcto.js",
-    "dist/providers/smashystream.js",
     "dist/providers/2now.js",
     "dist/providers/soap2day.js",
     "dist/providers/fmovies.js",
