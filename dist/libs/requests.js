@@ -147,6 +147,9 @@ libs.request_get = function (url, headers, isCheerio, isRecursive, retry) {
                 case 2:
                     e_1 = _a.sent();
                     if (!isRecursive || (isRecursive && retry <= 0)) {
+                        if (isCheerio && typeof cheerio !== "undefined") {
+                            return [2, cheerio.load("")];
+                        }
                         return [2, ""];
                     }
                     return [4, libs.request_get(url, headers, isCheerio, isRecursive, retry - 1)];
@@ -290,9 +293,14 @@ libs.request_post = function (url, headers, body, isCheerio, isUserAgentDefault)
                     return [2, requestData.data];
                 case 2:
                     e_6 = _a.sent();
+                    if (isCheerio && typeof cheerio !== "undefined") {
+                        return [2, cheerio.load("")];
+                    }
                     return [2, ""];
                 case 3: return [2];
             }
         });
     });
 };
+
+

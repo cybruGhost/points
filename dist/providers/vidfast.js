@@ -13,7 +13,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+        while (_) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -35,96 +35,23 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, url, dataDetail, htmlDetail, ID, parseStreamData, headerDefault, serverData, _i, serverData_1, itemServer, streamData, tracks, _a, _b, trackItem, label, e_1;
-    return __generator(this, function (_c) {
-        switch (_c.label) {
-            case 0:
-                PROVIDER = 'BVidfast';
-                DOMAIN = "https://www.vidfast.pro";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'referer': "".concat(DOMAIN, "/"),
-                    "origin": "".concat(DOMAIN)
-                };
-                _c.label = 1;
-            case 1:
-                _c.trys.push([1, 10, , 11]);
-                url = "".concat(DOMAIN, "/movie/").concat(movieInfo.tmdb_id);
-                if (movieInfo.type == "tv") {
-                    url = "".concat(DOMAIN, "/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
-                }
-                return [4, fetch(url, {
-                        headers: headers
-                    })];
-            case 2:
-                dataDetail = _c.sent();
-                return [4, dataDetail.text()];
-            case 3:
-                htmlDetail = _c.sent();
-                ID = htmlDetail.match(/\\"en\\":\\"(.*?)\\"/i);
-                ID = ID ? ID[1] : "";
-                libs.log({ ID: ID }, PROVIDER, 'ID');
-                if (!ID) {
-                    return [2];
-                }
-                return [4, libs.request_get("https://enc-dec.app/api/enc-vidfast?text=".concat(ID))];
-            case 4:
-                parseStreamData = _c.sent();
-                libs.log({ parseStreamData: parseStreamData }, PROVIDER, 'PARSE STREAM DATA');
-                if (!parseStreamData || !parseStreamData.result || !parseStreamData.result.servers || !parseStreamData.result.stream) {
-                    return [2];
-                }
-                headerDefault = {
-                    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-                    "Referer": "https://vidfast.pro/",
-                    "X-Requested-With": "XMLHttpRequest"
-                };
-                return [4, libs.request_get(parseStreamData.result.servers, headerDefault)];
-            case 5:
-                serverData = _c.sent();
-                libs.log({ serverData: serverData }, PROVIDER, 'SERVER DATA');
-                if (!serverData || !serverData.length) {
-                    return [2];
-                }
-                _i = 0, serverData_1 = serverData;
-                _c.label = 6;
-            case 6:
-                if (!(_i < serverData_1.length)) return [3, 9];
-                itemServer = serverData_1[_i];
-                if (itemServer.name != "Alpha") {
-                    return [3, 8];
-                }
-                return [4, libs.request_get(parseStreamData.result.stream + "/" + itemServer.data, headerDefault)];
-            case 7:
-                streamData = _c.sent();
-                libs.log({ streamData: streamData }, PROVIDER, 'STREAM DATA');
-                tracks = [];
-                if (streamData && streamData.tracks) {
-                    for (_a = 0, _b = streamData.tracks; _a < _b.length; _a++) {
-                        trackItem = _b[_a];
-                        label = trackItem.label.split("-")[0].trim();
-                        tracks.push({
-                            file: trackItem.file,
-                            kind: 'captions',
-                            label: label,
-                        });
-                    }
-                }
-                libs.log({ tracks: tracks }, PROVIDER, 'TRACKS');
-                if (streamData && streamData.url) {
-                    libs.embed_callback(streamData.url, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, [{ file: streamData.url, quality: 1080 }], headers);
-                }
-                _c.label = 8;
-            case 8:
-                _i++;
-                return [3, 6];
-            case 9: return [3, 11];
-            case 10:
-                e_1 = _c.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 11];
-            case 11: return [2];
-        }
+function cleanEpisode(value) {
+    return value === undefined || value === null ? "" : String(value);
+}
+function emitEmbed(PROVIDER, HOST, url, callback) {
+    if (!url) {
+        return;
+    }
+    libs.log({ url: url }, PROVIDER, "EMBED URL");
+    libs.embed_callback(url, PROVIDER, HOST, "Embed", callback, 1, [], [{ file: url, quality: "Embed" }], {}, { isEmbed: true });
+}source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, url;
+    return __generator(this, function (_a) {
+        PROVIDER = "BVidfast";
+        url = movieInfo.type == "tv"
+            ? "https://vidfast.co/tv/tmdb/".concat(movieInfo.tmdb_id, "-").concat(cleanEpisode(movieInfo.season), "-").concat(cleanEpisode(movieInfo.episode))
+            : "https://vidfast.co/movie/tmdb/".concat(movieInfo.tmdb_id);
+        emitEmbed(PROVIDER, "VidFast", url, callback);
+        return [2];
     });
 }); };

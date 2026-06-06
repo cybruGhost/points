@@ -45,14 +45,13 @@ function emitEmbed(PROVIDER, HOST, url, callback) {
     libs.log({ url: url }, PROVIDER, "EMBED URL");
     libs.embed_callback(url, PROVIDER, HOST, "Embed", callback, 1, [], [{ file: url, quality: "Embed" }], {}, { isEmbed: true });
 }source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, mediaType, url;
+    var PROVIDER, url;
     return __generator(this, function (_a) {
-        PROVIDER = "RVIDSRC";
-        mediaType = movieInfo.type == "tv" ? "tv" : "movie";
+        PROVIDER = "MMultiEmbed";
         url = movieInfo.type == "tv"
-            ? "https://vidsrc.me/embed/".concat(mediaType, "?tmdb=").concat(movieInfo.tmdb_id, "&season=").concat(cleanEpisode(movieInfo.season), "&episode=").concat(cleanEpisode(movieInfo.episode))
-            : "https://vidsrc.me/embed/".concat(mediaType, "?tmdb=").concat(movieInfo.tmdb_id);
-        emitEmbed(PROVIDER, "VidSrc", url, callback);
+            ? "https://multiembed.mov/?video_id=".concat(movieInfo.tmdb_id, "&tmdb=1&s=").concat(cleanEpisode(movieInfo.season), "&e=").concat(cleanEpisode(movieInfo.episode))
+            : "https://multiembed.mov/?video_id=".concat(movieInfo.tmdb_id, "&tmdb=1");
+        emitEmbed(PROVIDER, "MultiEmbed", url, callback);
         return [2];
     });
 }); };
