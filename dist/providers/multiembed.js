@@ -38,12 +38,40 @@ var _this = this;
 function cleanEpisode(value) {
     return value === undefined || value === null ? "" : String(value);
 }
-function emitEmbed(PROVIDER, HOST, url, callback) {
+function webviewHeaders(url) {
+    var host = libs.url_extractRootDomain ? libs.url_extractRootDomain(url) : "";
+    return {
+        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "upgrade-insecure-requests": "1",
+        referer: url,
+        origin: host ? "https://" + host : undefined
+    };
+}
+function emitWebview(PROVIDER, url, movieInfo, callback) {
     if (!url) {
         return;
     }
-    libs.log({ url: url }, PROVIDER, "EMBED URL");
-    libs.embed_callback(url, PROVIDER, HOST, "Embed", callback, 1, [], [{ file: url, quality: "Embed" }], {}, { isEmbed: true });
+    var userAgent = "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36";
+    var script = "(function(){try{if(window.__cubeHooked)return;window.__cubeHooked=true;function send(o){try{window.ReactNativeWebView.postMessage(JSON.stringify(o));}catch(e){}};var open=XMLHttpRequest.prototype.open;var sendX=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__cubeUrl=u;return open.apply(this,arguments)};XMLHttpRequest.prototype.send=function(){this.addEventListener('load',function(){send({kind:'xhr',status:this.status,responseURL:this.responseURL||this.__cubeUrl,responseText:this.responseText||''})});return sendX.apply(this,arguments)};var oldFetch=window.fetch;window.fetch=function(input,init){var reqUrl=(typeof input==='string')?input:(input&&input.url);send({kind:'fetch',url:reqUrl});return oldFetch.apply(this,arguments).then(function(res){try{var clone=res.clone();clone.text().then(function(text){send({kind:'fetch-load',status:res.status,responseURL:res.url||reqUrl,responseText:text||''})}).catch(function(e){send({kind:'fetch-error',url:reqUrl,error:String(e)})})}catch(e){send({kind:'fetch-hook-error',url:reqUrl,error:String(e)})}return res})};setTimeout(function(){send({kind:'page',url:location.href,html:document.documentElement?document.documentElement.innerHTML:''})},3500)}catch(e){window.ReactNativeWebView.postMessage(JSON.stringify({kind:'hook-error',error:String(e)}))}})();true;";
+    libs.log({ url: url }, PROVIDER, "WEBVIEW URL");
+    callback({
+        callback: {
+            provider: PROVIDER,
+            host: "GENERICEMBED",
+            url: url,
+            headers: webviewHeaders(url),
+            userAgent: userAgent,
+            beforeLoadScript: script,
+            script: script,
+            metadata: {
+                movieInfo: movieInfo,
+                url_webview: url,
+                providerName: PROVIDER
+            },
+            callback: callback
+        }
+    });
 }source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
     var PROVIDER, url;
     return __generator(this, function (_a) {
@@ -51,7 +79,7 @@ function emitEmbed(PROVIDER, HOST, url, callback) {
         url = movieInfo.type == "tv"
             ? "https://multiembed.mov/?video_id=".concat(movieInfo.tmdb_id, "&tmdb=1&s=").concat(cleanEpisode(movieInfo.season), "&e=").concat(cleanEpisode(movieInfo.episode))
             : "https://multiembed.mov/?video_id=".concat(movieInfo.tmdb_id, "&tmdb=1");
-        emitEmbed(PROVIDER, "MultiEmbed", url, callback);
+        emitWebview(PROVIDER, url, movieInfo, callback);
         return [2];
     });
 }); };
