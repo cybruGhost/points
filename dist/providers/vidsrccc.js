@@ -106,7 +106,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 if (!v) {
                     return [2];
                 }
-                return [4, fetch("https://raw.githubusercontent.com/lulunnqqq/mv/refs/heads/main/abc.txt")];
+                return [4, fetch("https://raw.githubusercontent.com/guxiangbin/tvbox2/main/ABC.txt")];
             case 4:
                 secretKey = _d.sent();
                 return [4, secretKey.text()];
