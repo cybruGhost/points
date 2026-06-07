@@ -35,56 +35,96 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-
-function cleanEpisode(value) {
-    return value === undefined || value === null ? "" : String(value);
-}
-
-function webviewHeaders(url) {
-    var host = libs.url_extractRootDomain ? libs.url_extractRootDomain(url) : "";
-    return {
-        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-        "accept-language": "en-US,en;q=0.9",
-        "upgrade-insecure-requests": "1",
-        referer: url,
-        origin: host ? "https://" + host : undefined
-    };
-}
-
-function emitWebview(PROVIDER, url, movieInfo, callback) {
-    if (!url) { return; }
-    var userAgent = "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36";
-    var script = "(function(){try{if(window.__cubeHooked)return;window.__cubeHooked=true;function send(o){try{window.ReactNativeWebView.postMessage(JSON.stringify(o));}catch(e){}};var open=XMLHttpRequest.prototype.open;var sendX=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__cubeUrl=u;return open.apply(this,arguments)};XMLHttpRequest.prototype.send=function(){this.addEventListener('load',function(){send({kind:'xhr',status:this.status,responseURL:this.responseURL||this.__cubeUrl,responseText:this.responseText||''})});return sendX.apply(this,arguments)};var oldFetch=window.fetch;window.fetch=function(input,init){var reqUrl=(typeof input==='string')?input:(input&&input.url);send({kind:'fetch',url:reqUrl});return oldFetch.apply(this,arguments).then(function(res){try{var clone=res.clone();clone.text().then(function(text){send({kind:'fetch-load',status:res.status,responseURL:res.url||reqUrl,responseText:text||''})}).catch(function(e){send({kind:'fetch-error',url:reqUrl,error:String(e)})})}catch(e){send({kind:'fetch-hook-error',url:reqUrl,error:String(e)})}return res})};setTimeout(function(){send({kind:'page',url:location.href,html:document.documentElement?document.documentElement.innerHTML:''})},3500)}catch(e){window.ReactNativeWebView.postMessage(JSON.stringify({kind:'hook-error',error:String(e)}))}})();true;";
-
-    libs.log({ url: url }, PROVIDER, "WEBVIEW URL");
-    callback({
-        callback: {
-            provider: PROVIDER,
-            host: "GENERICEMBED",
-            url: url,
-            headers: webviewHeaders(url),
-            userAgent: userAgent,
-            beforeLoadScript: script,
-            script: script,
-            metadata: {
-                movieInfo: movieInfo,
-                url_webview: url,
-                providerName: PROVIDER
-            },
-            callback: callback
-        }
-    });
-}
-
 source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, url;
-    return __generator(this, function (_a) {
-        PROVIDER = "BVideasy";
-        // videasy.net uses the same TMDB-based URL pattern as vidfast did
-        url = movieInfo.type === "tv"
-            ? "https://vidfast.pro/tv/".concat(movieInfo.tmdb_id, "/").concat(cleanEpisode(movieInfo.season), "/").concat(cleanEpisode(movieInfo.episode))
-            : "https://vidfast.pro/movie/".concat(movieInfo.tmdb_id);
-        emitWebview(PROVIDER, url, movieInfo, callback);
-        return [2];
+    var PROVIDER, DOMAIN, headers, url, dataDetail, htmlDetail, ID, parseStreamData, headerDefault, serverData, _i, serverData_1, itemServer, streamData, tracks, _a, _b, trackItem, label, e_1;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                PROVIDER = 'BVidfast';
+                DOMAIN = "https://www.vidfast.pro";
+                headers = {
+                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                    'referer': "".concat(DOMAIN, "/"),
+                    "origin": "".concat(DOMAIN)
+                };
+                _c.label = 1;
+            case 1:
+                _c.trys.push([1, 10, , 11]);
+                url = "".concat(DOMAIN, "/movie/").concat(movieInfo.tmdb_id);
+                if (movieInfo.type == "tv") {
+                    url = "".concat(DOMAIN, "/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
+                }
+                return [4, fetch(url, {
+                        headers: headers
+                    })];
+            case 2:
+                dataDetail = _c.sent();
+                return [4, dataDetail.text()];
+            case 3:
+                htmlDetail = _c.sent();
+                ID = htmlDetail.match(/\\"en\\":\\"(.*?)\\"/i);
+                ID = ID ? ID[1] : "";
+                libs.log({ ID: ID }, PROVIDER, 'ID');
+                if (!ID) {
+                    return [2];
+                }
+                return [4, libs.request_get("https://enc-dec.app/api/enc-vidfast?text=".concat(ID))];
+            case 4:
+                parseStreamData = _c.sent();
+                libs.log({ parseStreamData: parseStreamData }, PROVIDER, 'PARSE STREAM DATA');
+                if (!parseStreamData || !parseStreamData.result || !parseStreamData.result.servers || !parseStreamData.result.stream) {
+                    return [2];
+                }
+                headerDefault = {
+                    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+                    "Referer": "https://vidfast.pro/",
+                    "X-Requested-With": "XMLHttpRequest"
+                };
+                return [4, libs.request_get(parseStreamData.result.servers, headerDefault)];
+            case 5:
+                serverData = _c.sent();
+                libs.log({ serverData: serverData }, PROVIDER, 'SERVER DATA');
+                if (!serverData || !serverData.length) {
+                    return [2];
+                }
+                _i = 0, serverData_1 = serverData;
+                _c.label = 6;
+            case 6:
+                if (!(_i < serverData_1.length)) return [3, 9];
+                itemServer = serverData_1[_i];
+                if (itemServer.name != "Alpha") {
+                    return [3, 8];
+                }
+                return [4, libs.request_get(parseStreamData.result.stream + "/" + itemServer.data, headerDefault)];
+            case 7:
+                streamData = _c.sent();
+                libs.log({ streamData: streamData }, PROVIDER, 'STREAM DATA');
+                tracks = [];
+                if (streamData && streamData.tracks) {
+                    for (_a = 0, _b = streamData.tracks; _a < _b.length; _a++) {
+                        trackItem = _b[_a];
+                        label = trackItem.label.split("-")[0].trim();
+                        tracks.push({
+                            file: trackItem.file,
+                            kind: 'captions',
+                            label: label,
+                        });
+                    }
+                }
+                libs.log({ tracks: tracks }, PROVIDER, 'TRACKS');
+                if (streamData && streamData.url) {
+                    libs.embed_callback(streamData.url, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, [{ file: streamData.url, quality: 1080 }], headers);
+                }
+                _c.label = 8;
+            case 8:
+                _i++;
+                return [3, 6];
+            case 9: return [3, 11];
+            case 10:
+                e_1 = _c.sent();
+                libs.log({ e: e_1 }, PROVIDER, "ERROR");
+                return [3, 11];
+            case 11: return [2];
+        }
     });
 }); };
