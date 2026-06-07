@@ -4,6 +4,7 @@
     "dist/providers/vidsrcvip.js",
     "dist/providers/rivestream.js",
     "dist/providers/vidfast.js",
+    "dist/providers/phimmoichills.js",
     "dist/providers/vidsrcto.js"
   ]
 }
