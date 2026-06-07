@@ -2,6 +2,7 @@
   "providers": [
     "dist/providers/videasy.js",
     "dist/providers/vidsrccc.js",
+    "dist/providers/ssss.js",
     "dist/providers/smashystream.js",
     "dist/providers/multiembed.js",
     "dist/providers/vidfast.js",
