@@ -2,8 +2,6 @@
   "providers": [
     "dist/providers/vidsrccc.js",
     "dist/providers/ssss.js",
-    "dist/providers/videasy.js",
-    "dist/providers/vidfast.js",
     "dist/providers/vidsrc.js",
     "dist/providers/vidsrcto.js"
   ]
