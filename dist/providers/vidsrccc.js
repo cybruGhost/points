@@ -72,10 +72,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
         switch (_d.label) {
             case 0:
                 PROVIDER = 'OVidsrcCC';
-                DOMAIN = "https://vidsrc.cc";
+                DOMAIN = "https://vidsrc.to";
                 headers = {
                     'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-                    'Referer': "https://vidsrc.cc/",
+                    'Referer': "https://vidsrc.to/",
                     'Origin': DOMAIN,
                 };
                 _d.label = 1;

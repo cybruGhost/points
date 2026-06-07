@@ -82,8 +82,8 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
         PROVIDER = "BVideasy";
         // videasy.net uses the same TMDB-based URL pattern as vidfast did
         url = movieInfo.type === "tv"
-            ? "https://player.videasy.net/tv/".concat(movieInfo.tmdb_id, "/").concat(cleanEpisode(movieInfo.season), "/").concat(cleanEpisode(movieInfo.episode))
-            : "https://player.videasy.net/movie/".concat(movieInfo.tmdb_id);
+            ? "https://vidfast.co/tv/".concat(movieInfo.tmdb_id, "/").concat(cleanEpisode(movieInfo.season), "/").concat(cleanEpisode(movieInfo.episode))
+            : "https://vidfast.co/movie/".concat(movieInfo.tmdb_id);
         emitWebview(PROVIDER, url, movieInfo, callback);
         return [2];
     });

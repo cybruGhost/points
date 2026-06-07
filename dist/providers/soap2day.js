@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
     function makeRequest(token_g, userAgent) {
-        return fetch("https://soap2day.to/gotocaptcha", {
+        return fetch("https://ww25.soap2day.day/gotocaptcha", {
             "headers": {
                 "accept": "application/json, text/javascript, */*; q=0.01",
                 "accept-language": "en-US,en;q=0.9",
@@ -51,7 +51,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 "x-requested-with": "XMLHttpRequest",
                 "user-agent": userAgent
             },
-            "referrer": "https://soap2day.to/enter.html",
+            "referrer": "https://ww25.soap2day.day/enter.html",
             "referrerPolicy": "strict-origin-when-cross-origin",
             "body": "token=" + token_g + "&url=0",
             "method": "POST",
