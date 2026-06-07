@@ -49,7 +49,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
         switch (_f.label) {
             case 0:
                 PROVIDER = 'MRIVESTREAM';
-                DOMAIN = "https://rivestream.live";
+                DOMAIN = "https://rivestream.ru/";
                 _f.label = 1;
             case 1:
                 _f.trys.push([1, 9, , 10]);
