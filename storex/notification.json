@@ -1,7 +1,7 @@
 {
-  "latestVersionCode": 20028,
-  "minimumSupportedVersionCode": 20028,
-  "latestVersionName": "2.0.28",
+  "latestVersionCode": 20027,
+  "minimumSupportedVersionCode": 20027,
+  "latestVersionName": "2.0.27",
   "updateUrl": "https://github.com/cybruGhost",
   "updateTitle": "The Cube update available",
   "updateMessage": "Install the latest version for playback, download, and stability improvements.",
@@ -12,7 +12,7 @@
   ],
   "notification": {
     "id": "v2.0.27-welcome",
-    "enabled": true,
+    "enabled": false,
     "title": "Welcome to The Cube 2.0.27",
     "message": "Profiles, native downloads, and TV navigation have been improved.",
     "actionLabel": "Learn more",
