@@ -1,21 +1,13 @@
 {
-  "latestVersionCode": 20027,
-  "minimumSupportedVersionCode": 20027,
-  "latestVersionName": "2.0.27",
-  "updateUrl": "https://github.com/cybruGhost",
-  "updateTitle": "The Cube update available",
-  "updateMessage": "Install the latest version for playback, download, and stability improvements.",
-  "releaseNotes": [
-    "Improved native playback and downloads",
-    "Separate viewing profiles and cloud sync",
-    "Smoother phone and TV navigation"
-  ],
   "notification": {
-    "id": "v2.0.27-welcome",
-    "enabled": false,
-    "title": "Welcome to The Cube 2.0.27",
-    "message": "Profiles, native downloads, and TV navigation have been improved.",
-    "actionLabel": "Learn more",
-    "actionUrl": "https://github.com/cybruGhost"
+    "version": "v1.8.4",
+    "url": "https://github.com/cybruGhost/Cubic-Music/releases/tag/v1.8.4",
+    "imageUrl": "https://github.com/cybruGhost/waigwe/blob/main/storex/crossfading.png?raw=true",
+    "title": "UPDATE APP NOW",
+    "contents": "Keep the music playing 🎶\nSupport Cubic Music via PayPal or M-Pesa ❤️Click here to donate❤️❤️",
+    "show": true,
+    "is_force": true,
+    "force_update": true,
+    "isUpdate": true
   }
 }
