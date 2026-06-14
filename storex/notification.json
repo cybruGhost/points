@@ -1,21 +1,105 @@
 {
-  "latestVersionCode": 20027,
-  "minimumSupportedVersionCode": 20027,
-  "latestVersionName": "2.0.27",
-  "updateUrl": "https://github.com/cybruGhost",
-  "updateTitle": "The Cube update available",
-  "updateMessage": "Install the latest version for playback, download, and stability improvements.",
-  "releaseNotes": [
-    "Improved native playback and downloads",
-    "Separate viewing profiles and cloud sync",
-    "Smoother phone and TV navigation"
-  ],
-  "notification": {
-    "id": "v2.0.27-welcome",
-    "enabled": false,
-    "title": "Welcome to The Cube 2.0.27",
-    "message": "Profiles, native downloads, and TV navigation have been improved.",
-    "actionLabel": "Learn more",
-    "actionUrl": "https://github.com/cybruGhost"
+  "schemaVersion": 2,
+  "app": {
+    "name": "The Cube",
+    "packageName": "com.thecube.app",
+    "environment": "production",
+    "configEnabled": true,
+    "maintenanceMode": false,
+    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
+    "blockUnauthorizedBuilds": true,
+    "allowedSigningCertificateSha256": [
+      "REPLACE_WITH_RELEASE_CERT_SHA256"
+    ],
+    "blockedVersionCodes": [],
+    "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
+  },
+  "update": {
+    "enabled": true,
+    "checkOnLaunch": true,
+    "checkIntervalHours": 12,
+    "latestVersionCode": 20027,
+    "minimumSupportedVersionCode": 20027,
+    "latestVersionName": "2.0.27",
+    "forceUpdate": true,
+    "title": "The Cube Update Available",
+    "message": "Install the latest version for playback, downloads, profiles, Kids Mode, and TV navigation improvements.",
+    "releaseNotes": [
+      "Fixed duplicate profile creation",
+      "Fixed Kids Mode persistence",
+      "Fixed Continue Watching",
+      "Improved TV focus navigation",
+      "Improved phone downloads",
+      "Improved Library and playlists",
+      "Improved app stability"
+    ],
+    "platforms": {
+      "androidPhone": {
+        "enabled": true,
+        "apkUrl": "REPLACE_WITH_PHONE_APK_URL",
+        "fallbackUrl": "https://github.com/cybruGhost",
+        "sha256": "REPLACE_WITH_PHONE_APK_SHA256"
+      },
+      "androidTv": {
+        "enabled": true,
+        "apkUrl": "REPLACE_WITH_TV_APK_URL",
+        "fallbackUrl": "https://github.com/cybruGhost",
+        "sha256": "REPLACE_WITH_TV_APK_SHA256"
+      }
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "showOnLaunch": false,
+    "items": [
+      {
+        "id": "news-v2-0-27",
+        "type": "news",
+        "enabled": true,
+        "title": "The Cube 2.0.27 Is Here",
+        "message": "Profiles, Kids Mode, downloads, and TV navigation have been improved.",
+        "imageUrl": null,
+        "actionLabel": "View Details",
+        "actionUrl": "https://github.com/cybruGhost",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 10
+      },
+      {
+        "id": "support-development",
+        "type": "support",
+        "enabled": false,
+        "title": "Support The Cube",
+        "message": "Help support development and keep The Cube improving.",
+        "imageUrl": "REPLACE_WITH_OPTIONAL_IMAGE_URL",
+        "actionLabel": "Support",
+        "actionUrl": "https://support-pal-global.lovable.app",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 5
+      }
+    ]
+  },
+  "features": {
+    "profiles": true,
+    "kidsMode": true,
+    "continueWatching": true,
+    "watchLater": true,
+    "playlists": true,
+    "phoneDownloads": true,
+    "tvDownloads": false,
+    "castPlayer": true,
+    "trailers": true,
+    "externalPlayers": false
+  },
+  "ads": {
+    "enabled": true,
+    "provider": "admob",
+    "showBanner": true,
+    "showInterstitial": false,
+    "android": {
+      "appId": "ca-app-pub-7167154680086124~1956582131",
+      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
+    }
   }
 }
