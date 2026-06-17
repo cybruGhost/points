@@ -1,21 +1,106 @@
 {
-  "latestVersionCode": 20027,
-  "minimumSupportedVersionCode": 20027,
-  "latestVersionName": "2.0.27",
-  "updateUrl": "https://github.com/cybruGhost",
-  "updateTitle": "The Cube update available",
-  "updateMessage": "Install the latest version for playback, download, and stability improvements.",
-  "releaseNotes": [
-    "Improved native playback and downloads",
-    "Separate viewing profiles and cloud sync",
-    "Smoother phone and TV navigation"
-  ],
-  "notification": {
-    "id": "v2.0.27-welcome",
-    "enabled": false,
-    "title": "Welcome to The Cube 2.0.27",
-    "message": "Profiles, native downloads, and TV navigation have been improved.",
-    "actionLabel": "Learn more",
-    "actionUrl": "https://github.com/cybruGhost"
+  "schemaVersion": 2,
+  "app": {
+    "name": "The Cube",
+    "packageName": "com.thecube",
+    "environment": "production",
+    "configEnabled": true,
+    "maintenanceMode": false,
+    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
+    "blockUnauthorizedBuilds": true,
+    "allowedSigningCertificateSha256": [
+      "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
+    ],
+    "blockedVersionCodes": [],
+    "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
+  },
+  "update": {
+    "enabled": true,
+    "checkOnLaunch": true,
+    "checkIntervalHours": 12,
+    "latestVersionCode": 20027,
+    "minimumSupportedVersionCode": 20027,
+    "latestVersionName": "2.0.27",
+    "forceUpdate": false,
+    "title": "The Cube 2.0.27 is ready",
+    "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
+    "releaseNotes": [
+      "Removed the Android Cast button crash path",
+      "Added player server switching during loading and error states",
+      "Added StreamIMDB as an isolated web playback option",
+      "Improved subtitles with all-language subtitle-proxy support and local caching",
+      "Added download pause and resume controls",
+      "Improved Firebase signup with nickname, password confirmation, reset, and email verification",
+      "Updated Kids profile logo, badge, and slower Kids banner rotation",
+      "Improved profile, library, playlist, and TV focus behavior"
+    ],
+    "platforms": {
+      "androidPhone": {
+        "enabled": true,
+        "apkUrl": "REPLACE_WITH_PHONE_APK_URL",
+        "fallbackUrl": "https://github.com/cybruGhost",
+        "sha256": "REPLACE_WITH_PHONE_APK_SHA256"
+      },
+      "androidTv": {
+        "enabled": true,
+        "apkUrl": "REPLACE_WITH_TV_APK_URL",
+        "fallbackUrl": "https://github.com/cybruGhost",
+        "sha256": "REPLACE_WITH_TV_APK_SHA256"
+      }
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "showOnLaunch": false,
+    "items": [
+      {
+        "id": "news-v2-0-27",
+        "type": "news",
+        "enabled": true,
+        "title": "The Cube 2.0.27",
+        "message": "Player controls, downloads, profiles, Kids mode, and TV navigation have been improved.",
+        "imageUrl": null,
+        "actionLabel": "View project",
+        "actionUrl": "https://github.com/cybruGhost",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 10
+      },
+      {
+        "id": "support-development",
+        "type": "support",
+        "enabled": false,
+        "title": "Support The Cube",
+        "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
+        "imageUrl": null,
+        "actionLabel": "Support",
+        "actionUrl": "https://support-pal-global.lovable.app/",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 5
+      }
+    ]
+  },
+  "features": {
+    "profiles": true,
+    "kidsMode": true,
+    "continueWatching": true,
+    "watchLater": true,
+    "playlists": true,
+    "phoneDownloads": true,
+    "tvDownloads": false,
+    "castPlayer": false,
+    "trailers": true,
+    "externalPlayers": false
+  },
+  "ads": {
+    "enabled": true,
+    "provider": "admob",
+    "showBanner": true,
+    "showInterstitial": false,
+    "android": {
+      "appId": "ca-app-pub-7167154680086124~1956582131",
+      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
+    }
   }
 }
