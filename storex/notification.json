@@ -39,13 +39,13 @@
         "enabled": true,
         "apkUrl": "REPLACE_WITH_PHONE_APK_URL",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "3a4d5d8832a4a9b2577d84a5067af198bf92bd2bf4dd269d31594547d881b79d"
+        "sha256": "a9fc245341cc2ee9574cc5656adb240ce0df1e7d7f930d529ce7d785c7c70bde"
       },
       "androidTv": {
         "enabled": true,
         "apkUrl": "REPLACE_WITH_TV_APK_URL",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "3a4d5d8832a4a9b2577d84a5067af198bf92bd2bf4dd269d31594547d881b79d"
+        "sha256": "a9fc245341cc2ee9574cc5656adb240ce0df1e7d7f930d529ce7d785c7c70bde"
       }
     }
   },
