@@ -36,13 +36,13 @@
       "androidPhone": {
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
         "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
       },
       "androidTv": {
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
         "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
       }
     }
