@@ -9,7 +9,7 @@
     "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
-      "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
+      "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
     ],
     "blockedVersionCodes": [],
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
