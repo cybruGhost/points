@@ -21,7 +21,7 @@
     "latestVersionCode": 20028,
     "minimumSupportedVersionCode": 20028,
     "latestVersionName": "2.0.28",
-    "forceUpdate": false,
+    "forceUpdate": true,
     "title": "The Cube 2.0.28 is ready",
     "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
     "releaseNotes": [
