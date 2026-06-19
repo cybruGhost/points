@@ -9,7 +9,7 @@
     "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
-      "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
+      "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
     ],
     "blockedVersionCodes": [],
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
@@ -18,46 +18,45 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20028,
+    "latestVersionCode": 20029,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.28",
-    "forceUpdate": true,
-    "title": "The Cube 2.0.28 is ready",
+    "latestVersionName": "2.0.29",
+    "forceUpdate": false,
+    "title": "The Cube 2.0.29 is ready",
     "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
     "releaseNotes": [
-      "Added the new Hono Videasy HLS stream response support",
-      "Kept Gacheri/VidLink as native selectable servers",
-      "Removed the old W1 embedded server from the player server list",
-      "Fixed TV D-pad navigation inside the player controls",
-      "Merged Videasy subtitles with The Cube subtitle-proxy results",
-      "Improved French localization for navigation and support UI",
-      "Updated release signing hash and version metadata"
+      "Fixed TV player remote focus inside playback controls",
+      "Made Gacheri/VidLink use the adaptive master playlist first",
+      "Made provider resolving fail faster when one server is down",
+      "Forced remote config refresh on every app launch",
+      "Enabled launch notifications for news/support cards",
+      "Kept the same release signing key for update reputation"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.28/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
+        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.28/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
+        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
       }
     }
   },
   "notifications": {
     "enabled": true,
-    "showOnLaunch": false,
+    "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-28",
+        "id": "news-v2-0-29",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.28",
-        "message": "Native HLS providers, player controls, subtitles, and TV navigation have been improved.",
+        "title": "The Cube 2.0.29",
+        "message": "TV player controls, adaptive playback, remote config, and launch notifications have been improved.",
         "imageUrl": null,
         "actionLabel": "View project",
         "actionUrl": "https://github.com/cybruGhost",
@@ -68,7 +67,7 @@
       {
         "id": "support-development",
         "type": "support",
-        "enabled": false,
+        "enabled": true,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
         "imageUrl": null,
