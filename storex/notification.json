@@ -18,34 +18,33 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20027,
-    "minimumSupportedVersionCode": 20027,
-    "latestVersionName": "2.0.27",
+    "latestVersionCode": 20028,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.28",
     "forceUpdate": false,
-    "title": "The Cube 2.0.27 is ready",
+    "title": "The Cube 2.0.28 is ready",
     "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
     "releaseNotes": [
-      "Removed the Android Cast button crash path",
-      "Added player server switching during loading and error states",
-      "Added StreamIMDB as an isolated web playback option",
-      "Improved subtitles with all-language subtitle-proxy support and local caching",
-      "Added download pause and resume controls",
-      "Improved Firebase signup with nickname, password confirmation, reset, and email verification",
-      "Updated Kids profile logo, badge, and slower Kids banner rotation",
-      "Improved profile, library, playlist, and TV focus behavior"
+      "Added the new Hono Videasy HLS stream response support",
+      "Kept Gacheri/VidLink as native selectable servers",
+      "Removed the old W1 embedded server from the player server list",
+      "Fixed TV D-pad navigation inside the player controls",
+      "Merged Videasy subtitles with The Cube subtitle-proxy results",
+      "Improved French localization for navigation and support UI",
+      "Updated release signing hash and version metadata"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "REPLACE_WITH_PHONE_APK_URL",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.28/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "a9fc245341cc2ee9574cc5656adb240ce0df1e7d7f930d529ce7d785c7c70bde"
+        "sha256": "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "REPLACE_WITH_TV_APK_URL",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.28/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost",
-        "sha256": "a9fc245341cc2ee9574cc5656adb240ce0df1e7d7f930d529ce7d785c7c70bde"
+        "sha256": "acd9e26ccc487612343b5e71756edd303f31f697edc30d8aed79d46093f7c691"
       }
     }
   },
@@ -54,11 +53,11 @@
     "showOnLaunch": false,
     "items": [
       {
-        "id": "news-v2-0-27",
+        "id": "news-v2-0-28",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.27",
-        "message": "Player controls, downloads, profiles, Kids mode, and TV navigation have been improved.",
+        "title": "The Cube 2.0.28",
+        "message": "Native HLS providers, player controls, subtitles, and TV navigation have been improved.",
         "imageUrl": null,
         "actionLabel": "View project",
         "actionUrl": "https://github.com/cybruGhost",
