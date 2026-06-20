@@ -19,7 +19,7 @@
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
     "latestVersionCode": 20030,
-    "minimumSupportedVersionCode": 20028,
+    "minimumSupportedVersionCode": 20029,
     "latestVersionName": "2.0.30",
     "forceUpdate": false,
     "title": "The Cube 2.0.30 is ready",
