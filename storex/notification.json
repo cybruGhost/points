@@ -21,7 +21,7 @@
     "latestVersionCode": 20033,
     "minimumSupportedVersionCode": 20030,
     "latestVersionName": "2.0.33",
-    "forceUpdate": false,
+    "forceUpdate": true,
     "title": "The Cube 2.0.33 is ready",
     "message": "Install the latest version for direct WebView playback, phone portrait restore after player exit, subtitle crash fixes, and faster server recovery.",
     "releaseNotes": [
