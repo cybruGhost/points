@@ -18,32 +18,43 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20029,
+    "latestVersionCode": 20031,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.29",
+    "latestVersionName": "2.0.31",
     "forceUpdate": false,
-    "title": "The Cube 2.0.29 is ready",
-    "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
+    "title": "The Cube 2.0.31 is ready",
+    "message": "Install the latest version for Anime, website sync, smoother playback, subtitles, resume fixes, and download export.",
     "releaseNotes": [
-      "Fixed TV player remote focus inside playback controls",
-      "Made Gacheri/VidLink use the adaptive master playlist first",
-      "Made provider resolving fail faster when one server is down",
-      "Forced remote config refresh on every app launch",
-      "Enabled launch notifications for news/support cards",
-      "Kept the same release signing key for update reputation"
+      "Improved TV Home layout with a framed hero and compact landscape rows",
+      "Moved Videasy to the final fallback position",
+      "Fixed movies showing episode selectors",
+      "Improved normal Auto quality selection for smoother playback",
+      "Added Anime as its own app tab",
+      "Fixed Anime API array parsing so poster cards render instead of raw JSON",
+      "Routed Anime through a details page with real episode data",
+      "Fixed Anime HLS playback through the Aniplay stream proxy",
+      "Added Anime stream playback through the Cube player",
+      "Synced website Continue Watching and profile picture data",
+      "Kept premium status tied to the signed-in donor email",
+      "Added temporary streaming cache for smoother HLS playback",
+      "Improved subtitle switching without resetting playback",
+      "Improved series/anime resume and next episode state handling",
+      "Added optional manual export for completed phone downloads",
+      "Improved TV player focus so red only marks the focused control",
+      "Disabled non-essential ad/support launch notifications"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
+        "sha256": "005dd920a8f283d4cca166fb42e62658ca2fceeff11da697ab3159267e12d204"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
+        "sha256": "005dd920a8f283d4cca166fb42e62658ca2fceeff11da697ab3159267e12d204"
       }
     }
   },
@@ -52,14 +63,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-29",
+        "id": "news-v2-0-31",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.29",
-        "message": "TV player controls, adaptive playback, remote config, and launch notifications have been improved.",
+        "title": "The Cube 2.0.31",
+        "message": "TV Home, Anime parsing/playback, subtitles, resume, download export, website sync, and player stability have been improved.",
         "imageUrl": null,
-        "actionLabel": "View project",
-        "actionUrl": "https://github.com/cybruGhost",
+        "actionLabel": "Open The Cube",
+        "actionUrl": "https://thecub.netlify.app",
         "dismissible": true,
         "showOnce": true,
         "priority": 10
@@ -67,7 +78,7 @@
       {
         "id": "support-development",
         "type": "support",
-        "enabled": true,
+        "enabled": false,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
         "imageUrl": null,
