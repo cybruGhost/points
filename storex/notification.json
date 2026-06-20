@@ -18,32 +18,37 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20029,
+    "latestVersionCode": 20030,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.29",
+    "latestVersionName": "2.0.30",
     "forceUpdate": false,
-    "title": "The Cube 2.0.29 is ready",
-    "message": "Install the latest version for player stability, server switching, downloads, profiles, Kids mode, and TV navigation improvements.",
+    "title": "The Cube 2.0.30 is ready",
+    "message": "Install the latest version for Anime, website sync, smoother playback, subtitles, resume fixes, and download export.",
     "releaseNotes": [
-      "Fixed TV player remote focus inside playback controls",
-      "Made Gacheri/VidLink use the adaptive master playlist first",
-      "Made provider resolving fail faster when one server is down",
-      "Forced remote config refresh on every app launch",
-      "Enabled launch notifications for news/support cards",
-      "Kept the same release signing key for update reputation"
+      "Added Anime as its own app tab",
+      "Fixed Anime API array parsing so poster cards render instead of raw JSON",
+      "Added Anime stream playback through the Cube player",
+      "Synced website Continue Watching and profile picture data",
+      "Kept premium status tied to the signed-in donor email",
+      "Added temporary streaming cache for smoother HLS playback",
+      "Improved subtitle switching without resetting playback",
+      "Improved series resume and next episode state handling",
+      "Added optional manual export for completed phone downloads",
+      "Improved TV player focus so red only marks the focused control",
+      "Disabled non-essential ad/support launch notifications"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
+        "sha256": "63e838ba3ed2042218b49c1afb13f72d10f4410562943357ce94731386e1a4f9"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.29/app-release.apk",
-        "sha256": "398dbffac8144cb1ec454486cbcaf46703b2f50fabdbddc1d458f96a4ae5cd27"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
+        "sha256": "63e838ba3ed2042218b49c1afb13f72d10f4410562943357ce94731386e1a4f9"
       }
     }
   },
@@ -52,14 +57,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-29",
+        "id": "news-v2-0-30",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.29",
-        "message": "TV player controls, adaptive playback, remote config, and launch notifications have been improved.",
+        "title": "The Cube 2.0.30",
+        "message": "Anime parsing, subtitles, resume, download export, website sync, and TV player focus have been improved.",
         "imageUrl": null,
-        "actionLabel": "View project",
-        "actionUrl": "https://github.com/cybruGhost",
+        "actionLabel": "Open The Cube",
+        "actionUrl": "https://thecub.netlify.app",
         "dismissible": true,
         "showOnce": true,
         "priority": 10
@@ -67,7 +72,7 @@
       {
         "id": "support-development",
         "type": "support",
-        "enabled": true,
+        "enabled": false,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
         "imageUrl": null,
