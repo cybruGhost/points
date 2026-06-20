@@ -18,17 +18,19 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20031,
-    "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.31",
+    "latestVersionCode": 20033,
+    "minimumSupportedVersionCode": 20030,
+    "latestVersionName": "2.0.33",
     "forceUpdate": false,
-    "title": "The Cube 2.0.31 is ready",
-    "message": "Install the latest version for Anime, website sync, smoother playback, subtitles, resume fixes, and download export.",
+    "title": "The Cube 2.0.33 is ready",
+    "message": "Install the latest version for direct WebView playback, phone portrait restore after player exit, subtitle crash fixes, and faster server recovery.",
     "releaseNotes": [
       "Improved TV Home layout with a framed hero and compact landscape rows",
-      "Moved Videasy to the final fallback position",
+      "Prioritized Gacheri/VidLink before fallback providers",
       "Fixed movies showing episode selectors",
       "Improved normal Auto quality selection for smoother playback",
+      "Added Sonar, Nontongo, Rive, AutoEmbed, 123Embed, and SmashyStream WebView server entries",
+      "Removed the old embedded fallback from normal playback",
       "Added Anime as its own app tab",
       "Fixed Anime API array parsing so poster cards render instead of raw JSON",
       "Routed Anime through a details page with real episode data",
@@ -38,23 +40,36 @@
       "Kept premium status tied to the signed-in donor email",
       "Added temporary streaming cache for smoother HLS playback",
       "Improved subtitle switching without resetting playback",
+      "Added native Sonar WebView overlay controls for play, pause, and 10-second seeking",
       "Improved series/anime resume and next episode state handling",
+      "Fixed TV Search query resets and reduced oversized TV search cards",
+      "Preserved donor entitlement across restart while clearing it on explicit sign-out",
       "Added optional manual export for completed phone downloads",
       "Improved TV player focus so red only marks the focused control",
-      "Disabled non-essential ad/support launch notifications"
+      "Disabled non-essential ad/support launch notifications",
+      "Fixed WebView player close/back handling so users can exit stuck embeds",
+      "Forced embedded servers into the landscape player route instead of portrait loading",
+      "Stopped WebView servers from being sent through ExoPlayer",
+      "Moved Gacheri ahead of slower native server groups",
+      "Cleaned synced Anime Continue Watching rows so duplicate junk metadata is filtered",
+      "Removed the old HLS provider from the normal stream resolver",
+      "Loaded WebView servers directly with referer headers instead of iframe wrapping",
+      "Restored phones to portrait after leaving any player",
+      "Fixed cached subtitle file playback through FileProvider",
+      "Automatically skips dead native servers on HTTP 403, 404, or 410"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
-        "sha256": "005dd920a8f283d4cca166fb42e62658ca2fceeff11da697ab3159267e12d204"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.33/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.33/app-release.apk",
+        "sha256": "bbd3e4ecb8af0137261a8752f2e7e1f7d8e8642da81f1bb2021930b872847ba3"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.31/app-release.apk",
-        "sha256": "005dd920a8f283d4cca166fb42e62658ca2fceeff11da697ab3159267e12d204"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.33/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.33/app-release.apk",
+        "sha256": "bbd3e4ecb8af0137261a8752f2e7e1f7d8e8642da81f1bb2021930b872847ba3"
       }
     }
   },
@@ -63,11 +78,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-31",
+        "id": "news-v2-0-33",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.31",
-        "message": "TV Home, Anime parsing/playback, subtitles, resume, download export, website sync, and player stability have been improved.",
+        "title": "The Cube 2.0.33",
+        "message": "Direct WebView playback, phone portrait restore after player exit, subtitles, Gacheri priority, and player recovery have been improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
