@@ -18,21 +18,23 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 12,
-    "latestVersionCode": 20029,
-    "minimumSupportedVersionCode": 20029,
-    "latestVersionName": "2.0.29",
+    "latestVersionCode": 20030,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.30",
     "forceUpdate": false,
     "title": "The Cube 2.0.30 is ready",
     "message": "Install the latest version for Anime, website sync, smoother playback, subtitles, resume fixes, and download export.",
     "releaseNotes": [
       "Added Anime as its own app tab",
       "Fixed Anime API array parsing so poster cards render instead of raw JSON",
+      "Routed Anime through a details page with real episode data",
+      "Fixed Anime HLS playback through the Aniplay stream proxy",
       "Added Anime stream playback through the Cube player",
       "Synced website Continue Watching and profile picture data",
       "Kept premium status tied to the signed-in donor email",
       "Added temporary streaming cache for smoother HLS playback",
       "Improved subtitle switching without resetting playback",
-      "Improved series resume and next episode state handling",
+      "Improved series/anime resume and next episode state handling",
       "Added optional manual export for completed phone downloads",
       "Improved TV player focus so red only marks the focused control",
       "Disabled non-essential ad/support launch notifications"
@@ -42,13 +44,13 @@
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
-        "sha256": "63e838ba3ed2042218b49c1afb13f72d10f4410562943357ce94731386e1a4f9"
+        "sha256": "c14ba531bc98672c01b9fe2adeedac7db01087a88969103011fdba6fee0e0727"
       },
       "androidTv": {
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.30/app-release.apk",
-        "sha256": "63e838ba3ed2042218b49c1afb13f72d10f4410562943357ce94731386e1a4f9"
+        "sha256": "c14ba531bc98672c01b9fe2adeedac7db01087a88969103011fdba6fee0e0727"
       }
     }
   },
