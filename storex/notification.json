@@ -26,11 +26,6 @@
     "message": "Install the latest version for stable Server A-E stream labels, CineFreak and MultiXS native playback, fewer dead WebView entries, and better native stream type handling.",
     "releaseNotes": [
       "Improved TV Home layout with a framed hero and compact landscape rows",
-      "Renamed Gacheri/VidLink streams to Server A1, A2, A3",
-      "Renamed CineFreak streams to Server B1, B2, B3",
-      "Renamed MultiXS streams to Server C1, C2, C3",
-      "Renamed Movies4u streams to Server D1, D2, D3",
-      "Renamed MovieBlast streams to Server E1, E2, E3",
       "Prioritized Gacheri/VidLink before fallback providers",
       "Fixed movies showing episode selectors",
       "Improved normal Auto quality selection for smoother playback",
@@ -63,9 +58,7 @@
       "Fixed cached subtitle file playback through FileProvider",
       "Automatically skips dead native servers on HTTP 403, 404, or 410",
       "Added CineFreak direct movie and episode streams",
-      "Added MultiXS movie and episode streams with referer headers",
       "Kept playback on native scraper links before any WebView path",
-      "Fixed CineFreak and MultiXS stream type priority when URLs do not expose a file extension",
       "Trusted both configured and currently installed signing certificates during update verification"
     ],
     "platforms": {
