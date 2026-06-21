@@ -17,7 +17,7 @@
   "update": {
     "enabled": true,
     "checkOnLaunch": true,
-    "checkIntervalHours": 12,
+    "checkIntervalHours": 1,
     "latestVersionCode": 20035,
     "minimumSupportedVersionCode": 20028,
     "latestVersionName": "2.0.35",
