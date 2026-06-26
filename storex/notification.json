@@ -19,19 +19,41 @@
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
     "latestVersionCode": 20037,
-    "minimumSupportedVersionCode": 20028,
+    "minimumSupportedVersionCode": 20034,
     "latestVersionName": "2.0.37",
     "forceUpdate": true,
     "title": "The Cube 2.0.37 is ready",
     "message": "Install the latest version for  Server F,  Server G, stronger native buffering, larger temporary stream cache, and faster fallback choices above Server A.",
     "releaseNotes": [
       "Improved TV Home layout with a framed hero and compact landscape rows",
-      "Added Server F with  playback above Server A when available",
-      "Added s Server G for available",
+      "Added Vidfast as Server F with native HLS playback above Server A when available",
+      "Added Vidking as Server G for Vidmoly-backed links when a real embed ID is available",
       "Moved Server F and Server G above Server A in Auto so users can avoid buffering Server A links when better streams resolve",
       "Raised native ahead-buffer targets so streams load farther ahead during playback",
       "Raised the temporary stream cache limit to 2 GB and still clears it after player sessions",
       "Shortened stream resolver cache so expired or weak links refresh sooner",
+      "Removed the WebView player route and dead embed server path",
+      "Increased temporary playback cache and buffer targets for smoother streaming",
+      "Added extra browser headers for MultiXS native stream links",
+      "Fixed Kids and new profiles leaking the signed-in donor email",
+      "Added a manual Check for updates button in Settings",
+      "Fixed force update handling when latestVersionCode is newer",
+      "Changed report issue link to the official issue report center",
+      "Improved TV Anime poster focus routing and filtered invalid Anime IDs",
+      "Improved Anime episode rows with visible TV focus",
+      "Fixed TV Search query resets and reduced oversized TV search cards",
+      "Preserved donor entitlement across restart while clearing it on explicit sign-out",
+      "Added optional manual export for completed phone downloads",
+      "Improved TV player focus so red only marks the focused control",
+      "Disabled non-essential ad/support launch notifications",
+      "Fixed WebView player close/back handling so users can exit stuck embeds",
+      "Forced embedded servers into the landscape player route instead of portrait loading",
+      "Stopped WebView servers from being sent through ExoPlayer",
+      "Moved Gacheri ahead of slower native server groups",
+      "Cleaned synced Anime Continue Watching rows so duplicate junk metadata is filtered",
+      "Removed the old HLS provider from the normal stream resolver",
+      "Loaded WebView servers directly with referer headers instead of iframe wrapping",
+      "Restored phones to portrait after leaving any player",
       "Fixed cached subtitle file playback through FileProvider",
       "Automatically skips dead native servers on HTTP 403, 404, or 410",
       "Added CineFreak direct movie and episode streams",
@@ -53,3 +75,60 @@
         "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.37/app-release.apk",
         "sha256": "c17298f13a408e54976951b912109bb0ac228e9f6040c5008ed47abe262f4228"
       }
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "showOnLaunch": true,
+    "items": [
+      {
+        "id": "news-v2-0-37",
+        "type": "news",
+        "enabled": true,
+        "title": "The Cube 2.0.37",
+        "message": "Vidfast Server F and Vidking Server G were added, Auto now tries them above Server A when playable, and native buffering/cache were strengthened.",
+        "imageUrl": null,
+        "actionLabel": "Open The Cube",
+        "actionUrl": "https://thecub.netlify.app",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 10
+      },
+      {
+        "id": "support-development",
+        "type": "support",
+        "enabled": false,
+        "title": "Support The Cube",
+        "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
+        "imageUrl": null,
+        "actionLabel": "Support",
+        "actionUrl": "https://support-pal-global.lovable.app/",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 5
+      }
+    ]
+  },
+  "features": {
+    "profiles": true,
+    "kidsMode": true,
+    "continueWatching": true,
+    "watchLater": true,
+    "playlists": true,
+    "phoneDownloads": true,
+    "tvDownloads": false,
+    "castPlayer": false,
+    "trailers": true,
+    "externalPlayers": false
+  },
+  "ads": {
+    "enabled": true,
+    "provider": "admob",
+    "showBanner": true,
+    "showInterstitial": false,
+    "android": {
+      "appId": "ca-app-pub-7167154680086124~1956582131",
+      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
+    }
+  }
+}
