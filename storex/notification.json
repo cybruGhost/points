@@ -26,8 +26,8 @@
     "message": "Install the latest version for  Server F,  Server G, stronger native buffering, larger temporary stream cache, and faster fallback choices above Server A.",
     "releaseNotes": [
       "Improved TV Home layout with a framed hero and compact landscape rows",
-      "Added Vidfast as Server F with native HLS playback above Server A when available",
-      "Added Vidking as Server G for Vidmoly-backed links when a real embed ID is available",
+      "Added  Server F with native HLS playback above Server A when available",
+      "Added Server G for  links when a real embed ID is available",
       "Moved Server F and Server G above Server A in Auto so users can avoid buffering Server A links when better streams resolve",
       "Raised native ahead-buffer targets so streams load farther ahead during playback",
       "Raised the temporary stream cache limit to 2 GB and still clears it after player sessions",
