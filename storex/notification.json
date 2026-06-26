@@ -18,101 +18,38 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20036,
+    "latestVersionCode": 20037,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.36",
+    "latestVersionName": "2.0.37",
     "forceUpdate": true,
-    "title": "The Cube 2.0.36 is ready",
-    "message": "Install the latest version for removed WebView playback, smoother buffering cache, TV Anime focus fixes, Kids profile isolation, and a manual update check in Settings.",
+    "title": "The Cube 2.0.37 is ready",
+    "message": "Install the latest version for Vidfast Server F, Vidking Server G, stronger native buffering, larger temporary stream cache, and faster fallback choices above Server A.",
     "releaseNotes": [
       "Improved TV Home layout with a framed hero and compact landscape rows",
-      "Increased temporary playback cache and buffer targets for smoother streaming",
-      "Added extra browser headers for MultiXS native stream links",
-      "Fixed Kids and new profiles leaking the signed-in donor email",
-      "Added a manual Check for updates button in Settings",
-      "Fixed force update handling when latestVersionCode is newer",
-      "Changed report issue link to the official issue report center",
-      "Improved TV Anime poster focus routing and filtered invalid Anime IDs",
-      "Improved Anime episode rows with visible TV focus",
-      "Fixed TV episode list header so Episode 1 is no longer hidden",
-      "Adjusted Kids logo sizing on TV and phone headers",
-      "Prioritized Gacheri/VidLink before fallback providers",
-      "Fixed movies showing episode selectors",
-      "Improved normal Auto quality selection for smoother playback",
-      "Removed generic WebView entries from the normal stream list",
-      "Removed the old embedded fallback from normal playback",
-      "Added Anime as its own app tab",
-      "Fixed Anime API array parsing so poster cards render instead of raw JSON",
-      "Routed Anime through a details page with real episode data",
+      "Added Server F with  playback above Server A when available",
+      "Added s Server G for available",
+      "Moved Server F and Server G above Server A in Auto so users can avoid buffering Server A links when better streams resolve",
+      "Raised native ahead-buffer targets so streams load farther ahead during playback",
+      "Raised the temporary stream cache limit to 2 GB and still clears it after player sessions",
+      "Shortened stream resolver cache so expired or weak links refresh sooner",
+      "Fixed cached subtitle file playback through FileProvider",
+      "Automatically skips dead native servers on HTTP 403, 404, or 410",
+      "Added CineFreak direct movie and episode streams",
+      "Added MultiXS movie and episode streams with referer headers",
+      "Kept playback on native scraper links before any WebView path",
+      "Fixed CineFreak and MultiXS stream type priority when URLs do not expose a file extension",
       "Trusted both configured and currently installed signing certificates during update verification"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.36/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.36/app-release.apk",
-        "sha256": "805036ab5e231a22b613e3da19545e9027013f5a0d186667ad5d295e127ba5f0"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.37/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.37/app-release.apk",
+        "sha256": "c17298f13a408e54976951b912109bb0ac228e9f6040c5008ed47abe262f4228"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.36/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.36/app-release.apk",
-        "sha256": "805036ab5e231a22b613e3da19545e9027013f5a0d186667ad5d295e127ba5f0"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.37/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.37/app-release.apk",
+        "sha256": "c17298f13a408e54976951b912109bb0ac228e9f6040c5008ed47abe262f4228"
       }
-    }
-  },
-  "notifications": {
-    "enabled": true,
-    "showOnLaunch": true,
-    "items": [
-      {
-        "id": "news-v2-0-36",
-        "type": "news",
-        "enabled": true,
-        "title": "The Cube 2.0.36",
-        "message": "WebView playback removal, smoother buffering cache, TV Anime focus, Kids profile isolation, MultiXS headers, update checks, and force update handling have been improved.",
-        "imageUrl": null,
-        "actionLabel": "Open The Cube",
-        "actionUrl": "https://thecub.netlify.app",
-        "dismissible": true,
-        "showOnce": true,
-        "priority": 10
-      },
-      {
-        "id": "support-development",
-        "type": "support",
-        "enabled": false,
-        "title": "Support The Cube",
-        "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
-        "imageUrl": null,
-        "actionLabel": "Support",
-        "actionUrl": "https://support-pal-global.lovable.app/",
-        "dismissible": true,
-        "showOnce": true,
-        "priority": 5
-      }
-    ]
-  },
-  "features": {
-    "profiles": true,
-    "kidsMode": true,
-    "continueWatching": true,
-    "watchLater": true,
-    "playlists": true,
-    "phoneDownloads": true,
-    "tvDownloads": false,
-    "castPlayer": false,
-    "trailers": true,
-    "externalPlayers": false
-  },
-  "ads": {
-    "enabled": true,
-    "provider": "admob",
-    "showBanner": true,
-    "showInterstitial": false,
-    "android": {
-      "appId": "ca-app-pub-7167154680086124~1956582131",
-      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
-    }
-  }
-}
