@@ -18,33 +18,35 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20038,
-    "minimumSupportedVersionCode": 20034,
-    "latestVersionName": "2.0.38",
+    "latestVersionCode": 20039,
+    "minimumSupportedVersionCode": 20037,
+    "latestVersionName": "2.0.39",
     "forceUpdate": true,
-    "title": "The Cube 2.0.38 is ready",
-    "message": "I KNOW , BUT STILL UPDATE THE APP- THIS IS FOR PLAYBACK AND MORE UPDATES STILL COMING. Install the latest version for stronger playback recovery.",
+    "title": "The Cube 2.0.39 is ready",
+    "message": "Install the latest version for a stronger main playback source, clearer server quality labels, better TV stability, and cleaner download messages.",
     "releaseNotes": [
-      "Added more fallback choices for movies when the first server is weak or unavailable",
-      "Fixed one server group not showing streams that returned a different playable URL field",
-      "Filtered unsupported embed-only links from the native player list",
-      "Improved stream ordering so stronger native streams appear before weaker fallbacks",
-      "Improved TV remote navigation between the top header and page content",
-      "Kept playback cache and ahead-buffer improvements for smoother streaming",
-      "Kept update verification tied to the official signing certificate"
+      "Added a stronger main native playback source before fallback servers",
+      "Added clearer quality labels to server choices",
+      "Fixed TV profile switching crashes during kids profile changes",
+      "Improved profile picture browsing stability on TV",
+      "Fixed a home banner crash and restored cleaner banner return behavior",
+      "Improved TV focus on player loading and error actions",
+      "Improved anime playback recovery when the first anime stream source is empty",
+      "Cleaned download quota warnings so users no longer see raw JSON text",
+      "Replaced hardcoded profile version text with the installed app version"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.38/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.38/app-release.apk",
-        "sha256": "bf23a0c914dbdda494d99c1cc3c66b859f2feca63b5fb850649c63c4b4867a5b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.39/app-release.apk",
+        "fallbackUrl": "https://thecub.netlify.app",
+        "sha256": "b952af0549942f0b16989d4d758cd56a2115e11845102aa529bb876ef544a5fc"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.38/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.38/app-release.apk",
-        "sha256": "bf23a0c914dbdda494d99c1cc3c66b859f2feca63b5fb850649c63c4b4867a5b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.39/app-release.apk",
+        "fallbackUrl": "https://thecub.netlify.app",
+        "sha256": "b952af0549942f0b16989d4d758cd56a2115e11845102aa529bb876ef544a5fc"
       }
     }
   },
@@ -53,11 +55,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-38",
+        "id": "news-v2-0-39",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.38",
-        "message": "Playback fallback, TV navigation, and update reliability were improved.",
+        "title": "The Cube 2.0.39",
+        "message": "TV stability, anime playback recovery, and download messages were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
