@@ -18,15 +18,18 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20038,
-    "minimumSupportedVersionCode": 20037,
-    "latestVersionName": "2.0.38",
+    "latestVersionCode": 20040,
+    "minimumSupportedVersionCode": 20034,
+    "latestVersionName": "2.0.40",
     "forceUpdate": true,
-    "title": "The Cube 2.0.39 is ready",
-    "message": "Install the latest version for a stronger main playback source, clearer server quality labels, better TV stability, and cleaner download messages.",
+    "title": "The Cube 2.0.40 is ready",
+    "message": "Install the latest version for fixed main server playback headers, cleaner profile management on phone, and TV stability fixes.",
     "releaseNotes": [
       "Added a stronger main native playback source before fallback servers",
       "Added clearer quality labels to server choices",
+      "Fixed main server playback headers to avoid forbidden stream requests",
+      "Fixed phone Manage Profiles opening the selector instead of the manage screen",
+      "Restored the splash screen to the original clean logo animation",
       "Fixed TV profile switching crashes during kids profile changes",
       "Improved profile picture browsing stability on TV",
       "Fixed a home banner crash and restored cleaner banner return behavior",
@@ -38,15 +41,15 @@
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.39/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.40/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "b952af0549942f0b16989d4d758cd56a2115e11845102aa529bb876ef544a5fc"
+        "sha256": "4701fffaa001bec6997837018ebaa26dc559dee4f43654f28f91bcf02d85794e"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.39/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.40/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "b952af0549942f0b16989d4d758cd56a2115e11845102aa529bb876ef544a5fc"
+        "sha256": "4701fffaa001bec6997837018ebaa26dc559dee4f43654f28f91bcf02d85794e"
       }
     }
   },
@@ -55,11 +58,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-39",
+        "id": "news-v2-0-40",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.39",
-        "message": "TV stability, anime playback recovery, and download messages were improved.",
+        "title": "The Cube 2.0.40",
+        "message": "Main playback, phone profile management, and TV stability were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
