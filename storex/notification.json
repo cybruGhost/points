@@ -18,38 +18,37 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20040,
-    "minimumSupportedVersionCode": 20034,
-    "latestVersionName": "2.0.40",
+    "latestVersionCode": 20041,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.41",
     "forceUpdate": true,
-    "title": "The Cube 2.0.40 is ready",
-    "message": "Install the latest version for fixed main server playback headers, cleaner profile management on phone, and TV stability fixes.",
+    "title": "The Cube 2.0.41 is ready",
+    "message": "Install the latest version for stronger playback recovery, better episode matching, cleaner server choices, and smoother stream startup.",
     "releaseNotes": [
-      "Added a stronger main native playback source before fallback servers",
-      "Added clearer quality labels to server choices",
-      "Fixed main server playback headers to avoid forbidden stream requests",
-      "Fixed phone Manage Profiles opening the selector instead of the manage screen",
-      "Restored the splash screen to the original clean logo animation",
-      "Fixed TV profile switching crashes during kids profile changes",
-      "Improved profile picture browsing stability on TV",
-      "Fixed a home banner crash and restored cleaner banner return behavior",
-      "Improved TV focus on player loading and error actions",
-      "Improved anime playback recovery when the first anime stream source is empty",
-      "Cleaned download quota warnings so users no longer see raw JSON text",
-      "Replaced hardcoded profile version text with the installed app version"
+      "Improved main playback matching for TV episodes that previously returned empty results",
+      "Added another main playback route to reduce load and improve fallback coverage",
+      "Improved stream headers used by protected playback links",
+      "Improved server quality labels and ordering",
+      "Improved recovery when a returned stream is expired or unavailable",
+      "Kept the original splash animation clean",
+      "Fixed phone Manage Profiles opening the wrong screen",
+      "Improved TV profile, banner, and focus stability",
+      "Improved player loading and error actions on TV",
+      "Cleaned quota warning text so raw JSON is never shown",
+      "Replaced hardcoded version text with the installed app version"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.40/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.41/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "4701fffaa001bec6997837018ebaa26dc559dee4f43654f28f91bcf02d85794e"
+        "sha256": "08e99125a954600b346ca7041aa36cb7427ebf194a26cfe492aaa4861dc09a09"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.40/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.41/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "4701fffaa001bec6997837018ebaa26dc559dee4f43654f28f91bcf02d85794e"
+        "sha256": "08e99125a954600b346ca7041aa36cb7427ebf194a26cfe492aaa4861dc09a09"
       }
     }
   },
@@ -58,11 +57,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-40",
+        "id": "news-v2-0-41",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.40",
-        "message": "Main playback, phone profile management, and TV stability were improved.",
+        "title": "The Cube 2.0.41",
+        "message": "Playback matching, recovery, phone profile management, and TV stability were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
