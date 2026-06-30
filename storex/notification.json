@@ -18,37 +18,34 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20041,
+    "latestVersionCode": 20042,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.41",
+    "latestVersionName": "2.0.42",
     "forceUpdate": true,
-    "title": "The Cube 2.0.41 is ready",
-    "message": "Install the latest version for stronger playback recovery, better episode matching, cleaner server choices, and smoother stream startup.",
+    "title": "The Cube 2.0.42 is ready",
+    "message": "Install the latest version for stronger server discovery, better episode resume, and improved playback fallback when a stream is slow or unavailable.",
     "releaseNotes": [
-      "Improved main playback matching for TV episodes that previously returned empty results",
-      "Added another main playback route to reduce load and improve fallback coverage",
-      "Improved stream headers used by protected playback links",
-      "Improved server quality labels and ordering",
-      "Improved recovery when a returned stream is expired or unavailable",
-      "Kept the original splash animation clean",
-      "Fixed phone Manage Profiles opening the wrong screen",
-      "Improved TV profile, banner, and focus stability",
-      "Improved player loading and error actions on TV",
-      "Cleaned quota warning text so raw JSON is never shown",
-      "Replaced hardcoded version text with the installed app version"
+      "Improved playback discovery so all native server groups get a fair request window",
+      "Improved recovery when a stream is slow, expired, or unavailable",
+      "Added stronger fallback parsing for protected stream links",
+      "Improved movie and series search coverage with richer metadata matching",
+      "Fixed Resume opening the latest watched episode instead of always starting at S1 E1",
+      "Fixed TV Specials keeping the correct season number",
+      "Improved server labels and quality choices",
+      "Improved TV player loading and error actions"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.41/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.42/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "08e99125a954600b346ca7041aa36cb7427ebf194a26cfe492aaa4861dc09a09"
+        "sha256": "e12bfa73f5ccc31942db0cbad2a2db6210c802a2a1947e363886d31f6aac3dc2"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.41/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.42/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "08e99125a954600b346ca7041aa36cb7427ebf194a26cfe492aaa4861dc09a09"
+        "sha256": "e12bfa73f5ccc31942db0cbad2a2db6210c802a2a1947e363886d31f6aac3dc2"
       }
     }
   },
@@ -57,11 +54,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-41",
+        "id": "news-v2-0-42",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.41",
-        "message": "Playback matching, recovery, phone profile management, and TV stability were improved.",
+        "title": "The Cube 2.0.42",
+        "message": "Playback discovery, episode resume, Specials, search coverage, and TV stability were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
