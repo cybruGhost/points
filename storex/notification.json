@@ -18,12 +18,12 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20042,
+    "latestVersionCode": 20043,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.42",
+    "latestVersionName": "2.0.43",
     "forceUpdate": true,
-    "title": "The Cube 2.0.42 is ready",
-    "message": "Install the latest version for stronger server discovery, better episode resume, and improved playback fallback when a stream is slow or unavailable.",
+    "title": "The Cube 2.0.43 is ready",
+    "message": "Install the latest version for corrected episode titles, customizable navigation tabs, safer Kids navigation, and the new Sports page.",
     "releaseNotes": [
       "Improved playback discovery so all native server groups get a fair request window",
       "Improved recovery when a stream is slow, expired, or unavailable",
@@ -32,20 +32,24 @@
       "Fixed Resume opening the latest watched episode instead of always starting at S1 E1",
       "Fixed TV Specials keeping the correct season number",
       "Improved server labels and quality choices",
-      "Improved TV player loading and error actions"
+      "Improved TV player loading and error actions",
+      "Fixed episode titles staying stale after switching episodes",
+      "Added customizable navigation tabs in Settings",
+      "Kept Sports and Anime hidden from Kids profiles",
+      "Added a contained Sports page with native offline handling"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.42/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.43/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "e12bfa73f5ccc31942db0cbad2a2db6210c802a2a1947e363886d31f6aac3dc2"
+        "sha256": "b7be9353b24f985cbc82f12fba400591ff4bc1493ea87bf878d41c8df1495f0b"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.42/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.43/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "e12bfa73f5ccc31942db0cbad2a2db6210c802a2a1947e363886d31f6aac3dc2"
+        "sha256": "b7be9353b24f985cbc82f12fba400591ff4bc1493ea87bf878d41c8df1495f0b"
       }
     }
   },
@@ -54,11 +58,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-42",
+        "id": "news-v2-0-43",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.42",
-        "message": "Playback discovery, episode resume, Specials, search coverage, and TV stability were improved.",
+        "title": "The Cube 2.0.43",
+        "message": "Episode titles, customizable navigation, Kids-safe tabs, and Sports were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
