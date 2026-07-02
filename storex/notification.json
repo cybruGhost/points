@@ -18,39 +18,34 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20044,
+    "latestVersionCode": 20046,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.44",
+    "latestVersionName": "2.0.46",
     "forceUpdate": true,
-    "title": "The Cube 2.0.44 is ready",
-    "message": "Install the latest version for corrected Sports loading, customizable navigation tabs, safer Kids navigation, and episode title fixes.",
+    "title": "The Cube 2.0.46 is ready",
+    "message": "Install the latest version for better main server recovery, fixed Sports embedded previews, and stronger protected-stream playback headers.",
     "releaseNotes": [
-      "Improved playback discovery so all native server groups get a fair request window",
-      "Improved recovery when a stream is slow, expired, or unavailable",
-      "Added stronger fallback parsing for protected stream links",
-      "Improved movie and series search coverage with richer metadata matching",
-      "Fixed Resume opening the latest watched episode instead of always starting at S1 E1",
-      "Fixed TV Specials keeping the correct season number",
-      "Improved server labels and quality choices",
-      "Improved TV player loading and error actions",
-      "Fixed episode titles staying stale after switching episodes",
-      "Added customizable navigation tabs in Settings",
-      "Kept Sports and Anime hidden from Kids profiles",
-      "Added a contained Sports page with native offline handling",
-      "Fixed Sports loading so rate limits and slow pages show a native retry state instead of spinning forever"
+      "Added a stronger main stream route with aggregated quality choices",
+      "Added required playback headers for protected main streams",
+      "Kept TV episode requests guarded against unrelated movie responses",
+      "Improved native stream priority so the strongest main links appear first",
+      "Fixed Sports embedded previews being blocked by strict WebView mixed-content policy",
+      "Kept Sports external redirects blocked inside the app",
+      "Added Sports WebView diagnostics for embedded frame and preview failures",
+      "Kept Kids profiles blocked from Sports"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.44/app-release.apk",
-        "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "252cd6bf89224b2df9492d39cf7591d7e089af0c456347088327db95b15bf719"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
+        "sha256": "04b570efaf89fdfe13b2a3f1b1d7f0f979e8ee4282642582ada80acc6606c1d3"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.44/app-release.apk",
-        "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "252cd6bf89224b2df9492d39cf7591d7e089af0c456347088327db95b15bf719"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
+        "sha256": "04b570efaf89fdfe13b2a3f1b1d7f0f979e8ee4282642582ada80acc6606c1d3"
       }
     }
   },
@@ -59,17 +54,30 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-44",
+        "id": "news-v2-0-46",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.44",
-        "message": "Sports loading, customizable navigation, Kids-safe tabs, and episode titles were improved.",
+        "title": "The Cube 2.0.46",
+        "message": "Main server recovery, protected-stream playback, and Sports embedded previews were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
         "dismissible": true,
         "showOnce": true,
         "priority": 10
+      },
+      {
+        "id": "active-development-notice",
+        "type": "notice",
+        "enabled": true,
+        "title": "Active Development Notice",
+        "message": "THE CUBE is under heavy, active development. Expect frequent updates, sometimes multiple times a week, as features are added, bugs are fixed, and things get reworked. Breaking changes, UI shifts, and rough edges are part of the process right now.",
+        "imageUrl": null,
+        "actionLabel": "Got it",
+        "actionUrl": "",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 9
       },
       {
         "id": "support-development",
