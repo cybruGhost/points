@@ -18,12 +18,12 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20043,
+    "latestVersionCode": 20044,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.43",
+    "latestVersionName": "2.0.44",
     "forceUpdate": true,
-    "title": "The Cube 2.0.43 is ready",
-    "message": "Install the latest version for corrected episode titles, customizable navigation tabs, safer Kids navigation, and the new Sports page.",
+    "title": "The Cube 2.0.44 is ready",
+    "message": "Install the latest version for corrected Sports loading, customizable navigation tabs, safer Kids navigation, and episode title fixes.",
     "releaseNotes": [
       "Improved playback discovery so all native server groups get a fair request window",
       "Improved recovery when a stream is slow, expired, or unavailable",
@@ -36,20 +36,21 @@
       "Fixed episode titles staying stale after switching episodes",
       "Added customizable navigation tabs in Settings",
       "Kept Sports and Anime hidden from Kids profiles",
-      "Added a contained Sports page with native offline handling"
+      "Added a contained Sports page with native offline handling",
+      "Fixed Sports loading so rate limits and slow pages show a native retry state instead of spinning forever"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.43/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.44/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "b7be9353b24f985cbc82f12fba400591ff4bc1493ea87bf878d41c8df1495f0b"
+        "sha256": "252cd6bf89224b2df9492d39cf7591d7e089af0c456347088327db95b15bf719"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.43/app-release.apk",
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.44/app-release.apk",
         "fallbackUrl": "https://thecub.netlify.app",
-        "sha256": "b7be9353b24f985cbc82f12fba400591ff4bc1493ea87bf878d41c8df1495f0b"
+        "sha256": "252cd6bf89224b2df9492d39cf7591d7e089af0c456347088327db95b15bf719"
       }
     }
   },
@@ -58,11 +59,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-43",
+        "id": "news-v2-0-44",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.43",
-        "message": "Episode titles, customizable navigation, Kids-safe tabs, and Sports were improved.",
+        "title": "The Cube 2.0.44",
+        "message": "Sports loading, customizable navigation, Kids-safe tabs, and episode titles were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
