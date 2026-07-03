@@ -58,7 +58,7 @@
       {
         "id": "news-v2-0-48",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "The Cube 2.0.48",
         "message": "Playback starts faster, fallback servers warm in the background, and Sports/player controls were improved.",
         "imageUrl": null,
