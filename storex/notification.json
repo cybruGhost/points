@@ -15,7 +15,7 @@
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
   },
   "update": {
-    "enabled": true,
+    "enabled": false,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
     "latestVersionCode": 20048,
