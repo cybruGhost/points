@@ -15,7 +15,7 @@
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
   },
   "update": {
-    "enabled": false,
+    "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
     "latestVersionCode": 20048,
@@ -41,13 +41,13 @@
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
-        "sha256": "7ac77a23f811e41bcf6a37f1715a4b6900fe859fbddf26358043f259901113af"
+        "sha256": "88274c36223e2a76da01c3f56260494c1e83537b4e10150332ae091d184a4c08"
       },
       "androidTv": {
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
         "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
-        "sha256": "7ac77a23f811e41bcf6a37f1715a4b6900fe859fbddf26358043f259901113af"
+        "sha256": "88274c36223e2a76da01c3f56260494c1e83537b4e10150332ae091d184a4c08"
       }
     }
   },
