@@ -69,7 +69,7 @@
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
-        "message": "THE CUBE is under heavy, active development. Expect frequent updates, sometimes multiple times a week, as features are added, bugs are fixed, and things get reworked. Breaking changes, UI shifts, and rough edges are part of the process right now.",
+        "message": "THE CUBE is under heavy, active development. Expect frequent updates, sometimes multiple times a week, as features are added, bugs are fixed, and things get reworked.THE CUBE is a passion project. I don't get paid for this, there are no ads inside the app, and nothing is malicious.",
         "imageUrl": null,
         "actionLabel": "Got it",
         "actionUrl": "",
