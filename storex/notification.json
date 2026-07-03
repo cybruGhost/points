@@ -15,35 +15,35 @@
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
   },
   "update": {
-    "enabled": false,
+    "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20049,
-    "minimumSupportedVersionCode": 20044,
-    "latestVersionName": "2.0.49",
+    "latestVersionCode": 20050,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.50",
     "forceUpdate": true,
-    "title": "The Cube 2.0.49 is ready",
-    "message": "Install the latest version for faster stream startup, better server recovery, and improved release stability.",
+    "title": "The Cube 2.0.50 is ready",
+    "message": "Install the latest version for improved server visibility, cleaner server labels, and better stream recovery.",
     "releaseNotes": [
       "Stream startup now publishes priority and main server results progressively",
       "The first working stream can start while other server groups keep warming",
       "Server recovery keeps warmed candidates available in the selector",
       "Main server waits were shortened so hanging endpoints do not block the selector",
-      "The self-healing stream route is now preferred before aggregate fallback",
-      "Fixed app page headers being clipped after returning from playback"
+      "Server C candidates are no longer hidden when upstream labels them differently",
+      "Server labels no longer repeat the same quality twice"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.49/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.49/app-release.apk",
-        "sha256": "425883d4a21d2add3ac10e6a0996326ff5579f2ca9cee201521b0dd3a813ad2f"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
+        "sha256": "781b8f809233e1d42b5e97ed803604d88ace23e9347689007b2101c3c9e76bb8"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.49/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.49/app-release.apk",
-        "sha256": "425883d4a21d2add3ac10e6a0996326ff5579f2ca9cee201521b0dd3a813ad2f"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
+        "sha256": "781b8f809233e1d42b5e97ed803604d88ace23e9347689007b2101c3c9e76bb8"
       }
     }
   },
@@ -52,11 +52,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-49",
+        "id": "news-v2-0-50",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.49",
-        "message": "Playback startup and server recovery were improved so working streams appear faster.",
+        "title": "The Cube 2.0.50",
+        "message": "Server visibility and recovery were improved, with cleaner server labels.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -65,7 +65,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-49",
+        "id": "active-development-notice-v2-0-50",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
@@ -80,10 +80,10 @@
       {
         "id": "support-development",
         "type": "support",
-        "enabled": false,
+        "enabled": true,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
-        "imageUrl": null,
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1782737631424.png",
         "actionLabel": "Support",
         "actionUrl": "https://support-pal-global.lovable.app/",
         "dismissible": true,
