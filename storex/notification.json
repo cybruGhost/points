@@ -18,34 +18,36 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20046,
+    "latestVersionCode": 20048,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.46",
+    "latestVersionName": "2.0.48",
     "forceUpdate": true,
-    "title": "The Cube 2.0.46 is ready",
-    "message": "Install the latest version for better main server recovery, fixed Sports embedded previews, and stronger protected-stream playback headers.",
+    "title": "The Cube 2.0.48 is ready",
+    "message": "Install the latest version for faster playback start, background server warming, Sports page fixes, player lock, and picture-in-picture.",
     "releaseNotes": [
-      "Added a stronger main stream route with aggregated quality choices",
-      "Added required playback headers for protected main streams",
-      "Kept TV episode requests guarded against unrelated movie responses",
-      "Improved native stream priority so the strongest main links appear first",
-      "Fixed Sports embedded previews being blocked by strict WebView mixed-content policy",
-      "Kept Sports external redirects blocked inside the app",
-      "Added Sports WebView diagnostics for embedded frame and preview failures",
-      "Kept Kids profiles blocked from Sports"
+      "Playback now starts from the first playable main stream instead of waiting for every server",
+      "Fallback servers warm in the background with limited concurrency",
+      "Fallback provider timeouts were shortened to avoid multi-minute waits",
+      "Cached warm candidates are kept for retry and recovery",
+      "Sports WebView is remembered instead of recreated during recomposition",
+      "Sports now reports page start, visible commit, finish, HTTP, DNS, SSL, and console failures",
+      "Fixed active development notices being filtered out by notification type",
+      "Added player control lock to prevent accidental seeking, volume, brightness, and server changes",
+      "Added picture-in-picture entry from the player",
+      "Restored system bars and app insets after closing the player"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
-        "sha256": "04b570efaf89fdfe13b2a3f1b1d7f0f979e8ee4282642582ada80acc6606c1d3"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
+        "sha256": "7ac77a23f811e41bcf6a37f1715a4b6900fe859fbddf26358043f259901113af"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.46/app-release.apk",
-        "sha256": "04b570efaf89fdfe13b2a3f1b1d7f0f979e8ee4282642582ada80acc6606c1d3"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.48/app-release.apk",
+        "sha256": "7ac77a23f811e41bcf6a37f1715a4b6900fe859fbddf26358043f259901113af"
       }
     }
   },
@@ -54,11 +56,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-46",
+        "id": "news-v2-0-48",
         "type": "news",
         "enabled": true,
-        "title": "The Cube 2.0.46",
-        "message": "Main server recovery, protected-stream playback, and Sports embedded previews were improved.",
+        "title": "The Cube 2.0.48",
+        "message": "Playback starts faster, fallback servers warm in the background, and Sports/player controls were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -67,7 +69,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice",
+        "id": "active-development-notice-v2-0-48",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
@@ -77,7 +79,7 @@
         "actionUrl": "",
         "dismissible": true,
         "showOnce": true,
-        "priority": 9
+        "priority": 20
       },
       {
         "id": "support-development",
