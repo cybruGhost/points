@@ -18,17 +18,13 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20056,
-    "minimumSupportedVersionCode": 20048,
-    "latestVersionName": "2.0.56",
+    "latestVersionCode": 20057,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.57",
     "forceUpdate": true,
-    "title": "The Cube 2.0.56 is ready",
-    "message": "Install the latest version for stronger stream routing, safer embedded playback, and improved Anime episode loading.",
+    "title": "The Cube 2.0.57 is ready",
+    "message": "Install the latest version for restored direct server availability, improved Sports playback behavior, and the updated embedded player.",
     "releaseNotes": [
-      "Working streams now appear progressively as each server responds",
-      "Added another direct stream source with HLS and MP4 support",
-      "Improved stream header selection for fallback CDN links",
-      "Prioritized more reliable HLS fallback links when available",
       "Replaced the embedded fallback with a locked, controlled player page",
       "Improved Anime details and episode loading from the public API",
       "Live playback no longer reuses fragile temporary cache entries for signed stream links",
@@ -44,15 +40,15 @@
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.56/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.56/app-release.apk",
-        "sha256": "1fdca85c9cce5768652dcaeb72612b8e37d41319753ec10ec472391fdba3603b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
+        "sha256": "ba9a2dc3b340addcaec78c67503989f5791ad92908dc4f13e180ffd08ab27d8d"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.56/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.56/app-release.apk",
-        "sha256": "1fdca85c9cce5768652dcaeb72612b8e37d41319753ec10ec472391fdba3603b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
+        "sha256": "ba9a2dc3b340addcaec78c67503989f5791ad92908dc4f13e180ffd08ab27d8d"
       }
     }
   },
@@ -61,10 +57,10 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-56",
+        "id": "news-v2-0-57",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.56",
+        "title": "The Cube 2.0.57",
         "message": "Stream startup, server selection, and direct playback handling were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
@@ -74,7 +70,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-56",
+        "id": "active-development-notice-v2-0-57",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
