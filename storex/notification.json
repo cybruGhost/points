@@ -18,37 +18,37 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20057,
+    "latestVersionCode": 20059,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.57",
+    "latestVersionName": "2.0.59",
     "forceUpdate": true,
-    "title": "The Cube 2.0.57 is ready",
-    "message": "Install the latest version for restored direct server availability, improved Sports playback behavior, and the updated embedded player.",
+    "title": "The Cube 2.0.59 is ready",
+    "message": "Install the latest version for proxied CinemaOS playback, richer MP4/MKV parsing, and better Server J reliability.",
     "releaseNotes": [
-      "Replaced the embedded fallback with a locked, controlled player page",
-      "Improved Anime details and episode loading from the public API",
-      "Live playback no longer reuses fragile temporary cache entries for signed stream links",
-      "Browser-compatible playback headers are applied more consistently",
-      "Embedded playback now keeps popups inside the app and blocks common ad redirects",
-      "Unavailable servers stay visible for the current request and can be retried later",
-      "Direct HLS, MP4, MKV, and embedded players are routed separately",
-      "Server labels now show cleaner quality and format information",
-      "Required playback headers are preserved through the player",
-      "Sports is disabled by default and can be enabled from Customize Tabs",
-      "Provider parser coverage was expanded for safer release stability"
+      "Server J now uses the download-proxy stream resolver for proxied CinemaOS MP4 and MKV playback",
+      "Peach direct playback remains available as a later fallback instead of the primary Server J path",
+      "The stream parser now reads extractData links, nested MP4 downloads, MKV files, MKV v2 links, and captions",
+      "Proxied MP4 and MKV links are routed to ExoPlayer as progressive media streams",
+      "Playback headers now preserve identity encoding and browser-compatible request headers for proxy streams",
+      "Large 2160p and HEVC MKV links remain selectable but are no longer auto-picked first",
+      "The sandbox embedded fallback now uses sandbox-stream.lovable.app",
+      "Embedded fallback fullscreen expansion now fills the player surface",
+      "Player exit now restores the previous orientation instead of forcing portrait",
+      "Sports stays on cube-trove-api.lovable.app with mobile browser headers and in-app popup routing",
+      "Provider parser tests were refreshed for download-proxy, Peach movie, and Peach TV response shapes"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
-        "sha256": "ba9a2dc3b340addcaec78c67503989f5791ad92908dc4f13e180ffd08ab27d8d"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
+        "sha256": "38079e56ff72ebf9978bcc4de7da724184ce3e905da61ff34672203d4d6f43b8"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.57/app-release.apk",
-        "sha256": "ba9a2dc3b340addcaec78c67503989f5791ad92908dc4f13e180ffd08ab27d8d"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
+        "sha256": "38079e56ff72ebf9978bcc4de7da724184ce3e905da61ff34672203d4d6f43b8"
       }
     }
   },
@@ -57,11 +57,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-57",
+        "id": "news-v2-0-59",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.57",
-        "message": "Stream startup, server selection, and direct playback handling were improved.",
+        "title": "The Cube 2.0.59",
+        "message": "Server J now uses proxied CinemaOS MP4/MKV streams with richer parser coverage.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -70,7 +70,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-57",
+        "id": "active-development-notice-v2-0-59",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
