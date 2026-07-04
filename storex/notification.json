@@ -15,36 +15,37 @@
     "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
   },
   "update": {
-    "enabled": false,
-    "checkOnLaunch": false,
+    "enabled": true,
+    "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20052,
-    "minimumSupportedVersionCode": 20048,
-    "latestVersionName": "2.0.52",
+    "latestVersionCode": 20054,
+    "minimumSupportedVersionCode": 20028,
+    "latestVersionName": "2.0.54",
     "forceUpdate": true,
-    "title": "The Cube 2.0.52 is ready",
-    "message": "Install the latest version for faster stream startup, restored optional Anime, and smoother profile editing.",
+    "title": "The Cube 2.0.54 is ready",
+    "message": "Install the latest version for another direct stream source, better header handling, and clearer playback routing.",
     "releaseNotes": [
-      "Faster priority stream checks before slower fallback groups",
-      "Additional direct stream response shapes are now parsed correctly",
-      "Optional Anime tab is available again through Customize Tabs",
-      "Kids profiles still hide Anime and Sports automatically",
-      "Profile editor actions now stay reachable on phone screens",
-      "Stream requests now use the current app version header",
-      "Release metadata and update notification were refreshed"
+      "Working streams now appear progressively as each server responds",
+      "Added another direct stream source with HLS and MP4 support",
+      "Unavailable servers stay visible for the current request and can be retried later",
+      "Direct HLS, MP4, MKV, and embedded players are routed separately",
+      "Server labels now show cleaner quality and format information",
+      "Required playback headers are preserved through the player",
+      "Sports is disabled by default and can be enabled from Customize Tabs",
+      "Provider parser coverage was expanded for safer release stability"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
-        "sha256": "dfa8b81deef905073b06c25b0f55c4febe55bed28bcd259cf60f5d305c90570b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.54/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.54/app-release.apk",
+        "sha256": "a2b5fd781895681c34ac8a571bac34a82131b18a43bc28fdba104ab05cdd84ad"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
-        "sha256": "dfa8b81deef905073b06c25b0f55c4febe55bed28bcd259cf60f5d305c90570b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.54/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.54/app-release.apk",
+        "sha256": "a2b5fd781895681c34ac8a571bac34a82131b18a43bc28fdba104ab05cdd84ad"
       }
     }
   },
@@ -53,11 +54,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-52",
+        "id": "news-v2-0-54",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.52",
-        "message": "Stream startup, tab customization, and profile editing were improved.",
+        "title": "The Cube 2.0.54",
+        "message": "Stream startup, server selection, and direct playback handling were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -66,7 +67,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-52",
+        "id": "active-development-notice-v2-0-54",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
