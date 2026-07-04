@@ -18,32 +18,33 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20050,
-    "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.50",
+    "latestVersionCode": 20052,
+    "minimumSupportedVersionCode": 20048,
+    "latestVersionName": "2.0.52",
     "forceUpdate": true,
-    "title": "The Cube 2.0.50 is ready",
-    "message": "Install the latest version for improved server visibility, cleaner server labels, and better stream recovery.",
+    "title": "The Cube 2.0.52 is ready",
+    "message": "Install the latest version for faster stream startup, restored optional Anime, and smoother profile editing.",
     "releaseNotes": [
-      "Stream startup now publishes priority and main server results progressively",
-      "The first working stream can start while other server groups keep warming",
-      "Server recovery keeps warmed candidates available in the selector",
-      "Main server waits were shortened so hanging endpoints do not block the selector",
-      "Server C candidates are no longer hidden when upstream labels them differently",
-      "Server labels no longer repeat the same quality twice"
+      "Faster priority stream checks before slower fallback groups",
+      "Additional direct stream response shapes are now parsed correctly",
+      "Optional Anime tab is available again through Customize Tabs",
+      "Kids profiles still hide Anime and Sports automatically",
+      "Profile editor actions now stay reachable on phone screens",
+      "Stream requests now use the current app version header",
+      "Release metadata and update notification were refreshed"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
-        "sha256": "781b8f809233e1d42b5e97ed803604d88ace23e9347689007b2101c3c9e76bb8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
+        "sha256": "dfa8b81deef905073b06c25b0f55c4febe55bed28bcd259cf60f5d305c90570b"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.50/app-release.apk",
-        "sha256": "781b8f809233e1d42b5e97ed803604d88ace23e9347689007b2101c3c9e76bb8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.52/app-release.apk",
+        "sha256": "dfa8b81deef905073b06c25b0f55c4febe55bed28bcd259cf60f5d305c90570b"
       }
     }
   },
@@ -52,11 +53,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-50",
+        "id": "news-v2-0-52",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.50",
-        "message": "Server visibility and recovery were improved, with cleaner server labels.",
+        "title": "The Cube 2.0.52",
+        "message": "Stream startup, tab customization, and profile editing were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -65,11 +66,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-50",
+        "id": "active-development-notice-v2-0-52",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
-        "message": "PLZ USE VPN FOR SERVERS FOR NOW(PROTON VPN/ DOWNLOAD MOVIE .THE CUBE is under heavy, active development. Expect frequent updates, sometimes multiple times a week, as features are added, bugs are fixed, and things get reworked.THE CUBE is a passion project. I don't get paid for this, there are no ads inside the app, and nothing is malicious.",
+        "message": "THE CUBE is under heavy, active development. Expect frequent updates, sometimes multiple times a week, as features are added, bugs are fixed, and things get reworked. Breaking changes, UI shifts, and rough edges are part of the process right now.",
         "imageUrl": null,
         "actionLabel": "Got it",
         "actionUrl": "",
