@@ -35,7 +35,7 @@
       "Embedded fallback fullscreen expansion now fills the player surface",
       "Player exit now restores the previous orientation instead of forcing portrait",
       "Sports stays on  with mobile browser headers and in-app popup routing",
-      "Provider parser tests were refreshed for download-proxy, Peach movie, and Peach TV response shapes"
+      "Provider parser tests were refreshed for  movie, and Peach TV response shapes"
     ],
     "platforms": {
       "androidPhone": {
