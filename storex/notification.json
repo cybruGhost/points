@@ -18,37 +18,33 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20059,
+    "latestVersionCode": 20060,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.59",
+    "latestVersionName": "2.0.60",
     "forceUpdate": true,
-    "title": "The Cube 2.0.59 is ready",
-    "message": "Install the latest version for proxied playback, richer MP4/MKV parsing, and better Server reliability.",
+    "title": "The Cube 2.0.60 is ready",
+    "message": "Install the latest version for steadier playback loading, better recovery, and a cleaner home experience.",
     "releaseNotes": [
-      "Server J now uses the  stream resolver for proxied MP4 and MKV playbk",
-      "Pach direct playback remains available as a later fallback instead of the primary Server  path",
-      "The stream parser now reads extractData links, nested M4 links, and captions",
-      "Proxied MP4 and MKV links are routed to ExoPlayer as progressive media streams",
-      "Playback headers now preserve identity encoding and browser-compatible request headers for proxy streams",
-      "Large 2160p and HEVC MKV links remain selectable but are no longer auto-picked first",
-      "The sandbox embedded fallback now uses ",
-      "Embedded fallback fullscreen expansion now fills the player surface",
-      "Player exit now restores the previous orientation instead of forcing portrait",
-      "Sports stays on  with mobile browser headers and in-app popup routing",
-      "Provider parser tests were refreshed for  movie, and Peach TV response shapes"
+      "Playback now keeps more valid stream choices available without blocking the first playable result",
+      "Playback request headers are preserved more consistently for stream playback",
+      "Slow but valid endpoints get more request time while bad responses still fail cleanly",
+      "Anime and Sports tabs are disabled by default and can be enabled from Customize Tabs",
+      "Support is now shown as a homepage module instead of a launch popup or system notification",
+      "The home hero and support module now use subtle banner-tinted glass styling",
+      "Stream parser tests were refreshed for the merged response shape"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
-        "sha256": "38079e56ff72ebf9978bcc4de7da724184ce3e905da61ff34672203d4d6f43b8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
+        "sha256": "9dc53db4a555339d409c2b7ec05c6082ba29262de99d44a1f0b3a07c005a8aca"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.59/app-release.apk",
-        "sha256": "38079e56ff72ebf9978bcc4de7da724184ce3e905da61ff34672203d4d6f43b8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
+        "sha256": "9dc53db4a555339d409c2b7ec05c6082ba29262de99d44a1f0b3a07c005a8aca"
       }
     }
   },
@@ -57,11 +53,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-59",
+        "id": "news-v2-0-60",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.59",
-        "message": "Server J now uses proxied CinemaOS MP4/MKV streams with richer parser coverage.",
+        "title": "The Cube 2.0.60",
+        "message": "Playback loading, recovery timing, and homepage support were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -70,7 +66,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-59",
+        "id": "active-development-notice-v2-0-60",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
