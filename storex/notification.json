@@ -18,33 +18,34 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20060,
+    "latestVersionCode": 20061,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.60",
+    "latestVersionName": "2.0.61",
     "forceUpdate": true,
-    "title": "The Cube 2.0.60 is ready",
-    "message": "Install the latest version for steadier playback loading, better recovery, and a cleaner home experience.",
+    "title": "The Cube 2.0.61 is ready",
+    "message": "Install the latest version for improved playback loading, better embedded playback, and smoother TV navigation.",
     "releaseNotes": [
-      "Playback now keeps more valid stream choices available without blocking the first playable result",
-      "Playback request headers are preserved more consistently for stream playback",
-      "Slow but valid endpoints get more request time while bad responses still fail cleanly",
-      "Anime and Sports tabs are disabled by default and can be enabled from Customize Tabs",
-      "Support is now shown as a homepage module instead of a launch popup or system notification",
-      "The home hero and support module now use subtle banner-tinted glass styling",
-      "Stream parser tests were refreshed for the merged response shape"
+      "Playback now checks quick direct results first while slower results can still appear later",
+      "The server selector updates progressively and keeps failed entries retryable for that request",
+      "The Load More control is easier to reach in the server selector",
+      "Embedded playback now uses the refreshed player URL and improves Android TV remote focus",
+      "Embedded playback gets a fuller video surface while keeping app-side server controls available",
+      "Sports popup players now open inside the app and can be closed before returning to Sports",
+      "Playback request headers and stream type detection were tightened for HLS and direct files",
+      "Public update text no longer exposes internal provider details"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
-        "sha256": "9dc53db4a555339d409c2b7ec05c6082ba29262de99d44a1f0b3a07c005a8aca"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
+        "sha256": "7fe6318caa49c7eea2bb1ed57a677769250640595d33d6222fbd133eeff9545a"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.60/app-release.apk",
-        "sha256": "9dc53db4a555339d409c2b7ec05c6082ba29262de99d44a1f0b3a07c005a8aca"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
+        "sha256": "7fe6318caa49c7eea2bb1ed57a677769250640595d33d6222fbd133eeff9545a"
       }
     }
   },
@@ -53,11 +54,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-60",
+        "id": "news-v2-0-61",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.60",
-        "message": "Playback loading, recovery timing, and homepage support were improved.",
+        "title": "The Cube 2.0.61",
+        "message": "Playback loading, embedded playback, and TV navigation were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -66,7 +67,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-60",
+        "id": "active-development-notice-v2-0-61",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
@@ -86,7 +87,7 @@
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
         "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1782737631424.png",
         "actionLabel": "Support",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
+        "actionUrl": "https://support-pal-global.lovable.app/",
         "dismissible": true,
         "showOnce": true,
         "priority": 5
