@@ -18,34 +18,33 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20061,
+    "latestVersionCode": 20062,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.61",
+    "latestVersionName": "2.0.62",
     "forceUpdate": true,
-    "title": "The Cube 2.0.61 is ready",
-    "message": "Install the latest version for improved playback loading, better embedded playback, and smoother TV navigation.",
+    "title": "The Cube 2.0.62 is ready",
+    "message": "Install the latest version for better playback ordering, steadier seeking, and cleaner embedded playback.",
     "releaseNotes": [
-      "Playback now checks quick direct results first while slower results can still appear later",
-      "The server selector updates progressively and keeps failed entries retryable for that request",
-      "The Load More control is easier to reach in the server selector",
-      "Embedded playback now uses the refreshed player URL and improves Android TV remote focus",
-      "Embedded playback gets a fuller video surface while keeping app-side server controls available",
-      "Sports popup players now open inside the app and can be closed before returning to Sports",
-      "Playback request headers and stream type detection were tightened for HLS and direct files",
+      "The first server choices are now ordered around the most reliable direct playback paths",
+      "The selector avoids duplicate-looking file labels and keeps lower priority fallbacks later",
+      "Wrong-title responses and video placeholder links are filtered before they reach the player",
+      "Seeking on TV no longer switches servers just because playback is buffering after a seek",
+      "Embedded playback has a darker full-surface load state and safer popup handling",
+      "HLS and direct-file headers were tightened for more consistent playback",
       "Public update text no longer exposes internal provider details"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
-        "sha256": "7fe6318caa49c7eea2bb1ed57a677769250640595d33d6222fbd133eeff9545a"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
+        "sha256": "97fe93e36aaf580278d0f6778baf99a43595177ada909f00eb7b7132b79207fc"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.61/app-release.apk",
-        "sha256": "7fe6318caa49c7eea2bb1ed57a677769250640595d33d6222fbd133eeff9545a"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
+        "sha256": "97fe93e36aaf580278d0f6778baf99a43595177ada909f00eb7b7132b79207fc"
       }
     }
   },
@@ -54,11 +53,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-61",
+        "id": "news-v2-0-62",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.61",
-        "message": "Playback loading, embedded playback, and TV navigation were improved.",
+        "title": "The Cube 2.0.62",
+        "message": "Playback ordering, seeking, and embedded playback were improved.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -67,7 +66,7 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-61",
+        "id": "active-development-notice-v2-0-62",
         "type": "notice",
         "enabled": true,
         "title": "Active Development Notice",
@@ -85,7 +84,7 @@
         "enabled": true,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
-        "imageUrl": "https://dywyagjcuvxtjgtksyjn.supabase.co/storage/v1/object/public/notification-images/noti_1783260615732.png",
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1782737631424.png",
         "actionLabel": "Support",
         "actionUrl": "https://support-pal-global.lovable.app/",
         "dismissible": true,
