@@ -71,11 +71,11 @@
       "enabled": true,
       "title": "Development Update",
       "message": "Hi everyone! 👋 Development will officially resume on July 10. We're sorry for the inconvenience you've experienced. Our main focus will be improving playback stability, smoothing streaming performance, and fixing reported issues. In the meantime, we've increased the download queue so more of you can download content while streaming improvements are being worked on. Thank you for your patience, support, and understanding as we continue making THE CUBE better. ❤️",
-      "imageUrl": null,
+      "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783461158399.png",
       "actionLabel": "Understood",
       "actionUrl": "",
       "dismissible": true,
-      "showOnce": true,
+      "showOnce": false,
       "priority": 20
     },
       {
