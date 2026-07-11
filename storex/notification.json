@@ -18,33 +18,35 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20062,
+    "latestVersionCode": 20069,
     "minimumSupportedVersionCode": 20028,
-    "latestVersionName": "2.0.62",
+    "latestVersionName": "2.0.69",
     "forceUpdate": true,
-    "title": "The Cube 2.0.62 is ready",
-    "message": "Install the latest version for better playback ordering, steadier seeking, and cleaner embedded playback.",
+    "title": "The Cube 2.0.69 is ready",
+    "message": "Install the latest version for offline clone detection and a fixed minified startup.",
     "releaseNotes": [
-      "The first server choices are now ordered around the most reliable direct playback paths",
-      "The selector avoids duplicate-looking file labels and keeps lower priority fallbacks later",
-      "Wrong-title responses and video placeholder links are filtered before they reach the player",
-      "Seeking on TV no longer switches servers just because playback is buffering after a seek",
-      "Embedded playback has a darker full-surface load state and safer popup handling",
-      "HLS and direct-file headers were tightened for more consistent playback",
-      "Public update text no longer exposes internal provider details"
+      "Cascade no longer appears inside the native ExoPlayer server list",
+      "Cascade is disabled by remote config and permanently disabled on TV",
+      "Added Probe remaining servers to the server menu",
+      "Sports and Anime tabs are disabled unless remote config explicitly enables them",
+      "Official builds verify package and signing certificate locally, even offline",
+      "Gateway config remains the remote source for updates and feature switches when online",
+      "R8 keep rules were tightened for Firebase/Gson profile models",
+      "Home banner and poster cards have been polished",
+      "Release builds now run R8 minification and resource shrinking"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
-        "sha256": "97fe93e36aaf580278d0f6778baf99a43595177ada909f00eb7b7132b79207fc"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+        "sha256": "37c9d0de39e561507303c06b303ff27caf2d52506c7606d8d6ffcc4f4fa1b002"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.62/app-release.apk",
-        "sha256": "97fe93e36aaf580278d0f6778baf99a43595177ada909f00eb7b7132b79207fc"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+        "sha256": "37c9d0de39e561507303c06b303ff27caf2d52506c7606d8d6ffcc4f4fa1b002"
       }
     }
   },
@@ -53,11 +55,11 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "news-v2-0-62",
+        "id": "news-v2-0-69",
         "type": "news",
         "enabled": false,
-        "title": "The Cube 2.0.62",
-        "message": "Playback ordering, seeking, and embedded playback were improved.",
+        "title": "The Cube 2.0.69",
+        "message": "Offline clone detection and fixed R8 startup for the minified release.",
         "imageUrl": null,
         "actionLabel": "Open The Cube",
         "actionUrl": "https://thecub.netlify.app",
@@ -65,26 +67,26 @@
         "showOnce": true,
         "priority": 10
       },
-         {
-      "id": "active-development-notice-v2-0-62",
-      "type": "notice",
-      "enabled": true,
-      "title": "Development Update",
-      "message": "Hi everyone! 👋 Development officially started on July 10, and work is now actively in progress. It’s going to be a big week as we focus on smoother playback, better streaming performance, improved stability, and fixing the issues you’ve reported. Downloads are also being improved while the main playback work continues. Thank you for your patience, support, and for sticking with THE CUBE. More updates are on the way. ❤️",
-      "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
-      "actionLabel": "Donate",
-      "actionUrl": "https://cyberghost-shop.fourthwall.com",
-      "dismissible": true,
-      "showOnce": false,
-      "priority": 20
-    },
+      {
+        "id": "active-development-notice-v2-0-69",
+        "type": "notice",
+        "enabled": true,
+        "title": "WE ARE BACK",
+        "message": "Development and fixes are actively ongoing. We’re continuing to improve playback, streaming stability, performance, and the issues you’ve reported. You can still enjoy THE CUBE while we work—updates and improvements will continue rolling out regularly. Thank you for your patience and support. ❤️",
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
+        "actionLabel": "Donate",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 20
+      },
       {
         "id": "support-development",
         "type": "support",
         "enabled": true,
         "title": "Support The Cube",
         "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
-        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1782737631424.png",
+        "imageUrl": null,
         "actionLabel": "Support",
         "actionUrl": "https://support-pal-global.lovable.app/",
         "dismissible": true,
@@ -103,7 +105,10 @@
     "tvDownloads": false,
     "castPlayer": false,
     "trailers": true,
-    "externalPlayers": false
+    "externalPlayers": false,
+    "sportsTab": false,
+    "animeTab": false,
+    "cascadeFallback": false
   },
   "ads": {
     "enabled": true,
