@@ -78,7 +78,7 @@
         "actionLabel": "Support",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
-        "showOnce": true,
+        "showOnce": false,
         "priority": 5
       }
     ]
