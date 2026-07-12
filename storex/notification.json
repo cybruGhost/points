@@ -1,112 +1,125 @@
 {
-  "schemaVersion": 2,
-  "app": {
-    "name": "The Cube",
-    "packageName": "com.thecube",
-    "environment": "production",
-    "configEnabled": true,
-    "maintenanceMode": false,
-    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
-    "blockUnauthorizedBuilds": true,
-    "allowedSigningCertificateSha256": [
-      "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
-    ],
-    "blockedVersionCodes": [],
-    "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
-  },
-  "update": {
-    "enabled": true,
-    "checkOnLaunch": true,
-    "checkIntervalHours": 1,
-    "latestVersionCode": 20069,
-    "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.69",
-    "forceUpdate": true,
-    "title": "The Cube 2.0.69 is ready",
-    "message": "Install the latest version for offline clone detection, fixed details metadata, and improved notifications.",
-    "releaseNotes": [
-      "Fixed detail navigation so the selected movie or series opens with the correct TMDB id and metadata",
-      "Notifications now have a packaged fallback config when gateway config is unavailable",
-      "Added inbox and spam folder guidance during account registration",
-      "Cascade no longer appears inside the native ExoPlayer server list",
-      "Cascade is disabled by remote config and permanently disabled on TV",
-      "Added Probe remaining servers to the server menu",
-      "Sports and Anime tabs are disabled unless remote config explicitly enables them",
-      "Official builds verify package and signing certificate locally, even offline",
-      "Home banner and poster cards have been polished",
-      "Release builds run R8 minification and resource shrinking"
-    ],
-    "platforms": {
-      "androidPhone": {
-        "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-        "sha256": "c5cd316fa43dd6c007c68bd781925154c2690f0f5f72dc4be2ae8a42d76a6d84"
-      },
-      "androidTv": {
-        "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-        "sha256": "c5cd316fa43dd6c007c68bd781925154c2690f0f5f72dc4be2ae8a42d76a6d84"
-      }
-    }
-  },
-  "notifications": {
-    "enabled": true,
-    "showOnLaunch": true,
-    "items": [
-      {
-        "id": "active-development-notice-v2-0-69",
-        "type": "notice",
-        "enabled": true,
-        "title": "WE ARE BACK",
-        "message": "Development and fixes are actively ongoing. We're continuing to improve playback, streaming stability, performance, and the issues you've reported. You can still enjoy THE CUBE while we work - updates and improvements will continue rolling out regularly. Thank you for your patience and support.",
-        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
-        "actionLabel": "Donate",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com",
-        "dismissible": true,
-        "showOnce": false,
-        "priority": 20
-      },
-      {
-        "id": "support-development",
-        "type": "support",
-        "enabled": true,
-        "title": "Support The Cube",
-        "message": "Support is optional and helps development. Third-party servers may still go down or return errors.",
-        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
-        "actionLabel": "Support",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
-        "dismissible": true,
-        "showOnce": false,
-        "priority": 5
-      }
-    ]
-  },
-  "features": {
-    "profiles": true,
-    "kidsMode": true,
-    "continueWatching": true,
-    "watchLater": true,
-    "playlists": true,
-    "phoneDownloads": true,
-    "tvDownloads": false,
-    "castPlayer": false,
-    "trailers": true,
-    "externalPlayers": false,
-    "sportsTab": false,
-    "animeTab": false,
-    "cascadeFallback": false
-  },
-  "ads": {
-    "enabled": true,
-    "provider": "admob",
-    "showBanner": true,
-    "showInterstitial": false,
-    "android": {
-      "appId": "ca-app-pub-7167154680086124~1956582131",
-      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
-    }
-  }
-}
+    "schemaVersion":  2,
+    "app":  {
+                "name":  "The Cube",
+                "packageName":  "com.thecube",
+                "environment":  "production",
+                "configEnabled":  true,
+                "maintenanceMode":  false,
+                "maintenanceMessage":  "The Cube is temporarily under maintenance. Please try again later.",
+                "blockUnauthorizedBuilds":  true,
+                "allowedSigningCertificateSha256":  [
+                                                        "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
+                                                    ],
+                "blockedVersionCodes":  [
 
+                                        ],
+                "blockedMessage":  "This version of The Cube is no longer supported. Please install the official version."
+            },
+    "update":  {
+                   "enabled":  true,
+                   "checkOnLaunch":  true,
+                   "checkIntervalHours":  1,
+                   "latestVersionCode":  20069,
+                   "minimumSupportedVersionCode":  20067,
+                   "latestVersionName":  "2.0.69",
+                   "forceUpdate":  true,
+                   "title":  "The Cube 2.0.69 is ready",
+                   "message":  "Install the latest version for offline clone detection and a fixed minified startup.",
+                   "releaseNotes":  [
+                                        "Cascade no longer appears inside the native ExoPlayer server list",
+                                        "Cascade is disabled by remote config and permanently disabled on TV",
+                                        "Added Probe remaining servers to the server menu",
+                                        "Sports and Anime tabs are disabled unless remote config explicitly enables them",
+                                        "Official builds verify package and signing certificate locally, even offline",
+                                        "Gateway config remains the remote source for updates and feature switches when online",
+                                        "R8 keep rules were tightened for Firebase/Gson profile models",
+                                        "Home banner and poster cards have been polished",
+                                        "Release builds now run R8 minification and resource shrinking"
+                                    ],
+                   "platforms":  {
+                                     "androidPhone":  {
+                                                          "enabled":  true,
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+                                                          "sha256":  "c824e12a7fd9fd0b07d744087eeee91b59b96dffee07ec4b8fef3e005dffc62b"
+                                                      },
+                                     "androidTv":  {
+                                                       "enabled":  true,
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
+                                                       "sha256":  "c824e12a7fd9fd0b07d744087eeee91b59b96dffee07ec4b8fef3e005dffc62b"
+                                                   }
+                                 }
+               },
+    "notifications":  {
+                          "enabled":  true,
+                          "showOnLaunch":  true,
+                          "items":  [
+                                        {
+                                            "id":  "news-v2-0-69",
+                                            "type":  "news",
+                                            "enabled":  false,
+                                            "title":  "The Cube 2.0.69",
+                                            "message":  "Offline clone detection and fixed R8 startup for the minified release.",
+                                            "imageUrl":  null,
+                                            "actionLabel":  "Open The Cube",
+                                            "actionUrl":  "https://thecub.netlify.app",
+                                            "dismissible":  true,
+                                            "showOnce":  true,
+                                            "priority":  10
+                                        },
+                                        {
+                                            "id":  "active-development-notice-v2-0-69",
+                                            "type":  "notice",
+                                            "enabled":  true,
+                                            "title":  "WE ARE BACK",
+                                            "message":  "Development and fixes are actively ongoing. We\u0027re continuing to improve playback, streaming stability, performance, and the issues you\u0027ve reported. You can still enjoy THE CUBE while we work - updates and improvements will continue rolling out regularly. Thank you for your patience and support.",
+                                            "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
+                                            "actionLabel":  "Donate",
+                                            "actionUrl":  "https://cyberghost-shop.fourthwall.com",
+                                            "dismissible":  true,
+                                            "showOnce":  false,
+                                            "priority":  20
+                                        },
+                                        {
+                                            "id":  "support-development-v2-0-69",
+                                            "type":  "support",
+                                            "enabled":  true,
+                                            "title":  "Support The Cube",
+                                            "message":  "Support is optional and helps development. Third-party servers may still go down or return errors.",
+                                            "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
+                                            "actionLabel":  "Support",
+                                            "actionUrl":  "https://cyberghost-shop.fourthwall.com/",
+                                            "dismissible":  true,
+                                            "showOnce":  false,
+                                            "priority":  5
+                                        }
+                                    ]
+                      },
+    "features":  {
+                     "profiles":  true,
+                     "kidsMode":  true,
+                     "continueWatching":  true,
+                     "watchLater":  true,
+                     "playlists":  true,
+                     "phoneDownloads":  true,
+                     "tvDownloads":  false,
+                     "castPlayer":  false,
+                     "trailers":  true,
+                     "externalPlayers":  false,
+                     "sportsTab":  false,
+                     "animeTab":  false,
+                     "cascadeFallback":  false
+                 },
+    "ads":  {
+                "enabled":  true,
+                "provider":  "admob",
+                "showBanner":  true,
+                "showInterstitial":  false,
+                "android":  {
+                                "appId":  "ca-app-pub-7167154680086124~1956582131",
+                                "bannerAdUnitId":  "ca-app-pub-7167154680086124/6551931099"
+                            }
+            }
+}
