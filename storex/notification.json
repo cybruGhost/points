@@ -90,7 +90,7 @@
         "actionLabel": "Support",
         "actionUrl": "https://support-pal-global.lovable.app/",
         "dismissible": true,
-        "showOnce": true,
+        "showOnce": false,
         "priority": 5
       }
     ]
