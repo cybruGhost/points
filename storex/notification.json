@@ -20,35 +20,32 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20069,
+                   "latestVersionCode":  20070,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.69",
+                   "latestVersionName":  "2.0.70",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.69 is ready",
-                   "message":  "Install the latest version for offline clone detection and a fixed minified startup.",
+                   "title":  "The Cube 2.0.70 is ready",
+                   "message":  "Install the latest version for fixed native streaming, faster server loading, and restored Videasy/DownloadHub parsing.",
                    "releaseNotes":  [
-                                        "Cascade no longer appears inside the native ExoPlayer server list",
-                                        "Cascade is disabled by remote config and permanently disabled on TV",
-                                        "Added Probe remaining servers to the server menu",
-                                        "Sports and Anime tabs are disabled unless remote config explicitly enables them",
-                                        "Official builds verify package and signing certificate locally, even offline",
-                                        "Gateway config remains the remote source for updates and feature switches when online",
-                                        "R8 keep rules were tightened for Firebase/Gson profile models",
-                                        "Home banner and poster cards have been polished",
-                                        "Release builds now run R8 minification and resource shrinking"
+                                        "Fixed native streaming so direct servers no longer depend on gateway session unlock",
+                                        "Quick HLS/MP4 servers load first; slower Videasy and MP4/MKV servers continue through probe/background loading",
+                                        "Fixed parser support for DownloadHub data.streams and nested extractData downloads",
+                                        "Fixed extensionless MP4 links from StreameX/MultiMovies by honoring provider type fields",
+                                        "Verified VidCore, Vidfast, Videasy, and DownloadHub return movie and TV streams",
+                                        "Cascade remains disabled by config and TV stays native-player only"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-                                                          "sha256":  "c824e12a7fd9fd0b07d744087eeee91b59b96dffee07ec4b8fef3e005dffc62b"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
+                                                          "sha256":  "e8b75ff8fa2491f23c5060a69e2047b329b8e9871661b9611e3aa2563ebf6c05"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.69/app-release.apk",
-                                                       "sha256":  "c824e12a7fd9fd0b07d744087eeee91b59b96dffee07ec4b8fef3e005dffc62b"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
+                                                       "sha256":  "e8b75ff8fa2491f23c5060a69e2047b329b8e9871661b9611e3aa2563ebf6c05"
                                                    }
                                  }
                },
@@ -70,11 +67,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-69",
+                                            "id":  "active-development-notice-v2-0-70",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "WE ARE BACK",
-                                            "message":  "Development and fixes are actively ongoing. We\u0027re continuing to improve playback, streaming stability, performance, and the issues you\u0027ve reported. You can still enjoy THE CUBE while we work - updates and improvements will continue rolling out regularly.stable server is Downloadhub servers. Thank you for your patience and support.",
+                                            "title":  "THE CUBE 2.0.70",
+                                            "message":  "Native streaming has been fixed. Direct servers no longer wait on gateway unlock, quick servers load first, and Videasy/DownloadHub parsing has been restored.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
@@ -83,7 +80,7 @@
                                             "priority":  20
                                         },
                                         {
-                                            "id":  "support-development-v2-0-69",
+                                            "id":  "support-development-v2-0-70",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
