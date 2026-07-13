@@ -20,37 +20,40 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20070,
-                   "minimumSupportedVersionCode":  20069,
-                   "latestVersionName":  "2.0.70",
+                   "latestVersionCode":  20071,
+                   "minimumSupportedVersionCode":  20067,
+                   "latestVersionName":  "2.0.71",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.70 is ready",
-                   "message":  "Install the latest version for fixed native streaming, refreshed direct links, synced removals, and stable notifications.",
+                   "title":  "The Cube 2.0.71 is ready",
+                   "message":  "Install the latest version for improved server loading, incremental native providers, and fixed Videasy headers.",
                    "releaseNotes":  [
                                         "Fixed native streaming so direct servers no longer depend on gateway session unlock",
+                                        "Remaining native servers now load incrementally as each provider responds instead of waiting for the slowest heavy provider",
+                                        "Cached titles now keep probing remaining servers in the background, so reopening does not get stuck with only the first quick servers",
+                                        "Videasy playback headers now use the Vidking referer expected by the working resolver",
+                                        "Added browser Accept-Language headers for direct server and playback requests",
                                         "Fixed false Stream unavailable overlays from stale ExoPlayer errors after playback already started",
                                         "Rejected or expired direct links now ask the server APIs again instead of retrying the same dead URL",
                                         "Notification popups no longer repeat during the same app launch",
                                         "Continue Watching removals from the website now replace local state instead of merging stale rows back in",
                                         "Remote update config now checks public notification JSON hosts directly, not the streaming gateway",
-                                        "Quick HLS/MP4 servers load first; slower V and MP4/MKV servers continue through probe/background loading",
-                                        "Fixed parser support for DownloadHub data.streams and nested extractData downloads",
-                                        "Fixed extensionless MP4 links from StreameX/MultiMovies by honoring provider type fields",
-                                        "Verified return movie and TV streams", 
+                                        "Quick HLS/MP4 servers load first; slower  and MP4/MKV servers continue through probe/background loading",
+                                        "Fixed parser support for  data.streams and nested extractData downloads",
+                                        "Fixed extensionless MP4 links from  by honoring provider type fields",
                                         "Cascade remains disabled by config and TV stays native-player only"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                          "sha256":  "0729050acf089b2d7087ed80279520bb95772d373fc6429c13eb9300f949b198"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
+                                                          "sha256":  "76058540979fc32df3d6782159b8ff9fe4f0bb772bb98017007bd851a265865b"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                       "sha256":  "0729050acf089b2d7087ed80279520bb95772d373fc6429c13eb9300f949b198"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
+                                                       "sha256":  "76058540979fc32df3d6782159b8ff9fe4f0bb772bb98017007bd851a265865b"
                                                    }
                                  }
                },
@@ -72,11 +75,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-70",
+                                            "id":  "active-development-notice-v2-0-71",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.70",
-                                            "message":  "Native streaming has been fixed. Direct servers no longer wait on gateway unlock, quick servers load first, and Videasy/DownloadHub parsing has been restored.",
+                                            "title":  "THE CUBE 2.0.71",
+                                            "message":  "Native server loading has been improved. VidCore, Vidfast, StreameX, Videasy, DownloadHub, Movies4U, Peach, MultiMovies, and CineFreak now keep loading into the server list as each provider responds.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
@@ -85,7 +88,7 @@
                                             "priority":  20
                                         },
                                         {
-                                            "id":  "support-development-v2-0-70",
+                                            "id":  "support-development-v2-0-71",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
