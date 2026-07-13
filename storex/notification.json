@@ -25,13 +25,18 @@
                    "latestVersionName":  "2.0.70",
                    "forceUpdate":  true,
                    "title":  "The Cube 2.0.70 is ready",
-                   "message":  "Install the latest version for fixed native streaming, faster server loading, and restored Videasy/DownloadHub parsing.",
+                   "message":  "Install the latest version for fixed native streaming, refreshed direct links, synced removals, and stable notifications.",
                    "releaseNotes":  [
                                         "Fixed native streaming so direct servers no longer depend on gateway session unlock",
-                                        "Quick HLS/MP4 servers load first; slower Videasy and MP4/MKV servers continue through probe/background loading",
+                                        "Fixed false Stream unavailable overlays from stale ExoPlayer errors after playback already started",
+                                        "Rejected or expired direct links now ask the server APIs again instead of retrying the same dead URL",
+                                        "Notification popups no longer repeat during the same app launch",
+                                        "Continue Watching removals from the website now replace local state instead of merging stale rows back in",
+                                        "Remote update config now checks public notification JSON hosts directly, not the streaming gateway",
+                                        "Quick HLS/MP4 servers load first; slower V and MP4/MKV servers continue through probe/background loading",
                                         "Fixed parser support for DownloadHub data.streams and nested extractData downloads",
                                         "Fixed extensionless MP4 links from StreameX/MultiMovies by honoring provider type fields",
-                                        "Verified VidCore, Vidfast, Videasy, and DownloadHub return movie and TV streams",
+                                        "Verified return movie and TV streams", 
                                         "Cascade remains disabled by config and TV stays native-player only"
                                     ],
                    "platforms":  {
@@ -39,13 +44,13 @@
                                                           "enabled":  true,
                                                           "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
                                                           "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                          "sha256":  "e8b75ff8fa2491f23c5060a69e2047b329b8e9871661b9611e3aa2563ebf6c05"
+                                                          "sha256":  "0729050acf089b2d7087ed80279520bb95772d373fc6429c13eb9300f949b198"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
                                                        "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
                                                        "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.70/app-release.apk",
-                                                       "sha256":  "e8b75ff8fa2491f23c5060a69e2047b329b8e9871661b9611e3aa2563ebf6c05"
+                                                       "sha256":  "0729050acf089b2d7087ed80279520bb95772d373fc6429c13eb9300f949b198"
                                                    }
                                  }
                },
