@@ -51,13 +51,13 @@
                                                           "enabled":  true,
                                                           "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
                                                           "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
-                                                          "sha256":  "b9f327cc1ad627e74c7aeb65ee07769334dd647952eb3fa1adcbb416b9cc2a26"
+                                                          "sha256":  "b128a9a66317a813fa81c417f59179ee6f4e84ce92eb2b8f8a830a935c8a5875"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
                                                        "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
                                                        "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
-                                                       "sha256":  "b9f327cc1ad627e74c7aeb65ee07769334dd647952eb3fa1adcbb416b9cc2a26"
+                                                       "sha256":  "b128a9a66317a813fa81c417f59179ee6f4e84ce92eb2b8f8a830a935c8a5875"
                                                    }
                                  }
                },
