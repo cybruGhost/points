@@ -21,25 +21,29 @@
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
                    "latestVersionCode":  20071,
-                   "minimumSupportedVersionCode":  20070,
+                   "minimumSupportedVersionCode":  20067,
                    "latestVersionName":  "2.0.71",
                    "forceUpdate":  true,
                    "title":  "The Cube 2.0.71 is ready",
-                   "message":  "Install the latest version for improved server loading, incremental native providers, and fixed Videasy headers.",
+                   "message":  "Install the latest version for improved server loading, MeowTV VidCore support, TV focus fixes, and fixed Videasy headers.",
                    "releaseNotes":  [
                                         "Fixed native streaming so direct servers no longer depend on gateway session unlock",
+                                        "Updated VidCore to the new MeowTV API shape with server=pseudo and disguised HLS playlist support",
+                                        "Fixed TV Home D-pad Up focus routing that could crash on TV boxes and Fire TV devices",
+                                        "Widened and tightened the update prompt so long release notes stop breaking the dialog",
                                         "Remaining native servers now load incrementally as each provider responds instead of waiting for the slowest heavy provider",
                                         "Cached titles now keep probing remaining servers in the background, so reopening does not get stuck with only the first quick servers",
-                                        " playback headers now use the Vidking referer expected by the working resolver",
+                                        "Videasy playback headers now use the Vidking referer expected by the working resolver",
                                         "Added browser Accept-Language headers for direct server and playback requests",
                                         "Fixed false Stream unavailable overlays from stale ExoPlayer errors after playback already started",
                                         "Rejected or expired direct links now ask the server APIs again instead of retrying the same dead URL",
                                         "Notification popups no longer repeat during the same app launch",
                                         "Continue Watching removals from the website now replace local state instead of merging stale rows back in",
                                         "Remote update config now checks public notification JSON hosts directly, not the streaming gateway",
-                                        "Quick HLS/MP4 servers load first; slower  and MP4/MKV servers continue through probe/background loading",
-                                        "Fixed parser support for  data.streams and nested extractData downloads",
-                                        "Fixed extensionless MP4 links from  by honoring provider type fields",
+                                        "Quick HLS/MP4 servers load first; slower Videasy and MP4/MKV servers continue through probe/background loading",
+                                        "Fixed parser support for DownloadHub data.streams and nested extractData downloads",
+                                        "Fixed extensionless MP4 links from StreameX/MultiMovies by honoring provider type fields",
+                                        "Verified VidCore, Vidfast, Videasy, and DownloadHub return movie and TV streams",
                                         "Cascade remains disabled by config and TV stays native-player only"
                                     ],
                    "platforms":  {
@@ -47,13 +51,13 @@
                                                           "enabled":  true,
                                                           "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
                                                           "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
-                                                          "sha256":  "76058540979fc32df3d6782159b8ff9fe4f0bb772bb98017007bd851a265865b"
+                                                          "sha256":  "b9f327cc1ad627e74c7aeb65ee07769334dd647952eb3fa1adcbb416b9cc2a26"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
                                                        "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
                                                        "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.71/app-release.apk",
-                                                       "sha256":  "76058540979fc32df3d6782159b8ff9fe4f0bb772bb98017007bd851a265865b"
+                                                       "sha256":  "b9f327cc1ad627e74c7aeb65ee07769334dd647952eb3fa1adcbb416b9cc2a26"
                                                    }
                                  }
                },
@@ -79,7 +83,7 @@
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "THE CUBE 2.0.71",
-                                            "message":  "Native server loading has been improved.eak now keep loading into the server list as each provider responds.",
+                                            "message":  "Native server loading has been improved. VidCore, Vidfast, StreameX, Videasy, DownloadHub, Movies4U, Peach, MultiMovies, and CineFreak now keep loading into the server list as each provider responds.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
