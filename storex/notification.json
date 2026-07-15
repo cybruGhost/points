@@ -20,18 +20,21 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20072,
+                   "latestVersionCode":  20073,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.72",
+                   "latestVersionName":  "2.0.73",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.72 is ready",
-                   "message":  "Install the latest version for Stream-derived Vix support, faster native server loading, and update-cache fixes.",
+                   "title":  "The Cube 2.0.73 is ready",
+                   "message":  "Install the latest version for older Firestick 4K compatibility, server  support, and faster native server loading.",
                    "releaseNotes":  [
-                                        "Added  native HLS resolver based on the StreamFlix TMDB streaming path",
-                                        "resolves TMDB movie and TV episode ids through /api/movie and /api/tv, then builds the signed playlist from the embed page",
-                                        "cc is in the fast native server group, so it appears before slow MP4/MKV probes finish",
-                                        "Kept StreamFlix source isolated in Assets; only the compatible resolver behavior was ported into the app",
-                                        "Updated Vide to the new MeowTV API shape with server=pseudo and disguised HLS playlist support",
+                                        "Added  native HLS resolver based on the Stream TMDB streaming path",
+                                        "Vix resolves TMDB movie and TV episode ids through /api/movie and /api/tv, then builds the signed playlist from the embed page",
+                                        "Added flix native HLS resolver from StreamFlix using the Rpmvid encrypted response flow",
+                                        "flix resolves TMDB movie and TV episode ids, decrypts the Rpmvid payload locally, and returns ExoPlayer-ready HLS",
+                                        "Lowered Android minimum SDK to support Fire OS 6 / older Firestick 4K devices",
+                                        "Vix is in the fast native server group, so it appears before slow MP4/MKV probes finish",
+                                        "Kept Flix source isolated in Assets; only the compatible resolver behavior was ported into the app",
+                                        "Updated core to the new Mew API shape with server=pseudo and disguised HLS playlist support",
                                         "Remote notification JSON fetches now use no-cache headers and a timestamp query to avoid stale GitHub raw config",
                                         "TV Home D-pad Up focus routing is guarded to avoid crashing on TV boxes and Fire TV devices",
                                         "Cascade remains disabled by config and TV stays native-player only"
@@ -39,15 +42,15 @@
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.72/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.72/app-release.apk",
-                                                          "sha256":  "2c8467611e4ce25d07444462a7bed63ab1f3c99574c61335aca86c5859171905"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.73/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.73/app-release.apk",
+                                                          "sha256":  "2e58fd788685bcd1c6115497960a5b3624218942ab44ff19c73df5201bf347d7"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.72/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.72/app-release.apk",
-                                                       "sha256":  "2c8467611e4ce25d07444462a7bed63ab1f3c99574c61335aca86c5859171905"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.73/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.73/app-release.apk",
+                                                       "sha256":  "2e58fd788685bcd1c6115497960a5b3624218942ab44ff19c73df5201bf347d7"
                                                    }
                                  }
                },
@@ -69,11 +72,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-72",
+                                            "id":  "active-development-notice-v2-0-73",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.72",
-                                            "message":  "Native server loading now includes Vixc from the reviewed Stream TMDB path.k continue loading as each provider responds.",
+                                            "title":  "THE CUBE 2.0.73",
+                                            "message":  "This build lowers the Android requirement for older Firestick 4K devices and keeps native server loading with good servers.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
@@ -82,7 +85,7 @@
                                             "priority":  20
                                         },
                                         {
-                                            "id":  "support-development-v2-0-72",
+                                            "id":  "support-development-v2-0-73",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
