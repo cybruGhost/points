@@ -27,29 +27,29 @@
                    "title":  "The Cube 2.0.74 is ready",
                    "message":  "Install the latest version for fixed profile sync, unlocked Anime/Sports tabs, clearer Download Hub ban status, and safer Videasy HLS playback headers.",
                    "releaseNotes":  [
-                                        "Added VixSrc native HLS resolver based on the StreamFlix TMDB streaming path",
-                                        "VixSrc resolves TMDB movie and TV episode ids through /api/movie and /api/tv, then builds the signed playlist from the embed page",
-                                        "Added Vidflix native HLS resolver from StreamFlix using the Rpmvid encrypted response flow",
-                                        "Vidflix resolves TMDB movie and TV episode ids, decrypts the Rpmvid payload locally, and returns ExoPlayer-ready HLS",
-                                        "Added an in-player Audio menu that exposes real HLS audio tracks from ExoPlayer, matching the useful StreamFlix audio-track behavior",
-                                        "VidFast now merges server subtitles from its Wyzie endpoint with the app subtitle-proxy results",
+                                        "Added  native HLS resolver based on the  TMDB streaming path",
+                                        " resolves TMDB movie and TV episode ids through /api/movie and /api/tv, then builds the signed playlist from the embed page",
+                                        "Added  native HLS resolver from StreamFlix using the Rpmvid encrypted response flow",
+                                        " resolves TMDB movie and TV episode ids, decrypts the Rpmvid payload locally, and returns ExoPlayer-ready HLS",
+                                        "Added an in-player Audio menu that exposes real HLS audio tracks from ExoPlayer, matching the useful  audio-track behavior",
+                                        " now merges server subtitles from its Wyzie endpoint with the app subtitle-proxy results",
                                         "Fixed stale Stream unavailable overlays appearing while a recovered or switched server is already playing",
                                         "Lowered Android minimum SDK to support Fire OS 6 / older Firestick 4K devices",
-                                        "VixSrc is in the fast native server group, so it appears before slow MP4/MKV probes finish",
+                                        " is in the fast native server group, so it appears before slow MP4/MKV probes finish",
                                         "Kept StreamFlix source isolated in Assets; only the compatible resolver behavior was ported into the app",
                                         "Updated VidCore to the new MeowTV API shape with server=pseudo and disguised HLS playlist support",
                                         "Remote notification JSON fetches now use no-cache headers and a timestamp query to avoid stale GitHub raw config",
                                         "TV Home D-pad Up focus routing is guarded to avoid crashing on TV boxes and Fire TV devices",
                                         "Cascade remains disabled by config and TV stays native-player only",
                                         "Sports and Anime are unlocked in customized tabs when remote config allows them",
-                                        "Sports now uses native ESPN/API rows instead of a WebView, with icons, league badges, team logos, snapshots, news, and Innertube-backed highlight playback",
+                                        "Sports now uses native / rows instead of a WebView, with icons, league badges, team logos, snapshots, news, and Innertube-backed highlight playback",
                                         "Home notification news/support cards now rotate as an in-home slideshow every 17 seconds instead of opening as extra launch popups",
                                         "Anime and subtitle gateway URLs are injected at build time and subtitle results merge provider subtitles with the subtitle-proxy results"
                                         ,
                                         "Signed-in profiles now show email details and update name/avatar from Firestore displayName, nickname, photoUrl, avatarUrl, or profilePic",
                                         "Download Hub ban state is shown in red in Settings and Downloads, and blocked accounts cannot retry hub requests",
                                         "Anime and Sports tabs stay available unless remote config explicitly disables them",
-                                        "Videasy proxied HLS requests no longer receive stale embed Referer or Origin headers"
+                                        " proxied HLS requests no longer receive stale embed Referer or Origin headers"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
