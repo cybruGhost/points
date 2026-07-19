@@ -20,30 +20,43 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20075,
+                   "latestVersionCode":  20076,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.75",
+                   "latestVersionName":  "2.0.76",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.75 is ready",
-                   "message":  "Install the latest version with the 2.0.75 server, Anime, Sports, profile, and update hotfixes.",
+                   "title":  "The Cube 2.0.76 is ready",
+                   "message":  "Install the latest official build for playback stability, account sync, updates, subtitles, Anime, Sports, and UI fixes.",
                    "releaseNotes":  [
-                                        "Signed-in profiles now show email details and update name/avatar from Firestore displayName, nickname, photoUrl, avatarUrl, or profilePic",
-                                        "Download Hub ban state is shown in red in Settings and Downloads, and blocked accounts cannot retry hub requests",
+                                        "Improved native playback source selection and failover",
+                                        "Improved movie and episode matching so selected details open the correct title",
+                                        "Improved audio-track selection and labels for multi-audio streams",
+                                        "Added horizontal brightness and volume swipe gestures in the player",
+                                        "Cleaned up the player source menu so failed checks are grouped instead of cluttering the list",
+                                        "Fixed stale unavailable overlays appearing while playback is already running",
+                                        "Lowered Android minimum SDK to support Fire OS 6 / older Firestick 4K devices",
+                                        "Remote update checks now avoid stale cached config",
+                                        "TV Home D-pad Up focus routing is guarded to avoid crashing on TV boxes and Fire TV devices",
+                                        "Sports and Anime are unlocked in customized tabs when remote config allows them",
+                                        "Sports uses native rows with icons, badges, team logos, snapshots, news, and highlight playback",
+                                        "Home notification news/support cards now rotate as an in-home slideshow every 17 seconds instead of opening as extra launch popups",
+                                        "Subtitle results are grouped by language and merged with source-provided tracks",
+                                        "Signed-in profiles now show email details and update name/avatar from account data",
+                                        "Blocked download accounts are shown clearly in Settings and Downloads",
                                         "Anime and Sports tabs stay available unless remote config explicitly disables them",
-                                        " proxied HLS requests no longer receive stale embed Referer or Origin headers"
+                                        "Playback headers and source switching are more consistent across devices"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.75/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.75/app-release.apk",
-                                                          "sha256":  "8829faafdd4d88a8f2465e633896b96ecfd28cffd1a7ff63a8461f8bd98041e9"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
+                                                          "sha256":  "d5095db2768e7e64ed3faad283a31c25445fc3682e212e838b8b4678129b4350"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.75/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.75/app-release.apk",
-                                                       "sha256":  "8829faafdd4d88a8f2465e633896b96ecfd28cffd1a7ff63a8461f8bd98041e9"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
+                                                       "sha256":  "d5095db2768e7e64ed3faad283a31c25445fc3682e212e838b8b4678129b4350"
                                                    }
                                  }
                },
@@ -52,18 +65,18 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-75",
+                                            "id":  "legacy-update-bridge-v2-0-76",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
-                                            "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, servers, profile sync, Anime, Sports, subtitles, and playback fixes work correctly.",
+                                            "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, Anime, Sports, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.75/app-release.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
-                                            "maxVersionCode":  20074
+                                            "maxVersionCode":  20075
                                         },
                                         {
                                             "id":  "news-v2-0-69",
@@ -79,32 +92,32 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-75",
+                                            "id":  "active-development-notice-v2-0-76",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.75",
-                                            "message":  "This build refreshes the signed APK and update checksum while keeping the latest server list, Anime/Sports fixes, profile sync, and native playback improvements.",
+                                            "title":  "THE CUBE 2.0.76",
+                                            "message":  "This build refreshes the official APK with playback stability, cleaner controls, account sync, and UI fixes.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  20,
-                                            "minVersionCode":  20075
+                                            "minVersionCode":  20076
                                         },
                                         {
-                                            "id":  "support-development-v2-0-75",
+                                            "id":  "support-development-v2-0-76",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
-                                            "message":  "Support is optional and helps development. Third-party servers may still go down or return errors.",
+                                            "message":  "Support is optional and helps development, testing, and ongoing fixes.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Support",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com/",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  5,
-                                            "minVersionCode":  20075
+                                            "minVersionCode":  20076
                                         }
                                     ]
                       },
