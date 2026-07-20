@@ -38,14 +38,14 @@
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
                                                           "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
                                                        "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
                                                    }
                                  }
@@ -62,7 +62,7 @@
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
