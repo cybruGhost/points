@@ -1,4 +1,4 @@
-﻿{
+{
     "schemaVersion":  2,
     "app":  {
                 "name":  "The Cube",
@@ -40,13 +40,13 @@
                                                           "enabled":  true,
                                                           "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
                                                           "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
-                                                          "sha256":  "0ce29818c473078b46c2aa3fd5c9e5d3a58757c8228f10d07e3e1e768550daff"
+                                                          "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
                                                        "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
                                                        "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
-                                                       "sha256":  "0ce29818c473078b46c2aa3fd5c9e5d3a58757c8228f10d07e3e1e768550daff"
+                                                       "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
                                                    }
                                  }
                },
