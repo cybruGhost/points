@@ -1,4 +1,4 @@
-{
+﻿{
     "schemaVersion":  2,
     "app":  {
                 "name":  "The Cube",
@@ -20,33 +20,33 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20077,
+                   "latestVersionCode":  20078,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.77",
+                   "latestVersionName":  "2.0.78",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.77 is ready",
-                   "message":  "Install the latest official build for player, profile, subtitle, and UI fixes.",
+                   "title":  "The Cube 2.0.78 is ready",
+                   "message":  "Install the latest official build for updater, TV remote focus, player, profile, subtitle, and UI fixes.",
                    "releaseNotes":  [
+                                        "Fixed the updater loop by shipping a newer app version code than the remote update target",
+                                        "The update page now shows the installed version and the version being installed",
+                                        "TV remote focus on update and notification actions now uses a clear orange outline",
                                         "Fixed player episode switching so a new episode does not inherit the previous episode resume position",
                                         "Improved subtitle switching so existing attached tracks can be enabled or disabled without reloading playback",
                                         "Expanded the profile avatar picker to show the full bundled website avatar set",
-                                        "Profile details stay aligned with signed-in account name, email, and selected avatar data",
-                                        "Removed the extra support payment option from the Support The Cube dialog",
-                                        "Improved playback source labels and request handling",
-                                        "Improved content catalog fallback behavior when an injected API host is unavailable"
+                                        "Removed the extra support payment option from the Support The Cube dialog"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
-                                                          "sha256":  "d4009dfddc401091e543934616f03805eae57977716e2e56a8788c30752e6631"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                          "sha256":  "0ce29818c473078b46c2aa3fd5c9e5d3a58757c8228f10d07e3e1e768550daff"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
-                                                       "sha256":  "d4009dfddc401091e543934616f03805eae57977716e2e56a8788c30752e6631"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
+                                                       "sha256":  "0ce29818c473078b46c2aa3fd5c9e5d3a58757c8228f10d07e3e1e768550daff"
                                                    }
                                  }
                },
@@ -55,18 +55,18 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-77",
+                                            "id":  "legacy-update-bridge-v2-0-78",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/app-release.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
-                                            "maxVersionCode":  20075
+                                            "maxVersionCode":  20076
                                         },
                                         {
                                             "id":  "news-v2-0-69",
@@ -82,21 +82,21 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-77",
+                                            "id":  "active-development-notice-v2-0-78",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.77",
-                                            "message":  "This build fixes player episode switching, profile avatars, subtitles, and app UI polish.",
+                                            "title":  "THE CUBE 2.0.78",
+                                            "message":  "This build fixes the update screen loop, TV remote focus outlines, and player/profile polish.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  20,
-                                            "minVersionCode":  20076
+                                            "minVersionCode":  20077
                                         },
                                         {
-                                            "id":  "support-development-v2-0-77",
+                                            "id":  "support-development-v2-0-78",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
@@ -107,7 +107,7 @@
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  5,
-                                            "minVersionCode":  20076
+                                            "minVersionCode":  20077
                                         }
                                     ]
                       },
