@@ -20,59 +20,49 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20076,
+                   "latestVersionCode":  20077,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.76",
+                   "latestVersionName":  "2.0.77",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.76 is ready",
-                   "message":  "Install the latest official build for playback stability, account sync, updates, subtitles, Anime, Sports, and UI fixes.",
+                   "title":  "The Cube 2.0.77 is ready",
+                   "message":  "Install the latest official build for player, profile, subtitle, and UI fixes.",
                    "releaseNotes":  [
-                                        "Improved native playback source selection and failover",
-                                        "Improved movie and episode matching so selected details open the correct title",
-                                        "Improved audio-track selection and labels for multi-audio streams",
-                                        "Added horizontal brightness and volume swipe gestures in the player",
-                                        "Cleaned up the player source menu so failed checks are grouped instead of cluttering the list",
-                                        "Fixed stale unavailable overlays appearing while playback is already running",
-                                        "Lowered Android minimum SDK to support Fire OS 6 / older Firestick 4K devices",
-                                        "Remote update checks now avoid stale cached config",
-                                        "TV Home D-pad Up focus routing is guarded to avoid crashing on TV boxes and Fire TV devices",
-                                        "Sports and Anime are unlocked in customized tabs when remote config allows them",
-                                        "Sports uses native rows with icons, badges, team logos, snapshots, news, and highlight playback",
-                                        "Home notification news/support cards now rotate as an in-home slideshow every 17 seconds instead of opening as extra launch popups",
-                                        "Subtitle results are grouped by language and merged with source-provided tracks",
-                                        "Signed-in profiles now show email details and update name/avatar from account data",
-                                        "Blocked download accounts are shown clearly in Settings and Downloads",
-                                        "Anime and Sports tabs stay available unless remote config explicitly disables them",
-                                        "Playback headers and source switching are more consistent across devices"
+                                        "Fixed player episode switching so a new episode does not inherit the previous episode resume position",
+                                        "Improved subtitle switching so existing attached tracks can be enabled or disabled without reloading playback",
+                                        "Expanded the profile avatar picker to show the full bundled website avatar set",
+                                        "Profile details stay aligned with signed-in account name, email, and selected avatar data",
+                                        "Removed the extra support payment option from the Support The Cube dialog",
+                                        "Improved playback source labels and request handling",
+                                        "Improved content catalog fallback behavior when an injected API host is unavailable"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
-                                                          "sha256":  "d5095db2768e7e64ed3faad283a31c25445fc3682e212e838b8b4678129b4350"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
+                                                          "sha256":  "6d27dd442fb5253bdad08d506e5c4c142e8aa8d01465f0f7c26f520a5f64ff2b"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
-                                                       "sha256":  "d5095db2768e7e64ed3faad283a31c25445fc3682e212e838b8b4678129b4350"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
+                                                       "sha256":  "6d27dd442fb5253bdad08d506e5c4c142e8aa8d01465f0f7c26f520a5f64ff2b"
                                                    }
                                  }
                },
-                      "notifications":  {
+    "notifications":  {
                           "enabled":  true,
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-76",
+                                            "id":  "legacy-update-bridge-v2-0-77",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
-                                            "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, Anime, Sports, subtitles, and playback work correctly.",
+                                            "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.76/app-release.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.77/app-release.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -92,11 +82,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-76",
+                                            "id":  "active-development-notice-v2-0-77",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.76",
-                                            "message":  "This build refreshes the official APK with playback stability, cleaner controls, account sync, and UI fixes.",
+                                            "title":  "THE CUBE 2.0.77",
+                                            "message":  "This build fixes player episode switching, profile avatars, subtitles, and app UI polish.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
@@ -106,7 +96,7 @@
                                             "minVersionCode":  20076
                                         },
                                         {
-                                            "id":  "support-development-v2-0-76",
+                                            "id":  "support-development-v2-0-77",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
