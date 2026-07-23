@@ -20,33 +20,32 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20078,
+                   "latestVersionCode":  20079,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.78",
+                   "latestVersionName":  "2.0.79",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.78 is ready",
-                   "message":  "Install the latest official build for restored subtitles, complete profiles, reliable downloads, and the new Explore experience.",
+                   "title":  "The Cube 2.0.79 is ready",
+                   "message":  "Install the latest official build for more reliable native playback, a cleaner home experience, and premium tab customization.",
                    "releaseNotes":  [
-                                        "Restored subtitles in the player and grouped choices by language",
-                                        "Combined stream-provided subtitles with the built-in subtitle catalog",
-                                        "Included all 69 profile avatars in minified release builds",
-                                        "Downloads now show a real connecting state when total size is unknown",
-                                        "Prevented duplicate download jobs and added clear HTTP 429 VPN guidance",
-                                        "Added a real-trailer Explore feed with vertical swipe and double-tap My List",
-                                        "Refined the phone home header and simplified bottom navigation"
+                                        "Improved native player source validation and server switching",
+                                        "Restored reliable playback headers for compatible HLS and direct streams",
+                                        "Refined the full-bleed home banner and removed extra banner actions",
+                                        "Improved the Cube Kids header and animation-only Explore feed",
+                                        "Made optional TV, Anime, and Sports tabs premium-controlled and off by default",
+                                        "Improved Explore trailer quality and playback selection"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
-                                                          "sha256":  "736057339c270d3dd067730f1195b56e3443e0c7fb0069deca4848a74cfad933"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.79/the-cube-v2.0.79.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.79/the-cube-v2.0.79.apk",
+                                                          "sha256":  "18c30e6d7be5e9e9e7b6ab7639526b1cf088f63255c1a10586659dd887fad7bb"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
-                                                       "sha256":  "736057339c270d3dd067730f1195b56e3443e0c7fb0069deca4848a74cfad933"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.79/the-cube-v2.0.79.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.79/the-cube-v2.0.79.apk",
+                                                       "sha256":  "18c30e6d7be5e9e9e7b6ab7639526b1cf088f63255c1a10586659dd887fad7bb"
                                                    }
                                  }
                },
@@ -55,14 +54,14 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-78",
+                                            "id":  "legacy-update-bridge-v2-0-79",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.79/the-cube-v2.0.79.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -82,11 +81,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-78",
+                                            "id":  "active-development-notice-v2-0-79",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.78",
-                                            "message":  "This build restores subtitles and profile avatars, improves downloads, and adds the new trailer Explore experience.",
+                                            "title":  "THE CUBE 2.0.79",
+                                            "message":  "This build improves native playback reliability, refreshes the home and kids experience, and adds premium control for optional tabs.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
@@ -96,7 +95,7 @@
                                             "minVersionCode":  20077
                                         },
                                         {
-                                            "id":  "support-development-v2-0-78",
+                                            "id":  "support-development-v2-0-79",
                                             "type":  "support",
                                             "enabled":  true,
                                             "title":  "Support The Cube",
