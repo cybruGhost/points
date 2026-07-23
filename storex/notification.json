@@ -25,28 +25,28 @@
                    "latestVersionName":  "2.0.78",
                    "forceUpdate":  true,
                    "title":  "The Cube 2.0.78 is ready",
-                   "message":  "Install the latest official build for updater, TV remote focus, player, profile, subtitle, and UI fixes.",
+                   "message":  "Install the latest official build for restored subtitles, complete profiles, reliable downloads, and the new Explore experience.",
                    "releaseNotes":  [
-                                        "Fixed the updater loop by shipping a newer app version code than the remote update target",
-                                        "The update page now shows the installed version and the version being installed",
-                                        "TV remote focus on update and notification actions now uses a clear orange outline",
-                                        "Fixed player episode switching so a new episode does not inherit the previous episode resume position",
-                                        "Improved subtitle switching so existing attached tracks can be enabled or disabled without reloading playback",
-                                        "Expanded the profile avatar picker to show the full bundled website avatar set",
-                                        "Removed the extra support payment option from the Support The Cube dialog"
+                                        "Restored subtitles in the player and grouped choices by language",
+                                        "Combined stream-provided subtitles with the built-in subtitle catalog",
+                                        "Included all 69 profile avatars in minified release builds",
+                                        "Downloads now show a real connecting state when total size is unknown",
+                                        "Prevented duplicate download jobs and added clear HTTP 429 VPN guidance",
+                                        "Added a real-trailer Explore feed with vertical swipe and double-tap My List",
+                                        "Refined the phone home header and simplified bottom navigation"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
-                                                          "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
+                                                          "sha256":  "736057339c270d3dd067730f1195b56e3443e0c7fb0069deca4848a74cfad933"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
-                                                       "sha256":  "b5f8cf0f65008172814005b72876692d9ee52369e27612c49d6a534e282bcebd"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
+                                                       "sha256":  "736057339c270d3dd067730f1195b56e3443e0c7fb0069deca4848a74cfad933"
                                                    }
                                  }
                },
@@ -62,7 +62,7 @@
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-b5f8cf0f.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.78/the-cube-v2.0.78-73605733.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -86,7 +86,7 @@
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "THE CUBE 2.0.78",
-                                            "message":  "This build fixes the update screen loop, TV remote focus outlines, and player/profile polish.",
+                                            "message":  "This build restores subtitles and profile avatars, improves downloads, and adds the new trailer Explore experience.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
