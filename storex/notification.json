@@ -20,30 +20,30 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20080,
+                   "latestVersionCode":  20081,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.80",
+                   "latestVersionName":  "2.0.81",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.80 is ready",
-                   "message":  "Install the latest official build for functional premium tab selection and clearer download connection guidance.",
+                   "title":  "The Cube 2.0.81 is ready",
+                   "message":  "Install the latest official build for a more varied Explore feed, sharper trailers, and more reliable downloads.",
                    "releaseNotes":  [
-                                        "Premium users can choose the five tabs displayed in phone navigation",
-                                        "Home and Settings remain available while optional tabs can be changed safely",
-                                        "Download errors now explain HTTP 429 and 502 connection routing failures",
-                                        "Download Hub recommends a VPN when a file host blocks the current region or network route"
+                                        "Explore now mixes personalized picks, trending titles, movies, series, and top-rated releases",
+                                        "Explore trailers now use HD video with synchronized audio in the native player",
+                                        "Downloads detect expired source links before queueing instead of remaining at zero percent",
+                                        "Interrupted downloads retry compatible connection routes while preserving resume progress"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.80/the-cube-v2.0.80.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.80/the-cube-v2.0.80.apk",
-                                                          "sha256":  "7aeb2a05ec870c37acb9819d40950c79c4987530532ded02348e5e4843d7bc61"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
+                                                          "sha256":  "6e7ae9e85706242945a0d368ac95e4414ad1894c34494fbe25566afd810735b7"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.80/the-cube-v2.0.80.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.80/the-cube-v2.0.80.apk",
-                                                       "sha256":  "7aeb2a05ec870c37acb9819d40950c79c4987530532ded02348e5e4843d7bc61"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
+                                                       "sha256":  "6e7ae9e85706242945a0d368ac95e4414ad1894c34494fbe25566afd810735b7"
                                                    }
                                  }
                },
@@ -52,14 +52,14 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-80",
+                                            "id":  "legacy-update-bridge-v2-0-81",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.80/the-cube-v2.0.80.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -79,11 +79,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-80",
+                                            "id":  "active-development-notice-v2-0-81",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.80",
-                                            "message":  "This build makes premium tab selection functional and gives clearer guidance when downloads are blocked by a regional or network route.",
+                                            "title":  "THE CUBE 2.0.81",
+                                            "message":  "This build improves Explore variety and trailer quality, and prevents expired downloads from sitting at zero percent.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
