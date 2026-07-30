@@ -20,30 +20,34 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20081,
+                   "latestVersionCode":  20082,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.81",
+                   "latestVersionName":  "2.0.82",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.81 is ready",
-                   "message":  "Install the latest official build for a more varied Explore feed, sharper trailers, and more reliable downloads.",
+                   "title":  "The Cube 2.0.82 is ready",
+                   "message":  "Install the latest official build for clearer episode availability, steadier TV navigation, and cleaner native playback.",
                    "releaseNotes":  [
-                                        "Explore now mixes personalized picks, trending titles, movies, series, and top-rated releases",
-                                        "Explore trailers now use HD video with synchronized audio in the native player",
-                                        "Downloads detect expired source links before queueing instead of remaining at zero percent",
-                                        "Interrupted downloads retry compatible connection routes while preserving resume progress"
+                                        "Upcoming series episodes now show their release date and cannot be played before they air",
+                                        "Released episodes display a clear availability indicator",
+                                        "TV detail, season, and episode navigation is more stable with a remote",
+                                        "Explore trailers use playback fallbacks with cleaner controls",
+                                        "Brightness and volume gestures now stay on the left and right edges of the player",
+                                        "Download Hub shows bans, remaining quota, and the time until quota refresh",
+                                        "Android TV launcher artwork now uses the proper adaptive shape",
+                                        "Playable sources can start sooner while remaining options continue loading"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
-                                                          "sha256":  "6e7ae9e85706242945a0d368ac95e4414ad1894c34494fbe25566afd810735b7"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.82/the-cube-v2.0.82.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.82/the-cube-v2.0.82.apk",
+                                                          "sha256":  "78369329c529e819217216546c0cff179c6c8a57c584ecf88439cab3392d7f1a"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
-                                                       "sha256":  "6e7ae9e85706242945a0d368ac95e4414ad1894c34494fbe25566afd810735b7"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.82/the-cube-v2.0.82.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.82/the-cube-v2.0.82.apk",
+                                                       "sha256":  "78369329c529e819217216546c0cff179c6c8a57c584ecf88439cab3392d7f1a"
                                                    }
                                  }
                },
@@ -52,14 +56,14 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-81",
+                                            "id":  "legacy-update-bridge-v2-0-82",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.81/the-cube-v2.0.81.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.82/the-cube-v2.0.82.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -79,11 +83,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-81",
+                                            "id":  "active-development-notice-v2-0-82",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.81",
-                                            "message":  "This build improves Explore variety and trailer quality, and prevents expired downloads from sitting at zero percent.",
+                                            "title":  "THE CUBE 2.0.82",
+                                            "message":  "This build clarifies episode availability, improves TV remote navigation, and provides cleaner native playback and download status.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1783766152192.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
