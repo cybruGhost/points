@@ -20,30 +20,31 @@
                    "enabled":  true,
                    "checkOnLaunch":  true,
                    "checkIntervalHours":  1,
-                   "latestVersionCode":  20083,
+                   "latestVersionCode":  20084,
                    "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.83",
+                   "latestVersionName":  "2.0.84",
                    "forceUpdate":  true,
-                   "title":  "The Cube 2.0.83 is ready",
-                   "message":  "Install the latest official build for working Explore trailers, correct title playback, and cleaner player controls.",
+                   "title":  "The Cube 2.0.84 is ready",
+                   "message":  "Install the latest official build for improved trailers, subtitle selection, episode resume, and profile access controls.",
                    "releaseNotes":  [
-                                        "Fixed Explore and trailer playback on more Android phones and TV devices",
-                                        "Added compatible quality and alternate trailer fallbacks when a trailer cannot start",
-                                        "Fixed previous title playback and resume state leaking into a newly selected movie or episode",
-                                        "Player title and timeline controls now use compact edge-to-edge bars"
+                                        "Improved Explore trailer startup, stream validation, and quality fallback",
+                                        "Subtitle choices now combine available sources and are grouped by language",
+                                        "Continue Watching now resumes the exact saved season and episode",
+                                        "Account access stays attached to the correct viewing profile",
+                                        "Improved playback recovery when an upstream source rejects a request"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.83/the-cube-v2.0.83.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.83/the-cube-v2.0.83.apk",
-                                                          "sha256":  "d177f1aadfd57ed5e86b726e68bc8a129e273e3754368f1c83ff57eb679ca4ea"
+                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.84/the-cube-v2.0.84.apk",
+                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.84/the-cube-v2.0.84.apk",
+                                                          "sha256":  "1a8d97d69620c64f46ecd73f72d514ac52a2d8882585a7d2873b59441a35d892"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.83/the-cube-v2.0.83.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.83/the-cube-v2.0.83.apk",
-                                                       "sha256":  "d177f1aadfd57ed5e86b726e68bc8a129e273e3754368f1c83ff57eb679ca4ea"
+                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.84/the-cube-v2.0.84.apk",
+                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.84/the-cube-v2.0.84.apk",
+                                                       "sha256":  "1a8d97d69620c64f46ecd73f72d514ac52a2d8882585a7d2873b59441a35d892"
                                                    }
                                  }
                },
@@ -52,14 +53,14 @@
                           "showOnLaunch":  true,
                           "items":  [
                                         {
-                                            "id":  "legacy-update-bridge-v2-0-83",
+                                            "id":  "legacy-update-bridge-v2-0-84",
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "IMPORTANT UPDATE REQUIRED",
                                             "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
                                             "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.83/the-cube-v2.0.83.apk",
+                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.84/the-cube-v2.0.84.apk",
                                             "dismissible":  true,
                                             "showOnce":  false,
                                             "priority":  100,
@@ -79,11 +80,11 @@
                                             "priority":  10
                                         },
                                         {
-                                            "id":  "active-development-notice-v2-0-83",
+                                            "id":  "active-development-notice-v2-0-84",
                                             "type":  "notice",
                                             "enabled":  true,
-                                            "title":  "THE CUBE 2.0.83",
-                                            "message":  "This build restores Explore trailers, keeps playback tied to the selected title, and cleans up the native player controls.",
+                                            "title":  "THE CUBE 2.0.84",
+                                            "message":  "This build improves Explore trailers, groups subtitle languages, resumes the exact episode, and keeps account access tied to the correct profile.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
