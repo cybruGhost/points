@@ -25,25 +25,25 @@
                    "latestVersionName":  "2.0.88",
                    "forceUpdate":  true,
                    "title":  "The Cube 2.0.88 is ready",
-                   "message":  "Install the latest official build for a cleaner Android home experience, a fixed TV hero layout, smoother remote navigation, and stable Continue Watching on large profiles.",
+                   "message":  "Install the latest official build for improved TV controls, subtitle customization, smoother episode navigation, and more reliable playback.",
                    "releaseNotes":  [
-                                        "Refined the Android home hero and first-screen content layout",
-                                        "Separated the fixed TV hero from scrolling content rows",
-                                        "Improved TV remote navigation in Asian Drama and Library",
-                                        "Fixed Continue Watching stability for large synced profiles"
+                                        "Hold OK on a TV Continue Watching card to open its actions menu",
+                                        "Added subtitle size, color, opacity, background, and position controls",
+                                        "Kept unreleased episodes focusable while preventing premature playback",
+                                        "Improved home presentation and playback compatibility"
                                     ],
                    "platforms":  {
                                      "androidPhone":  {
                                                           "enabled":  true,
                                                           "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.88/the-cube-v2.0.88.apk",
                                                           "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.88/the-cube-v2.0.88.apk",
-                                                          "sha256":  "be18802e8b7df631754dfb81cbd554b495dcd79d2a836f0cd5ab82f8edc27278"
+                                                          "sha256":  "ad04aba76365a750e51dc8222f72c558112d6f833b867d6246c9cac2584c4635"
                                                       },
                                      "androidTv":  {
                                                        "enabled":  true,
                                                        "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.88/the-cube-v2.0.88.apk",
                                                        "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.88/the-cube-v2.0.88.apk",
-                                                       "sha256":  "be18802e8b7df631754dfb81cbd554b495dcd79d2a836f0cd5ab82f8edc27278"
+                                                       "sha256":  "ad04aba76365a750e51dc8222f72c558112d6f833b867d6246c9cac2584c4635"
                                                    }
                                  }
                },
@@ -83,7 +83,7 @@
                                             "type":  "notice",
                                             "enabled":  true,
                                             "title":  "THE CUBE 2.0.88",
-                                            "message":  "This build improves the Android home layout, keeps TV browsing clean and stable, and smooths remote navigation.",
+                                            "message":  "This build improves TV controls, subtitle presentation, episode navigation, and general playback reliability.",
                                             "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
                                             "actionLabel":  "Donate",
                                             "actionUrl":  "https://cyberghost-shop.fourthwall.com",
