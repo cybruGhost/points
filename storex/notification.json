@@ -1,136 +1,134 @@
 {
-    "schemaVersion":  2,
-    "app":  {
-                "name":  "The Cube",
-                "packageName":  "com.thecube",
-                "environment":  "production",
-                "configEnabled":  true,
-                "maintenanceMode":  false,
-                "maintenanceMessage":  "The Cube is temporarily under maintenance. Please try again later.",
-                "blockUnauthorizedBuilds":  true,
-                "allowedSigningCertificateSha256":  [
-                                                        "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
-                                                    ],
-                "blockedVersionCodes":  [
-
-                                        ],
-                "blockedMessage":  "This version of The Cube is no longer supported. Please install the official version."
-            },
-    "update":  {
-                   "enabled":  true,
-                   "checkOnLaunch":  true,
-                   "checkIntervalHours":  1,
-                   "latestVersionCode":  20090,
-                   "minimumSupportedVersionCode":  20067,
-                   "latestVersionName":  "2.0.90",
-                   "forceUpdate":  true,
-                   "title":  "The Cube 2.0.90 is ready",
-                   "message":  "Install the latest official build for a cleaner Android home experience, a fixed TV hero layout, smoother remote navigation, and stable Continue Watching on large profiles.",
-                   "releaseNotes":  [
-                                        "Refined the Android home hero and first-screen content layout",
-                                        "Separated the fixed TV hero from scrolling content rows",
-                                        "Improved TV remote navigation in Asian Drama and Library",
-                                        "Fixed Continue Watching stability for large synced profiles"
-                                    ],
-                   "platforms":  {
-                                     "androidPhone":  {
-                                                          "enabled":  true,
-                                                          "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.90/the-cube-v2.0.90.apk",
-                                                          "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.90/the-cube-v2.0.90.apk",
-                                                          "sha256":  "5f19ba04708167e0d56dc881808b0088e07cc4f93326706afbd226d2fc4e9dff"
-                                                      },
-                                     "androidTv":  {
-                                                       "enabled":  true,
-                                                       "apkUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.90/the-cube-v2.0.90.apk",
-                                                       "fallbackUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.90/the-cube-v2.0.90.apk",
-                                                       "sha256":  "5f19ba04708167e0d56dc881808b0088e07cc4f93326706afbd226d2fc4e9dff"
-                                                   }
-                                 }
-               },
-    "notifications":  {
-                          "enabled":  true,
-                          "showOnLaunch":  true,
-                          "items":  [
-                                        {
-                                            "id":  "legacy-update-bridge-v2-0-88",
-                                            "type":  "notice",
-                                            "enabled":  true,
-                                            "title":  "IMPORTANT UPDATE REQUIRED",
-                                            "message":  "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
-                                            "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
-                                            "actionLabel":  "Update Now",
-                                            "actionUrl":  "https://github.com/cybruGhost/cube/releases/download/v2.0.90/the-cube-v2.0.90.apk",
-                                            "dismissible":  true,
-                                            "showOnce":  false,
-                                            "priority":  100,
-                                            "maxVersionCode":  20076
-                                        },
-                                        {
-                                            "id":  "news-v2-0-69",
-                                            "type":  "news",
-                                            "enabled":  false,
-                                            "title":  "The Cube 2.0.69",
-                                            "message":  "Offline clone detection and fixed R8 startup for the minified release.",
-                                            "imageUrl":  null,
-                                            "actionLabel":  "Open The Cube",
-                                            "actionUrl":  "https://thecub.netlify.app",
-                                            "dismissible":  true,
-                                            "showOnce":  true,
-                                            "priority":  10
-                                        },
-                                        {
-                                            "id":  "active-development-notice-v2-0-88",
-                                            "type":  "notice",
-                                            "enabled":  true,
-                                            "title":  "THE CUBE 2.0.90",
-                                            "message":  "This build improves the Android home layout, keeps TV browsing clean and stable, and smooths remote navigation.",
-                                            "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
-                                            "actionLabel":  "Donate",
-                                            "actionUrl":  "https://cyberghost-shop.fourthwall.com",
-                                            "dismissible":  true,
-                                            "showOnce":  false,
-                                            "priority":  20,
-                                            "minVersionCode":  20077
-                                        },
-                                        {
-                                            "id":  "support-development-v2-0-80",
-                                            "type":  "support",
-                                            "enabled":  true,
-                                            "title":  "Support The Cube",
-                                            "message":  "Support is optional and helps development, testing, and ongoing fixes.",
-                                            "imageUrl":  "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
-                                            "actionLabel":  "Support",
-                                            "actionUrl":  "https://cyberghost-shop.fourthwall.com/",
-                                            "dismissible":  true,
-                                            "showOnce":  false,
-                                            "priority":  5,
-                                            "minVersionCode":  20077
-                                        }
-                                    ]
-                      },
-    "features":  {
-                     "profiles":  true,
-                     "kidsMode":  true,
-                     "continueWatching":  true,
-                     "watchLater":  true,
-                     "playlists":  true,
-                     "phoneDownloads":  true,
-                     "tvDownloads":  false,
-                     "castPlayer":  false,
-                     "trailers":  true,
-                     "externalPlayers":  false,
-                     "sportsTab":  true,
-                     "animeTab":  true,
-                     "cascadeFallback":  false
-                 },
-    "ads":  {
-                "enabled":  true,
-                "provider":  "admob",
-                "showBanner":  true,
-                "showInterstitial":  false,
-                "android":  {
-                                "appId":  "ca-app-pub-7167154680086124~1956582131",
-                                "bannerAdUnitId":  "ca-app-pub-7167154680086124/6551931099"
-                            }
-            }
+  "schemaVersion": 2,
+  "app": {
+    "name": "The Cube",
+    "packageName": "com.thecube",
+    "environment": "production",
+    "configEnabled": true,
+    "maintenanceMode": false,
+    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
+    "blockUnauthorizedBuilds": true,
+    "allowedSigningCertificateSha256": [
+      "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
+    ],
+    "blockedVersionCodes": [],
+    "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
+  },
+  "update": {
+    "enabled": true,
+    "checkOnLaunch": true,
+    "checkIntervalHours": 1,
+    "latestVersionCode": 20091,
+    "minimumSupportedVersionCode": 20067,
+    "latestVersionName": "2.0.91",
+    "forceUpdate": true,
+    "title": "The Cube 2.0.91 is ready",
+    "message": "Install the latest official build for improved playback reliability, download handoff, and TV remote interactions.",
+    "releaseNotes": [
+      "Improved direct playback reliability and source validation",
+      "Restored additional movie and episode quality options",
+      "Fixed TV Continue Watching option handling",
+      "Improved download handoff and resume behavior while preserving account limits"
+    ],
+    "platforms": {
+      "androidPhone": {
+        "enabled": true,
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "sha256": "3bb8c933efd78e3fa9100bd77d2141791001b603745e54271e383a8825696f9e"
+      },
+      "androidTv": {
+        "enabled": true,
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "sha256": "3bb8c933efd78e3fa9100bd77d2141791001b603745e54271e383a8825696f9e"
+      }
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "showOnLaunch": true,
+    "items": [
+      {
+        "id": "legacy-update-bridge-v2-0-91",
+        "type": "notice",
+        "enabled": true,
+        "title": "IMPORTANT UPDATE REQUIRED",
+        "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
+        "actionLabel": "Update Now",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 100,
+        "maxVersionCode": 20076
+      },
+      {
+        "id": "news-v2-0-69",
+        "type": "news",
+        "enabled": false,
+        "title": "The Cube 2.0.69",
+        "message": "Offline clone detection and fixed R8 startup for the minified release.",
+        "imageUrl": null,
+        "actionLabel": "Open The Cube",
+        "actionUrl": "https://thecub.netlify.app",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 10
+      },
+      {
+        "id": "active-development-notice-v2-0-91",
+        "type": "notice",
+        "enabled": true,
+        "title": "THE CUBE 2.0.91",
+        "message": "This build improves playback reliability, download handoff, and TV remote interactions.",
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
+        "actionLabel": "Donate",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 20,
+        "minVersionCode": 20077
+      },
+      {
+        "id": "support-development-v2-0-80",
+        "type": "support",
+        "enabled": true,
+        "title": "Support The Cube",
+        "message": "Support is optional and helps development, testing, and ongoing fixes.",
+        "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
+        "actionLabel": "Support",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 5,
+        "minVersionCode": 20077
+      }
+    ]
+  },
+  "features": {
+    "profiles": true,
+    "kidsMode": true,
+    "continueWatching": true,
+    "watchLater": true,
+    "playlists": true,
+    "phoneDownloads": true,
+    "tvDownloads": false,
+    "castPlayer": false,
+    "trailers": true,
+    "externalPlayers": false,
+    "sportsTab": true,
+    "animeTab": true,
+    "cascadeFallback": false
+  },
+  "ads": {
+    "enabled": true,
+    "provider": "admob",
+    "showBanner": true,
+    "showInterstitial": false,
+    "android": {
+      "appId": "ca-app-pub-7167154680086124~1956582131",
+      "bannerAdUnitId": "ca-app-pub-7167154680086124/6551931099"
+    }
+  }
 }
