@@ -18,30 +18,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20091,
+    "latestVersionCode": 20092,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.91",
+    "latestVersionName": "2.0.92",
     "forceUpdate": true,
-    "title": "The Cube 2.0.91 is ready",
-    "message": "Install the latest official build for improved playback reliability, download handoff, and TV remote interactions.",
+    "title": "The Cube 2.0.92 is ready",
+    "message": "Install the latest official build for improved downloads and subtitles.",
     "releaseNotes": [
-      "Improved direct playback reliability and source validation",
-      "Restored additional movie and episode quality options",
-      "Fixed TV Continue Watching option handling",
-      "Improved download handoff and resume behavior while preserving account limits"
+      "Moved download link resolution into the app",
+      "Moved subtitle discovery and local decompression into the app",
+      "Improved subtitle language grouping and fallback handling",
+      "Added source verification when required for direct downloads"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
-        "sha256": "3bb8c933efd78e3fa9100bd77d2141791001b603745e54271e383a8825696f9e"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
+        "sha256": "89d4416da636272b01f347b719911d0768535faecd5cff992d48666187fb1e82"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
-        "sha256": "3bb8c933efd78e3fa9100bd77d2141791001b603745e54271e383a8825696f9e"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
+        "sha256": "89d4416da636272b01f347b719911d0768535faecd5cff992d48666187fb1e82"
       }
     }
   },
@@ -50,14 +50,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-91",
+        "id": "legacy-update-bridge-v2-0-92",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.91/the-cube-v2.0.91.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-91",
+        "id": "active-development-notice-v2-0-92",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.91",
-        "message": "This build improves playback reliability, download handoff, and TV remote interactions.",
+        "title": "THE CUBE 2.0.92",
+        "message": "This build improves downloads, subtitle discovery, and subtitle fallback handling.",
         "imageUrl": "https://qvcuxlmdkrdumkmgdzui.supabase.co/storage/v1/object/public/notification-images/noti_1785598245012.png",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
