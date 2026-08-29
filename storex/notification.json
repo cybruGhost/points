@@ -18,30 +18,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20092,
+    "latestVersionCode": 20093,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.92",
+    "latestVersionName": "2.0.93",
     "forceUpdate": true,
-    "title": "The Cube 2.0.92 is ready",
-    "message": "Install the latest official build for improved downloads and subtitles.",
+    "title": "The Cube 2.0.93 is ready",
+    "message": "Install the latest official build for faster and more reliable downloads.",
     "releaseNotes": [
-      "Moved download link resolution into the app",
-      "Moved subtitle discovery and local decompression into the app",
-      "Improved subtitle language grouping and fallback handling",
-      "Added source verification when required for direct downloads"
+      "Fixed MP4 and MKV downloads",
+      "Improved download speed and resume reliability",
+      "Improved download verification reliability",
+      "Fixed incorrect download error handling"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
-        "sha256": "89d4416da636272b01f347b719911d0768535faecd5cff992d48666187fb1e82"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.93/the-cube-v2.0.93.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.93/the-cube-v2.0.93.apk",
+        "sha256": "ba2dcd34747e212196bc6a907cbfda52998bd7186df185ce95eed609476bdd3b"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
-        "sha256": "89d4416da636272b01f347b719911d0768535faecd5cff992d48666187fb1e82"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.93/the-cube-v2.0.93.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.93/the-cube-v2.0.93.apk",
+        "sha256": "ba2dcd34747e212196bc6a907cbfda52998bd7186df185ce95eed609476bdd3b"
       }
     }
   },
@@ -50,14 +50,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-92",
+        "id": "legacy-update-bridge-v2-0-93",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.92/the-cube-v2.0.92.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.93/the-cube-v2.0.93.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-92",
+        "id": "active-development-notice-v2-0-93",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.92",
-        "message": "This build improves downloads, subtitle discovery, and subtitle fallback handling.",
+        "title": "THE CUBE 2.0.93",
+        "message": "This build fixes MP4 and MKV downloads and improves download speed and reliability.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
