@@ -18,30 +18,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20095,
+    "latestVersionCode": 20096,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.95",
+    "latestVersionName": "2.0.96",
     "forceUpdate": true,
-    "title": "The Cube 2.0.95 is ready",
-    "message": "Install the latest official build for smoother episode transitions and TV navigation.",
+    "title": "The Cube 2.0.96 is ready",
+    "message": "Install the latest official build for smoother Fire TV navigation, updates, and Continue Watching.",
     "releaseNotes": [
-      "Added automatic Next Episode with a cancel countdown",
-      "Prevented autoplay of unreleased episodes",
-      "Improved Continue Watching navigation",
-      "Improved account sync reliability"
+      "Improved Fire TV search and updater focus",
+      "Improved adaptive Next Episode timing",
+      "Refreshed Continue Watching metadata",
+      "Improved large-account sync stability"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.95/the-cube-v2.0.95.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.95/the-cube-v2.0.95.apk",
-        "sha256": "9c2d33593830c0ad75930c8a0d2fb06d246c635cc7816abecf6b7a0735852af8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
+        "sha256": "6df38e90901d88646bf08de9cc036a85db43232a271b8743bc468122353629f1"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.95/the-cube-v2.0.95.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.95/the-cube-v2.0.95.apk",
-        "sha256": "9c2d33593830c0ad75930c8a0d2fb06d246c635cc7816abecf6b7a0735852af8"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
+        "sha256": "6df38e90901d88646bf08de9cc036a85db43232a271b8743bc468122353629f1"
       }
     }
   },
@@ -50,14 +50,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-95",
+        "id": "legacy-update-bridge-v2-0-96",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.95/the-cube-v2.0.95.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-95",
+        "id": "active-development-notice-v2-0-96",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.95",
-        "message": "This update improves episode transitions, Continue Watching, and account sync.",
+        "title": "THE CUBE 2.0.96",
+        "message": "This update improves Fire TV navigation, updates, episode transitions, and Continue Watching.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
