@@ -18,30 +18,31 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20096,
+    "latestVersionCode": 20097,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.96",
+    "latestVersionName": "2.0.97",
     "forceUpdate": true,
-    "title": "The Cube 2.0.96 is ready",
-    "message": "Install the latest official build for smoother Fire TV navigation, updates, and Continue Watching.",
+    "title": "The Cube 2.0.97 is ready",
+    "message": "Install the latest official build for improved subtitles, series progress, downloads, and TV navigation.",
     "releaseNotes": [
-      "Improved Fire TV search and updater focus",
-      "Improved adaptive Next Episode timing",
-      "Refreshed Continue Watching metadata",
-      "Improved large-account sync stability"
+      "Fixed subtitle visibility in Fit, Fill, and Zoom",
+      "Restored subtitle language grouping and appearance settings",
+      "Refreshed series Continue Watching metadata and retained selected seasons",
+      "Added verified download quota checks and improved TV Library navigation",
+      "Removed Sports navigation"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
-        "sha256": "6df38e90901d88646bf08de9cc036a85db43232a271b8743bc468122353629f1"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
+        "sha256": "558c916173f473fc685345ed63221091f850962ccf07fe05fd256a2bdf2763ef"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
-        "sha256": "6df38e90901d88646bf08de9cc036a85db43232a271b8743bc468122353629f1"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
+        "sha256": "558c916173f473fc685345ed63221091f850962ccf07fe05fd256a2bdf2763ef"
       }
     }
   },
@@ -50,14 +51,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-96",
+        "id": "legacy-update-bridge-v2-0-97",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.96/the-cube-v2.0.96.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +78,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-96",
+        "id": "active-development-notice-v2-0-97",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.96",
-        "message": "This update improves Fire TV navigation, updates, episode transitions, and Continue Watching.",
+        "title": "THE CUBE 2.0.97",
+        "message": "This update improves subtitles, series progress, downloads, and TV navigation.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
@@ -117,7 +118,7 @@
     "castPlayer": false,
     "trailers": true,
     "externalPlayers": false,
-    "sportsTab": true,
+    "sportsTab": false,
     "animeTab": true,
     "cascadeFallback": false
   },
