@@ -18,31 +18,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20097,
+    "latestVersionCode": 20098,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.97",
+    "latestVersionName": "2.0.98",
     "forceUpdate": true,
-    "title": "The Cube 2.0.97 is ready",
-    "message": "Install the latest official build for improved subtitles, series progress, downloads, and TV navigation.",
+    "title": "The Cube 2.0.98 is ready",
+    "message": "Install the latest official build for improved player sizing, subtitles, search, and account state.",
     "releaseNotes": [
-      "Fixed subtitle visibility in Fit, Fill, and Zoom",
-      "Restored subtitle language grouping and appearance settings",
-      "Refreshed series Continue Watching metadata and retained selected seasons",
-      "Added verified download quota checks and improved TV Library navigation",
-      "Removed Sports navigation"
+      "Made Fill the default and corrected player sizing modes",
+      "Fixed subtitle position controls in every display mode",
+      "Improved the Android search field and result-card spacing",
+      "Tightened verified account premium state"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
-        "sha256": "558c916173f473fc685345ed63221091f850962ccf07fe05fd256a2bdf2763ef"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.98/the-cube-v2.0.98.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.98/the-cube-v2.0.98.apk",
+        "sha256": "0724591cbab2fe92f55380d80b48a30c4abcb378d0060c5a90ae0278e5863012"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
-        "sha256": "558c916173f473fc685345ed63221091f850962ccf07fe05fd256a2bdf2763ef"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.98/the-cube-v2.0.98.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.98/the-cube-v2.0.98.apk",
+        "sha256": "0724591cbab2fe92f55380d80b48a30c4abcb378d0060c5a90ae0278e5863012"
       }
     }
   },
@@ -51,14 +50,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-97",
+        "id": "legacy-update-bridge-v2-0-98",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.97/the-cube-v2.0.97.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.98/the-cube-v2.0.98.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -78,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-97",
+        "id": "active-development-notice-v2-0-98",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.97",
-        "message": "This update improves subtitles, series progress, downloads, and TV navigation.",
+        "title": "THE CUBE 2.0.98",
+        "message": "This update improves player sizing, subtitle placement, Android search, and account state.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
