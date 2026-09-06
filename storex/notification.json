@@ -7,6 +7,7 @@
     "configEnabled": true,
     "maintenanceMode": false,
     "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
+    "maintenanceUrl": "https://thecube.lovable.app/wall",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
       "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
