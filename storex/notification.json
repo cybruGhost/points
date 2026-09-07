@@ -5,7 +5,7 @@
     "packageName": "com.thecube",
     "environment": "production",
     "configEnabled": true,
-    "maintenanceMode": false,
+    "maintenanceMode": true,
     "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
     "maintenanceUrl": "https://thecube.lovable.app/wall",
     "blockUnauthorizedBuilds": true,
