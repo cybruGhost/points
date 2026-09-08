@@ -19,32 +19,31 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20099,
+    "latestVersionCode": 20100,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.99",
+    "latestVersionName": "2.0.100",
     "forceUpdate": true,
-    "title": "The Cube 2.0.99 is ready",
-    "message": "Install the latest official build for verified premium access, maintenance routing, TV search, support, and improved Explore trailers.",
+    "title": "The Cube 2.0.100 is ready",
+    "message": "Install the latest official build for expanded Premium streaming availability and more reliable source selection.",
     "releaseNotes": [
-      "Fixed premium download quota checks with verified Firebase identity",
-      "Cleared premium entitlement on sign-out and restored it after verification",
-      "Routed maintenance mode to The Cube status wall",
-      "Restored TV Search keyboard focus after returning from details",
-      "Added Arabic interface support and private issue reporting",
-      "Upgraded Explore trailers with resilient playback up to 1080p"
+      "Added a separate Premium direct-stream pool",
+      "Added more movie and series source choices for Premium profiles",
+      "Filtered unavailable media links before showing them as live",
+      "Improved HLS, MP4, and multi-audio playback compatibility",
+      "Isolated Premium source caches by account and active profile"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.99/the-cube-v2.0.99.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.99/the-cube-v2.0.99.apk",
-        "sha256": "e2605d082644b256a18b9409471cd0daa9aec4038cb74ad46c9dc07459c82a58"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/app-release.apk",
+        "sha256": "89e6c2854f4ad242b82f7c78fff69b2974bf9a7d948bc98eddaf5bb20838c808"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.99/the-cube-v2.0.99.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.99/the-cube-v2.0.99.apk",
-        "sha256": "e2605d082644b256a18b9409471cd0daa9aec4038cb74ad46c9dc07459c82a58"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/app-release.apk",
+        "sha256": "89e6c2854f4ad242b82f7c78fff69b2974bf9a7d948bc98eddaf5bb20838c808"
       }
     }
   },
@@ -53,14 +52,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-99",
+        "id": "legacy-update-bridge-v2-0-100",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.99/the-cube-v2.0.99.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -80,11 +79,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-99",
+        "id": "active-development-notice-v2-0-100",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.99",
-        "message": "This update improves premium checks, TV search, support, maintenance routing, and Explore trailers.",
+        "title": "THE CUBE 2.0.100",
+        "message": "This update expands Premium streaming choices and improves source validation and playback compatibility.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
