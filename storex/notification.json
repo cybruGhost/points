@@ -19,31 +19,32 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20100,
+    "latestVersionCode": 20101,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.100",
+    "latestVersionName": "2.0.101",
     "forceUpdate": true,
-    "title": "The Cube 2.0.100 is ready",
-    "message": "Install the latest official build for expanded Premium streaming availability and more reliable source selection.",
+    "title": "The Cube 2.0.101 is ready",
+    "message": "Install the latest official build for improved subtitles, search, Explore playback, and account stability.",
     "releaseNotes": [
-      "Added a separate Premium direct-stream pool",
-      "Added more movie and series source choices for Premium profiles",
-      "Filtered unavailable media links before showing them as live",
-      "Improved HLS, MP4, and multi-audio playback compatibility",
-      "Isolated Premium source caches by account and active profile"
+      "Fixed Asian Drama subtitle loading and language labels",
+      "Improved Explore trailer startup, quality, and fallback handling",
+      "Added compact four-column Asian Drama browsing with automatic loading",
+      "Fixed landscape player controls wrapping on smaller screens",
+      "Improved search behavior, sign-in guidance, and large-history sync stability",
+      "Hardened official update package and signing-certificate validation"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/app-release.apk",
-        "sha256": "89e6c2854f4ad242b82f7c78fff69b2974bf9a7d948bc98eddaf5bb20838c808"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/app-release.apk",
+        "sha256": "ac5535fb00cb91b15b1bb8a0c01c0a95e8c3e161b2694be84b602a37e8caa582"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/app-release.apk",
-        "sha256": "89e6c2854f4ad242b82f7c78fff69b2974bf9a7d948bc98eddaf5bb20838c808"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/app-release.apk",
+        "sha256": "ac5535fb00cb91b15b1bb8a0c01c0a95e8c3e161b2694be84b602a37e8caa582"
       }
     }
   },
@@ -52,14 +53,14 @@
     "showOnLaunch": true,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-100",
+        "id": "legacy-update-bridge-v2-0-101",
         "type": "notice",
         "enabled": true,
         "title": "IMPORTANT UPDATE REQUIRED",
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.100/the-cube-v2.0.100.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -79,11 +80,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v2-0-100",
+        "id": "active-development-notice-v2-0-101",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.100",
-        "message": "This update expands Premium streaming choices and improves source validation and playback compatibility.",
+        "title": "THE CUBE 2.0.101",
+        "message": "This update improves subtitles, Explore playback, search behavior, and account stability.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
