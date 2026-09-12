@@ -19,12 +19,12 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 20101,
+    "latestVersionCode": 30000,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "2.0.101",
+    "latestVersionName": "3.0.00",
     "forceUpdate": true,
-    "title": "The Cube 2.0.101 is ready",
-    "message": "Install the latest official build for improved subtitles, search, Explore playback, and account stability.",
+    "title": "The Cube 3.0.00 is ready",
+    "message": "Install the latest official build for verified premium access, maintenance routing, TV search, support, and improved Explore trailers.",
     "releaseNotes": [
       "Fixed Asian Drama subtitle loading and language labels",
       "Improved Explore trailer startup, quality, and fallback handling",
@@ -36,15 +36,15 @@
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/app-release.apk",
-        "sha256": "ac5535fb00cb91b15b1bb8a0c01c0a95e8c3e161b2694be84b602a37e8caa582"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.00/the-cube-v3.0.00.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.00/app-release.apk",
+        "sha256": "670159fd3b241cca7f2b1440f1dac3f7424f0e4b7b985a6ae4963df3f115bdf0"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/app-release.apk",
-        "sha256": "ac5535fb00cb91b15b1bb8a0c01c0a95e8c3e161b2694be84b602a37e8caa582"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.00/the-cube-v3.0.00.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.00/app-release.apk",
+        "sha256": "670159fd3b241cca7f2b1440f1dac3f7424f0e4b7b985a6ae4963df3f115bdf0"
       }
     }
   },
@@ -60,7 +60,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v2.0.101/the-cube-v2.0.101.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.00/the-cube-v3.0.00.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -83,8 +83,8 @@
         "id": "active-development-notice-v2-0-101",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 2.0.101",
-        "message": "This update improves subtitles, Explore playback, search behavior, and account stability.",
+        "title": "THE CUBE 3.0.00",
+        "message": "This update improves premium checks, TV search, support, maintenance routing, and Explore trailers.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
@@ -105,7 +105,23 @@
         "dismissible": true,
         "showOnce": false,
         "priority": 5,
-        "minVersionCode": 20077
+        "minVersionCode": 20077,
+        "nonPremiumOnly": true
+      },
+      {
+        "id": "support-development-premium-v2-0-101",
+        "type": "support",
+        "enabled": true,
+        "title": "You are now premium",
+        "message": "You can still support us even on premium or as a gesture. Tap to support The Cube.",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7OlSwv2L_7IvJ2vlhoqSOExH7L2P5PpZ9IkSk0cWwQ&s=10",
+        "actionLabel": "Support",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 6,
+        "minVersionCode": 20077,
+        "premiumOnly": true
       }
     ]
   },
