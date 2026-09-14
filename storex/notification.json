@@ -19,33 +19,34 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30002,
+    "latestVersionCode": 30003,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.02",
+    "latestVersionName": "3.0.03",
     "forceUpdate": true,
-    "title": "The Cube 3.0.02 is ready",
-    "message": "Install the latest official build for reliable Continue Watching progress, account access, playback, and TV navigation.",
+    "title": "The Cube 3.0.03 is ready",
+    "message": "Install the latest official build for more reliable downloads, subtitles, profile security, library history, and TV navigation.",
     "releaseNotes": [
-      "Fixed Continue Watching updates for movies and series",
-      "Playback progress now saves after seeking and when leaving the player",
-      "Added progress tracking for native and embedded playback",
-      "Protected recent progress from stale cloud history",
-      "Improved large-account history synchronization",
-      "Redesigned account registration with clear fields and email verification controls",
-      "Hardened official update package and signing-certificate validation"
+      "Expired download sessions now reopen verification instead of returning a dead 404",
+      "Added another working subtitle fallback for movies and TV episodes",
+      "Improved TV search focus when moving directly from the keyboard to results",
+      "Added optional local PIN protection and recovery for premium profiles",
+      "Improved remote navigation across profile PIN and recovery screens",
+      "Added the premium Asian Drama visibility option on TV",
+      "Watched history now completes at 98% with clearer library cards and metadata",
+      "Simplified the support break to one Continue control"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.02/the-cube-v3.0.02.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.02/app-release.apk",
-        "sha256": "68f2cee922f4273133402bbbdb24f4e638a2219b85ccab7a89af8ea53ab07172"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/app-release.apk",
+        "sha256": "50168a770716d4d8452b94791d05f1f52fbee14586039612b970fa7dfd02cf96"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.02/the-cube-v3.0.02.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.02/app-release.apk",
-        "sha256": "68f2cee922f4273133402bbbdb24f4e638a2219b85ccab7a89af8ea53ab07172"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/app-release.apk",
+        "sha256": "50168a770716d4d8452b94791d05f1f52fbee14586039612b970fa7dfd02cf96"
       }
     }
   },
@@ -61,7 +62,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.02/the-cube-v3.0.02.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -81,11 +82,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-02",
+        "id": "active-development-notice-v3-0-03",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.02",
-        "message": "This update restores reliable Continue Watching progress for movies and series.",
+        "title": "THE CUBE 3.0.03",
+        "message": "This update improves downloads, subtitles, profile security, library history, and TV remote navigation.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
