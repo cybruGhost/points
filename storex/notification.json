@@ -27,7 +27,6 @@
     "message": "Install the latest official build for a more reliable download lifecycle, direct MP4 handling, profile recovery, and smoother TV navigation.",
     "releaseNotes": [
       "Improved WorkManager download lifecycle and stale-job cleanup",
-      "MP4 VidVault wrappers now resolve direct signed CDN media URLs",
       "Added compact phone profile recovery and unlock screens",
       "Improved TV navigation across profile PIN and recovery screens",
       "Added sign-out confirmation and scroll-safe profile editing",
