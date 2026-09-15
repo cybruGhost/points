@@ -19,34 +19,32 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30003,
+    "latestVersionCode": 30005,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.03",
+    "latestVersionName": "3.0.05",
     "forceUpdate": true,
-    "title": "The Cube 3.0.03 is ready",
-    "message": "Install the latest official build for more reliable downloads, subtitles, profile security, library history, and TV navigation.",
+    "title": "The Cube 3.0.05 is ready",
+    "message": "Install the latest official build for a more reliable download lifecycle, direct MP4 handling, profile recovery, and smoother TV navigation.",
     "releaseNotes": [
-      "Expired download sessions now reopen verification instead of returning a dead 404",
-      "Added another working subtitle fallback for movies and TV episodes",
-      "Improved TV search focus when moving directly from the keyboard to results",
-      "Added optional local PIN protection and recovery for premium profiles",
-      "Improved remote navigation across profile PIN and recovery screens",
-      "Added the premium Asian Drama visibility option on TV",
-      "Watched history now completes at 98% with clearer library cards and metadata",
-      "Simplified the support break to one Continue control"
+      "Improved WorkManager download lifecycle and stale-job cleanup",
+      "MP4 VidVault wrappers now resolve direct signed CDN media URLs",
+      "Added compact phone profile recovery and unlock screens",
+      "Improved TV navigation across profile PIN and recovery screens",
+      "Added sign-out confirmation and scroll-safe profile editing",
+      "Restored phone portrait orientation after player exit"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/app-release.apk",
-        "sha256": "50168a770716d4d8452b94791d05f1f52fbee14586039612b970fa7dfd02cf96"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/the-cube-v3.0.05.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/app-release.apk",
+        "sha256": "e4b22278fb33113ca7429d1bf44e14ac83ffbc83e6914bf7dd94fe3828e2d2ab"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/app-release.apk",
-        "sha256": "50168a770716d4d8452b94791d05f1f52fbee14586039612b970fa7dfd02cf96"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/the-cube-v3.0.05.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/app-release.apk",
+        "sha256": "e4b22278fb33113ca7429d1bf44e14ac83ffbc83e6914bf7dd94fe3828e2d2ab"
       }
     }
   },
@@ -82,11 +80,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-03",
+        "id": "active-development-notice-v3-0-05",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.03",
-        "message": "This update improves downloads, subtitles, profile security, library history, and TV remote navigation.",
+        "title": "THE CUBE 3.0.05",
+        "message": "This update improves download reliability, profile security, recovery screens, and TV remote navigation.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
