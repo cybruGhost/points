@@ -19,11 +19,11 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30006,
+    "latestVersionCode": 30007,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.06",
+    "latestVersionName": "3.0.07",
     "forceUpdate": true,
-    "title": "The Cube 3.0.06 is ready",
+    "title": "The Cube 3.0.07 is ready",
     "message": "Install the latest official build with TV PIN confirmation and more reliable account sign-in.",
     "releaseNotes": [
       "Fixed TV profile PIN confirmation and lock controls",
@@ -33,15 +33,15 @@
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/the-cube-v3.0.06.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/app-release.apk",
-        "sha256": "b5e1ae8b5cfc42d062d00ae16bb56f01577074bfe231dcd1dde631730232ea28"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.07/the-cube-v3.0.07.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.07/app-release.apk",
+        "sha256": "c37a8d019c31e73b59ff7166783d83cea08e74937ff4b1e01a442ffabb9db2bc"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/the-cube-v3.0.06.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/app-release.apk",
-        "sha256": "b5e1ae8b5cfc42d062d00ae16bb56f01577074bfe231dcd1dde631730232ea28"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.07/the-cube-v3.0.07.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.07/app-release.apk",
+        "sha256": "c37a8d019c31e73b59ff7166783d83cea08e74937ff4b1e01a442ffabb9db2bc"
       }
     }
   },
@@ -57,7 +57,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.03/the-cube-v3.0.03.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.07/the-cube-v3.0.07.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-06",
+        "id": "active-development-notice-v3-0-07",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.06",
-        "message": "This update fixes TV profile PIN confirmation and improves account sign-in reliability.",
+        "title": "THE CUBE 3.0.07",
+        "message": "It is an urgent security fix that I overlooked.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
