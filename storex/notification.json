@@ -19,31 +19,29 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30005,
+    "latestVersionCode": 30006,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.05",
+    "latestVersionName": "3.0.06",
     "forceUpdate": true,
-    "title": "The Cube 3.0.05 is ready",
-    "message": "Install the latest official build for a more reliable download lifecycle, direct MP4 handling, profile recovery, and smoother TV navigation.",
+    "title": "The Cube 3.0.06 is ready",
+    "message": "Install the latest official build with TV PIN confirmation and more reliable account sign-in.",
     "releaseNotes": [
-      "Improved WorkManager download lifecycle and stale-job cleanup",
-      "Added compact phone profile recovery and unlock screens",
-      "Improved TV navigation across profile PIN and recovery screens",
-      "Added sign-out confirmation and scroll-safe profile editing",
-      "Restored phone portrait orientation after player exit"
+      "Fixed TV profile PIN confirmation and lock controls",
+      "Prevented repeated sign-up attempts for an existing email",
+      "Improved Firebase sign-in and premium status loading"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/the-cube-v3.0.05.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/app-release.apk",
-        "sha256": "e4b22278fb33113ca7429d1bf44e14ac83ffbc83e6914bf7dd94fe3828e2d2ab"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/the-cube-v3.0.06.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/app-release.apk",
+        "sha256": "b5e1ae8b5cfc42d062d00ae16bb56f01577074bfe231dcd1dde631730232ea28"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/the-cube-v3.0.05.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.05/app-release.apk",
-        "sha256": "e4b22278fb33113ca7429d1bf44e14ac83ffbc83e6914bf7dd94fe3828e2d2ab"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/the-cube-v3.0.06.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.06/app-release.apk",
+        "sha256": "b5e1ae8b5cfc42d062d00ae16bb56f01577074bfe231dcd1dde631730232ea28"
       }
     }
   },
@@ -79,11 +77,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-05",
+        "id": "active-development-notice-v3-0-06",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.05",
-        "message": "This update improves download reliability, profile security, recovery screens, and TV remote navigation.",
+        "title": "THE CUBE 3.0.06",
+        "message": "This update fixes TV profile PIN confirmation and improves account sign-in reliability.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
