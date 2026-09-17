@@ -81,7 +81,7 @@
         "type": "notice",
         "enabled": true,
         "title": "THE CUBE 3.0.07",
-        "message": "It is an urgent security fix that I overlooked.",
+        "message": "This build fixes security and ui hydrations.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl8oZgEZpet8ulNlbSoEWOudZEhhQb6lLyz1JyuR68QZ1Z317gjqJf_3_&s=10",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
