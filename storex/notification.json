@@ -19,35 +19,39 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30008,
+    "latestVersionCode": 30010,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.08",
+    "latestVersionName": "3.0.10",
     "forceUpdate": true,
-    "title": "The Cube 3.0.08 is ready",
-    "message": "Install the latest official build with a clearer player unlock and optional next-episode prompt controls.",
+    "title": "The Cube 3.0.10 is ready",
+    "message": "Install the latest official build with brighter navigation, isolated profile sessions, Premium account details, and a polished support break.",
     "releaseNotes": [
-      "Added a pulsing glow when the support break finishes and the player is ready",
-      "Added a Settings toggle for the on-screen next-episode countdown, off by default",
-      "Changed the optional next-episode prompt to appear exactly two minutes before the episode ends"
+      "Made Android navigation and page tabs brighter and easier to follow",
+      "Kept each viewing profile's sign-in and synced data separate",
+      "Added the glassy About My Premium panel with quota and expiry details",
+      "Added optional donation reminders controlled by the hosted JSON switch",
+      "Updated the 36-second support break with a glowing Continue button and Discord link",
+      "Made the on-screen next-episode prompt optional and moved it to two minutes before the end"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.08/the-cube-v3.0.08.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.08/app-release.apk",
-        "sha256": "1d68671b48b498beb7491712191e7e2306de88ac8e62bb6a7e51b8f8e39930d6"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.10/the-cube-v3.0.10.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.10/app-release.apk",
+        "sha256": "bab17dc515c9dddc5c79fd2d2dbea1dbaec74e59f864ec2d5e3e684d33a32390"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.08/the-cube-v3.0.08.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.08/app-release.apk",
-        "sha256": "1d68671b48b498beb7491712191e7e2306de88ac8e62bb6a7e51b8f8e39930d6"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.10/the-cube-v3.0.10.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.10/app-release.apk",
+        "sha256": "bab17dc515c9dddc5c79fd2d2dbea1dbaec74e59f864ec2d5e3e684d33a32390"
       }
     }
   },
   "notifications": {
     "enabled": true,
     "showOnLaunch": true,
+    "systemDonationNotificationsEnabled": true,
     "items": [
       {
         "id": "legacy-update-bridge-v2-0-101",
@@ -57,7 +61,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.08/the-cube-v3.0.08.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.10/the-cube-v3.0.10.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -77,11 +81,11 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-08",
+        "id": "active-development-notice-v3-0-10",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.08",
-        "message": "This update makes the player unlock clearer and gives you control over the on-screen next-episode countdown.",
+        "title": "THE CUBE 3.0.10",
+        "message": "Brighter tabs, isolated profile sessions, Premium details, and a polished support break are now available.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
         "actionLabel": "Donate",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
@@ -95,10 +99,10 @@
         "type": "support",
         "enabled": true,
         "title": "Join our Discord",
-        "message": "you can support us and also join our discord to find about other amaizing apps",
+        "message": "Join our Discord for updates, support, and news about other amazing apps.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpDdFPFLO9ycSQIog0EHWdmr1gZWYBUcMZtFki1a-9w&s=10",
-        "actionLabel": "join Discord",
-        "actionUrl": "https://discord.com/invite/RebqmxXqGb",
+        "actionLabel": "Join Discord",
+        "actionUrl": "https://discord.gg/XY6YtzQrdZ",
         "dismissible": true,
         "showOnce": false,
         "priority": 5,
