@@ -24,14 +24,14 @@
     "latestVersionName": "3.0.10",
     "forceUpdate": true,
     "title": "The Cube 3.0.10 is ready",
-    "message": "Install the latest official build with brighter navigation, isolated profile sessions, Premium account details, and a polished support break.",
+    "message": "Install the latest official build with more servers, brighter navigation, isolated profile sessions, Premium account details, and a polished support break.",
     "releaseNotes": [
       "Made Android navigation and page tabs brighter and easier to follow",
       "Kept each viewing profile's sign-in and synced data separate",
       "Added the glassy About My Premium panel with quota and expiry details",
       "Added optional donation reminders controlled by the hosted JSON switch",
       "Updated the 36-second support break with a glowing Continue button and Discord link",
-      "Made the on-screen next-episode prompt optional and moved it to two minutes before the end"
+      "Added more servers both for premium users and free"
     ],
     "platforms": {
       "androidPhone": {
@@ -85,9 +85,9 @@
         "type": "notice",
         "enabled": true,
         "title": "THE CUBE 3.0.10",
-        "message": "Brighter tabs, isolated profile sessions, Premium details, and a polished support break are now available.",
+        "message": "Moere servers, isolated profile sessions, Premium details, and a polished support break are now available.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
-        "actionLabel": "Donate",
+        "actionLabel": "keep cube alive",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
         "showOnce": false,
