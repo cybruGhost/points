@@ -90,7 +90,7 @@
         "actionLabel": "keep cube alive",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 20,
         "minVersionCode": 20077
       },
