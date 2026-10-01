@@ -19,27 +19,28 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30012,
+    "latestVersionCode": 30015,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.12",
+    "latestVersionName": "3.0.15",
     "forceUpdate": true,
-    "title": "hot fix",
-    "message": "Install the latest official build.",
+    "title": "Hot fix 2",
+    "message": "Install the latest official build with more reliable download retries and a compact Library in phone navigation.",
     "releaseNotes": [
-      "Hot fix."
+      "Improved recovery and resume for interrupted downloads",
+      "Added compact Library cards and placed Library in the phone navigation"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.12/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.12/the-cube-v3.0.12.apk",
-        "sha256": "4e5895d8c47a6f928315001ba240151d6da910b26ed0e23f3cd768ca3aa1f52a"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/the-cube-v3.0.15.apk",
+        "sha256": "1abb2dd7af1c9e75ae05360b4f10fc303f06ee5d7d4843d922a653bebf568886"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.12/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.12/the-cube-v3.0.12.apk",
-        "sha256": "4e5895d8c47a6f928315001ba240151d6da910b26ed0e23f3cd768ca3aa1f52a"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/the-cube-v3.0.15.apk",
+        "sha256": "1abb2dd7af1c9e75ae05360b4f10fc303f06ee5d7d4843d922a653bebf568886"
       }
     }
   },
@@ -56,7 +57,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.12/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -80,7 +81,7 @@
         "type": "notice",
         "enabled": true,
         "title": "THE CUBE 3.0.10",
-        "message": " Enjoying the Cube? Your support helps keep servers running and development moving.",
+        "message": "We're aware of the server connection issue and are developing a fix. Thanks for your patience. Your support helps keep the servers running and development moving.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
         "actionLabel": "keep cube alive",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
