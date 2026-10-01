@@ -107,7 +107,23 @@
         "showOnce": false,
         "priority": 5,
         "minVersionCode": 20077,
-        "nonPremiumOnly": true
+        "nonPremiumOnly": true,
+        "hideWhenPremiumExpired": true
+      },
+      {
+        "id": "premium-expired-renew-v3-0-12",
+        "type": "support",
+        "enabled": true,
+        "title": "Your Premium has expired",
+        "message": "Your Premium time has ended, so your account is now on Free. Renew with the same signed-in email to restore Premium.",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOO0WCoB-GQtwH48PeLt8Zpr5Ig59vHvOPN5AxH83hw&s=10",
+        "actionLabel": "Renew Premium",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 15,
+        "minVersionCode": 30012,
+        "expiredPremiumOnly": true
       },
       {
         "id": "support-development-premium-v2-0-101",
