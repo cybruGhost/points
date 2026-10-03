@@ -39,7 +39,7 @@
       "androidTv": {
         "enabled": true,
         "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/the-cube-v3.0.15.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
         "sha256": "1abb2dd7af1c9e75ae05360b4f10fc303f06ee5d7d4843d922a653bebf568886"
       }
     }
