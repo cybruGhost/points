@@ -19,28 +19,29 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30015,
+    "latestVersionCode": 30018,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.15",
+    "latestVersionName": "3.0.18",
     "forceUpdate": true,
-    "title": "Hot fix 2",
-    "message": "Install the latest official build with more reliable download retries and a compact Library in phone navigation.",
+    "title": "The Cube 3.0.18 — Hot fix",
+    "message": "Install the latest official build for the improved Support Break layout and PC login scanner.",
     "releaseNotes": [
-      "Improved recovery and resume for interrupted downloads",
-      "Added compact Library cards and placed Library in the phone navigation"
+      "Moved Continue to player into the thumb-friendly Support Break action area on phones",
+      "Hidden PC login from Kids profiles",
+      "Added a clear QR framing box to the PC login scanner"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/the-cube-v3.0.15.apk",
-        "sha256": "1abb2dd7af1c9e75ae05360b4f10fc303f06ee5d7d4843d922a653bebf568886"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/the-cube-v3.0.18.apk",
+        "sha256": "3656abc2a6e6c7b1ee2b743bd09caa86683d8fd0cce8c6db4e86b71dcff0f422"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
-        "sha256": "1abb2dd7af1c9e75ae05360b4f10fc303f06ee5d7d4843d922a653bebf568886"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/the-cube-v3.0.18.apk",
+        "sha256": "3656abc2a6e6c7b1ee2b743bd09caa86683d8fd0cce8c6db4e86b71dcff0f422"
       }
     }
   },
@@ -57,7 +58,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.15/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
