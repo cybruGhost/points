@@ -23,9 +23,11 @@
     "minimumSupportedVersionCode": 20067,
     "latestVersionName": "3.0.18",
     "forceUpdate": true,
-    "title": "The Cube 3.0.18 — Hot fix",
-    "message": "Install the latest official build for the improved Support Break layout and PC login scanner.",
+    "title": "The Cube 3.0.18 — Performance & Security",
+    "message": "Performance fixes, security improvements, and a four-device account limit across Android phones, TVs, and Firesticks.",
     "releaseNotes": [
+      "Performance and playback stability improvements",
+      "Improved account security and device management with a four-device limit",
       "Moved Continue to player into the thumb-friendly Support Break action area on phones",
       "Hidden PC login from Kids profiles",
       "Added a clear QR framing box to the PC login scanner"
