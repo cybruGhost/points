@@ -94,6 +94,22 @@
         "minVersionCode": 20077
       },
       {
+        "id": "playback-for-everyone-window-v3-0-19",
+        "type": "support",
+        "enabled": true,
+        "title": "Premium playback for everyone",
+        "message": "The Cube gives everyone Premium player controls and no Support Break until {endsAt}. Downloads keep their usual quota.",
+        "imageUrl": null,
+        "actionLabel": "",
+        "actionUrl": "",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 30,
+        "minVersionCode": 30019,
+        "nonPremiumOnly": true,
+        "promotionOnly": true
+      },
+      {
         "id": "support-development-v2-0-80",
         "type": "support",
         "enabled": true,
@@ -154,6 +170,7 @@
     "externalPlayers": false,
     "sportsTab": false,
     "animeTab": true,
+    "freePlayerLowerControlsEnabled": false,
     "cascadeFallback": false
   },
   "ads": {
