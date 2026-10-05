@@ -19,31 +19,31 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30018,
+    "latestVersionCode": 30019,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.18",
+    "latestVersionName": "3.0.19",
     "forceUpdate": true,
-    "title": "The Cube 3.0.18 — Performance & Security",
-    "message": "Performance fixes, security improvements, and a four-device account limit across Android phones, TVs, and Firesticks.",
+    "title": "The Cube 3.0.19 — Playback Gift & Account Polish",
+    "message": "A heart-themed playback gift for Free viewers, plus clearer sign-in and faster account updates. Downloads keep their normal quota.",
     "releaseNotes": [
-      "Performance and playback stability improvements",
-      "Improved account security and device management with a four-device limit",
-      "Moved Continue to player into the thumb-friendly Support Break action area on phones",
-      "Hidden PC login from Kids profiles",
-      "Added a clear QR framing box to the PC login scanner"
+      "During scheduled events, Free viewers get player controls and no Support Break; download quotas remain Free",
+      "Heart-themed Settings show when the playback gift ends on phone and TV",
+      "Clearer glass-style sign-in and sign-up, with improved TV D-pad focus",
+      "Account verification help opens support chat with details prefilled, never passwords or tokens",
+      "Improved account name, photo, Premium status, and hosted notice refresh"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/the-cube-v3.0.18.apk",
-        "sha256": "3656abc2a6e6c7b1ee2b743bd09caa86683d8fd0cce8c6db4e86b71dcff0f422"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.19/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.19/the-cube-v3.0.19.apk",
+        "sha256": "8d2af2a4d3c691cf5e357cc0746a5a8f89321d74609116ff2369f071ec43ad66"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/the-cube-v3.0.18.apk",
-        "sha256": "3656abc2a6e6c7b1ee2b743bd09caa86683d8fd0cce8c6db4e86b71dcff0f422"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.19/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.19/the-cube-v3.0.19.apk",
+        "sha256": "8d2af2a4d3c691cf5e357cc0746a5a8f89321d74609116ff2369f071ec43ad66"
       }
     }
   },
@@ -60,7 +60,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.18/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.19/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
