@@ -169,7 +169,7 @@
     "externalPlayers": false,
     "sportsTab": false,
     "animeTab": true,
-    "freePlayerLowerControlsEnabled": false,
+    "freePlayerLowerControlsEnabled": true,
     "cascadeFallback": false
   },
   "ads": {
