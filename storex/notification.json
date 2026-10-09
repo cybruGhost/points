@@ -19,30 +19,29 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30020,
+    "latestVersionCode": 30021,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.20",
+    "latestVersionName": "3.0.21",
     "forceUpdate": true,
-    "title": "The Cube 3.0.20 — TV Profile Switch Fix",
-    "message": "Sorry for the inconvenience with slow TV profile switching. Profiles now open without waiting for cloud sync. This is our last planned update this week.",
+    "title": "The Cube 3.0.21 — Major Server Update",
+    "message": "More playback servers for Free and Premium users, with improved TV stability and account syncing. Update recommended.",
     "releaseNotes": [
-      "Fixed TV profile selection waiting on Firestore and full cloud sync before opening Home",
-      "Cloud sync and Premium verification continue in the background while profile data stays separate",
-      "Repeated profile selections are guarded and local errors now show a retry message",
-      "Sorry for the inconvenience; this is our last planned update this week"
+      "More playback servers for Free and Premium users",
+      "Improved TV stability",
+      "Improved account syncing"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.20/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.20/the-cube-v3.0.20.apk",
-        "sha256": "e26f91016b9815bf638cf82ba4b00f7a985675481add4e76a51d70e8898f3b7d"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.21/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.21/the-cube-v3.0.21.apk",
+        "sha256": "dd6aa21cd11793dfe5b8f571ab5e9fb1d44f536e79047be78296ff00c6e2dcbe"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.20/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.20/the-cube-v3.0.20.apk",
-        "sha256": "e26f91016b9815bf638cf82ba4b00f7a985675481add4e76a51d70e8898f3b7d"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.21/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.21/the-cube-v3.0.21.apk",
+        "sha256": "dd6aa21cd11793dfe5b8f571ab5e9fb1d44f536e79047be78296ff00c6e2dcbe"
       }
     }
   },
@@ -59,7 +58,7 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.20/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.21/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
