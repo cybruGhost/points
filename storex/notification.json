@@ -161,14 +161,14 @@
     "continueWatching": true,
     "watchLater": true,
     "playlists": true,
-    "phoneDownloads": true,
+    "phoneDownloads": false,
     "tvDownloads": false,
     "castPlayer": false,
     "trailers": true,
     "externalPlayers": false,
     "sportsTab": false,
-    "animeTab": true,
-    "freePlayerLowerControlsEnabled": true,
+    "animeTab": false,
+    "freePlayerLowerControlsEnabled": false,
     "cascadeFallback": false
   },
   "ads": {
