@@ -78,10 +78,10 @@
         "priority": 10
       },
       {
-        "id": "active-development-notice-v3-0-10",
+        "id": "active-development-notice-v3-0-21",
         "type": "notice",
         "enabled": true,
-        "title": "THE CUBE 3.0.10",
+        "title": "THE CUBE 3.0.21",
         "message": "Support the app and its servers. Your support helps development moving.Also share app to your friends.https://thecub.netlify.app",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
         "actionLabel": "keep cube alive",
