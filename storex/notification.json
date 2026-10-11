@@ -96,7 +96,7 @@
         "type": "support",
         "enabled": true,
         "title": "Premium playback for everyone",
-        "message": "The Cube gives everyone Premium player controls and no Support Break until {endsAt}. Downloads keep their usual quota.",
+        "message": "The Cube gives everyone Premium player controls and no Support Break until {endsAt}. Downloads keep their quota.",
         "imageUrl": null,
         "actionLabel": "",
         "actionUrl": "",
