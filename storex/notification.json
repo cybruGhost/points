@@ -5,7 +5,7 @@
     "packageName": "com.thecube",
     "environment": "production",
     "configEnabled": true,
-    "maintenanceMode": true,
+    "maintenanceMode": false,
     "maintenanceMessage": "The Cube is temporarily under maintenance.we are modifying some servers right now. Please try again later or danate to us .",
     "maintenanceUrl": "https://thecub.netlify.app/wall",
     "blockUnauthorizedBuilds": true,
