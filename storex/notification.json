@@ -69,7 +69,7 @@
         "type": "news",
         "enabled": true,
         "title": "❤️ Keep The Cube Alive!",
-        "message": "Enjoying The Cube for free? Support us with a donation 🍿 Premium lasts 2 months(check settings). ❤️",
+        "message": "New release later today🍿 Premium lasts 2 months(check settings). ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
         "actionLabel": "❤️ Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
@@ -168,7 +168,7 @@
     "externalPlayers": false,
     "sportsTab": false,
     "animeTab": true,
-    "freePlayerLowerControlsEnabled": true,
+    "freePlayerLowerControlsEnabled": false,
     "cascadeFallback": false
   },
   "ads": {
