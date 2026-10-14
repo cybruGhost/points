@@ -167,7 +167,7 @@
     "trailers": true,
     "externalPlayers": false,
     "sportsTab": false,
-    "animeTab": false,
+    "animeTab": true,
     "freePlayerLowerControlsEnabled": true,
     "cascadeFallback": false
   },
