@@ -141,23 +141,6 @@
       }
     ]
   },
-  "features": {
-    "profiles": true,
-    "kidsMode": true,
-    "continueWatching": true,
-    "watchLater": true,
-    "playlists": true,
-    "phoneDownloads": true,
-    "tvDownloads": false,
-    "castPlayer": false,
-    "trailers": true,
-    "externalPlayers": false,
-    "sportsTab": false,
-    "animeTab": true,
-    "freePlayerLowerControlsEnabled": false,
-    "freeServerSwitchingEnabled": false,
-    "cascadeFallback": false
-  },
   "ads": {
     "enabled": true,
     "provider": "admob",
