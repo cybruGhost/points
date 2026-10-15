@@ -6,7 +6,7 @@
     "environment": "production",
     "configEnabled": true,
     "maintenanceMode": false,
-    "maintenanceMessage": "The Cube is temporarily under maintenance.we are modifying some servers right now. Please try again later or danate to us .",
+    "maintenanceMessage": "The Cube is temporarily unavailable while we make improvements. Please try again shortly.",
     "maintenanceUrl": "https://thecub.netlify.app/wall",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
@@ -19,29 +19,29 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30022,
+    "latestVersionCode": 30024,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.22",
+    "latestVersionName": "3.0.24",
     "forceUpdate": true,
-    "title": "The Cube 3.0.22 — Playback Stability",
-    "message": "Fixes a player crash when opening some series, with clearer Premium benefits and small Home badges. Update recommended.",
+    "title": "The Cube 3.0.24 — Experience Update",
+    "message": "A smoother Home, player, and Support Break experience on phone and TV. Update to the latest signed release.",
     "releaseNotes": [
-      "Fixed a player crash affecting some series",
-      "Clearer Premium benefits",
-      "Small Home badges for recently surfaced titles and aired episodes"
+      "More immersive Home banner",
+      "Improved landscape player prompt",
+      "Closer, easier-to-reach Support Break actions"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.22/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.22/the-cube-v3.0.22.apk",
-        "sha256": "7b64ac521b075e8f221fe74f14e553b09fdcf1016139351ebf7b071390f82d29"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/the-cube-v3.0.24.apk",
+        "sha256": "b5307dc3659bc3c9dc71a5db890f811ac4ef770e754c0e8225c5b71bf473a3fb"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.22/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.22/the-cube-v3.0.22.apk",
-        "sha256": "7b64ac521b075e8f221fe74f14e553b09fdcf1016139351ebf7b071390f82d29"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/the-cube-v3.0.24.apk",
+        "sha256": "b5307dc3659bc3c9dc71a5db890f811ac4ef770e754c0e8225c5b71bf473a3fb"
       }
     }
   },
@@ -58,38 +58,24 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.22/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
         "maxVersionCode": 20076
       },
       {
-        "id": "news-v2-0-69",
+        "id": "cube-news-v3-0-24",
         "type": "news",
         "enabled": true,
         "title": "❤️ Keep The Cube Alive!",
-        "message": "New release later today🍿 Premium lasts 2 months(check settings). ❤️",
+        "message": "The Cube 3.0.24 is live. Thanks for helping keep streaming and development moving. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
         "actionLabel": "❤️ Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
         "showOnce": false,
         "priority": 10
-      },
-      {
-        "id": "active-development-notice-v3-0-21",
-        "type": "notice",
-        "enabled": true,
-        "title": "THE CUBE 3.0.21",
-        "message": "Support the app and its servers. Your support helps development moving.Also share app to your friends.https://thecub.netlify.app",
-        "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
-        "actionLabel": "keep cube alive",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com",
-        "dismissible": true,
-        "showOnce": true,
-        "priority": 20,
-        "minVersionCode": 20077
       },
       {
         "id": "playback-for-everyone-window-v3-0-19",
@@ -112,7 +98,7 @@
         "type": "support",
         "enabled": true,
         "title": "Join our Discord",
-        "message": "Join our Discord for updates, support,minimum premium price is 6$.",
+        "message": "Join our Discord for updates and support. Premium starts at $6.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpDdFPFLO9ycSQIog0EHWdmr1gZWYBUcMZtFki1a-9w&s=10",
         "actionLabel": "Join Discord",
         "actionUrl": "https://discord.gg/XY6YtzQrdZ",
@@ -168,7 +154,8 @@
     "externalPlayers": false,
     "sportsTab": false,
     "animeTab": true,
-    "freePlayerLowerControlsEnabled": true,
+    "freePlayerLowerControlsEnabled": false,
+    "freeServerSwitchingEnabled": false,
     "cascadeFallback": false
   },
   "ads": {
