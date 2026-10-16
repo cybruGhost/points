@@ -67,7 +67,7 @@
       {
         "id": "cube-news-v3-0-25",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "❤️ Keep The Cube Alive!",
         "message": "The Cube 3.0.25 hot fix is live. Thanks for helping keep streaming and development moving. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
