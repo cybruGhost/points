@@ -19,29 +19,29 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30024,
+    "latestVersionCode": 30025,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.24",
+    "latestVersionName": "3.0.25",
     "forceUpdate": true,
-    "title": "The Cube 3.0.24 — Experience Update",
-    "message": "A smoother Home, player, and Support Break experience on phone and TV. Update to the latest signed release.",
+    "title": "The Cube 3.0.25 — Hot fix",
+    "message": "This hot fix improves account syncing and search on phone and TV. Update to the latest signed release.",
     "releaseNotes": [
-      "More immersive Home banner",
-      "Improved landscape player prompt",
-      "Closer, easier-to-reach Support Break actions"
+      "Improved library and Continue Watching sync",
+      "Faster Premium status refresh",
+      "Search polish and stability fixes"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/the-cube-v3.0.24.apk",
-        "sha256": "b5307dc3659bc3c9dc71a5db890f811ac4ef770e754c0e8225c5b71bf473a3fb"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/the-cube-v3.0.25.apk",
+        "sha256": "37bb9bb705e01f7dd32ebb4ac6134e655b4d1166834771ca735b4fc46cc4b763"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/the-cube-v3.0.24.apk",
-        "sha256": "b5307dc3659bc3c9dc71a5db890f811ac4ef770e754c0e8225c5b71bf473a3fb"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/the-cube-v3.0.25.apk",
+        "sha256": "37bb9bb705e01f7dd32ebb4ac6134e655b4d1166834771ca735b4fc46cc4b763"
       }
     }
   },
@@ -58,18 +58,18 @@
         "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.24/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
         "maxVersionCode": 20076
       },
       {
-        "id": "cube-news-v3-0-24",
+        "id": "cube-news-v3-0-25",
         "type": "news",
         "enabled": true,
         "title": "❤️ Keep The Cube Alive!",
-        "message": "The Cube 3.0.24 is live. Thanks for helping keep streaming and development moving. ❤️",
+        "message": "The Cube 3.0.25 hot fix is live. Thanks for helping keep streaming and development moving. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
         "actionLabel": "❤️ Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
