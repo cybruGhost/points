@@ -67,9 +67,9 @@
       {
         "id": "cube-news-v3-0-25",
         "type": "news",
-        "enabled": false,
+        "enabled": true,
         "title": "❤️ Keep The Cube Alive!",
-        "message": "The Cube 3.0.25 hot fix is live. Thanks for helping keep streaming and development moving. ❤️",
+        "message": "Enjoying the cube for free🥳? Premium $6 or more for 2 months. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
         "actionLabel": "❤️ Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
