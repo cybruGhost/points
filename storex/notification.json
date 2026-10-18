@@ -6,7 +6,7 @@
     "environment": "production",
     "configEnabled": true,
     "maintenanceMode": true,
-    "maintenanceMessage": "The Cube is too hot, we need to cool. Please try again after 47 min , click this button to support server health .",
+    "maintenanceMessage": "The Cube is too hot, we need to cool. Please try again after 47 min , click this button to support/donate to server health .",
     "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
