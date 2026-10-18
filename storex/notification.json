@@ -67,7 +67,7 @@
       {
         "id": "cube-news-v3-0-25",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "❤️ Keep The Cube Alive!",
         "message": "Enjoying the cube for free🥳? Premium $6 or more for 2 months. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
