@@ -5,9 +5,9 @@
     "packageName": "com.thecube",
     "environment": "production",
     "configEnabled": true,
-    "maintenanceMode": false,
-    "maintenanceMessage": "The Cube is temporarily unavailable while we make improvements. Please try again shortly.",
-    "maintenanceUrl": "https://thecub.netlify.app/wall",
+    "maintenanceMode": true,
+    "maintenanceMessage": "The Cube is too hot, we need to cool. Please try again after 47 min , click this button to support server health .",
+    "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
       "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
