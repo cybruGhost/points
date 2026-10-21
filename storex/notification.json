@@ -67,14 +67,14 @@
       {
         "id": "cube-news-v3-0-25",
         "type": "news",
-        "enabled": false,
-        "title": "❤️ Keep The Cube Alive!",
-        "message": "Enjoying the cube for free🥳? Premium $6 or more for 2 months. ❤️",
+        "enabled": true,
+        "title": "✅ We're Back Online!",
+        "message": "All systems operational! 🍿 Watch free as a guest. Sign in only for Premium. ❤️",
         "imageUrl": "https://raw.githubusercontent.com/nobrainghost/gheiem/main/cubenews.png",
-        "actionLabel": "❤️ Support The Cube",
+        "actionLabel": "❤️ Get Premium",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 10
       },
       {
