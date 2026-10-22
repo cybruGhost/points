@@ -175,7 +175,7 @@
         "actionLabel": "support server costs",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
-        "showOnce": true,
+        "showOnce": false,
         "priority": 40,
         "minVersionCode": 20077,
         "premiumOnly": true
