@@ -69,14 +69,14 @@
       },
 
       {
-        "id": "cube-news-v3-0-26-library",
+        "id": "cube-news-v3-0-26-improvements",
         "type": "news",
         "enabled": true,
-        "title": "The Cube is Ready ❤️",
-        "message": "You can keep watching for free as a guest. Sign in when you want Premium features and cloud account sync. Your support helps keep The Cube running.",
+        "title": "What's new in 3.0.26",
+        "message": "Smoother playback, faster Premium checks, and better library sync.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
-        "actionLabel": "Support The Cube",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "actionLabel": "",
+        "actionUrl": "",
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
@@ -86,7 +86,7 @@
       {
         "id": "free-account-update-v3-0-26-server-costs",
         "type": "notice",
-        "enabled": true,
+        "enabled": false,
         "title": "An update for Free viewers ❤️",
         "message": "Watching The Cube will stay free ❤️. Signing in without Premium gives you much the same viewing access as a guest. Keeping and syncing Free accounts puts extra strain on our servers and costs money. Soon, Free lists and watch progress won't sync between devices, and Free accounts may close later. You can still watch as a guest. Premium keeps your account and cross-device sync.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
