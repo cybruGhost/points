@@ -84,13 +84,13 @@
       },
 
       {
-        "id": "free-account-update-v3-0-26-server-costs",
+        "id": "free-account-update-v3-0-26-all-viewers-2",
         "type": "notice",
         "enabled": true,
-        "title": "An update for Free viewers ❤️",
-        "message": "Watching The Cube will stay free ❤️. Signing in without Premium gives you much the same viewing access as a guest. Keeping and syncing Free accounts puts extra strain on our servers and costs money. Soon, Free lists and watch progress won't sync between devices, and Free accounts may close later. You can still watch as a guest. Premium keeps your account and cross-device sync.",
+        "title": "Free viewing stays ❤️",
+        "message": "Watching stays free. Signed-in Free accounts offer much the same viewing as guests, but syncing them strains our servers and costs money. Free account sync will end, and accounts may close later. Guest viewing stays open. Premium keeps your account and library across devices.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
-        "actionLabel": "See Premium options",
+        "actionLabel": "View options",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
         "showOnce": false,
