@@ -6,7 +6,7 @@
     "environment": "production",
     "configEnabled": true,
     "maintenanceMode": false,
-    "maintenanceMessage": " server maintenance undergoing due to host policy changes. click this button to support/donate to server health .",
+    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
     "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
@@ -48,7 +48,7 @@
   "notifications": {
     "enabled": true,
     "showOnLaunch": true,
-    "systemDonationNotificationsEnabled": true,
+    "systemDonationNotificationsEnabled": false,
     "items": [
       {
         "id": "legacy-update-bridge-v2-0-101",
@@ -65,14 +65,14 @@
         "maxVersionCode": 20076
       },
       {
-        "id": "cube-news-v3-0-25",
+        "id": "cube-news-v3-0-25-library",
         "type": "news",
         "enabled": true,
-        "title": "✅ We're Back Online!",
-        "message": "All systems operational! 🍿 Watch free as a guest. Sign in only for Premium. ❤️",
+        "title": "The Cube is ready",
+        "message": "Watch free, or sign in to keep your library across devices. Check the latest release for app updates.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
-        "actionLabel": "❤️ Get Premium",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
+        "actionLabel": "Latest release",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/tag/v3.0.25",
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
@@ -126,14 +126,14 @@
         "expiredPremiumOnly": true
       },
       {
-        "id": "support-development-premium-v2-0-101",
-        "type": "support",
-        "enabled": false,
-        "title": "You are now premium",
-        "message": "You can still support us even on premium or as a gesture. Tap to support The Cube.",
+        "id": "premium-active-home-v3-0-25",
+        "type": "news",
+        "enabled": true,
+        "title": "You're Premium ❤️",
+        "message": "Your Premium is active. Enjoy more stream choices, full player controls, and no Support Break.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7OlSwv2L_7IvJ2vlhoqSOExH7L2P5PpZ9IkSk0cWwQ&s=10",
-        "actionLabel": "Support",
-        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
+        "actionLabel": "",
+        "actionUrl": "",
         "dismissible": true,
         "showOnce": false,
         "priority": 40,
