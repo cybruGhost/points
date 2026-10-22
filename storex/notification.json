@@ -127,7 +127,7 @@
       {
         "id": "support-development-premium-v2-0-101",
         "type": "support",
-        "enabled": true,
+        "enabled": false,
         "title": "You are now premium",
         "message": "You can still support us even on premium or as a gesture. Tap to support The Cube.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7OlSwv2L_7IvJ2vlhoqSOExH7L2P5PpZ9IkSk0cWwQ&s=10",
