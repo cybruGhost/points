@@ -86,7 +86,7 @@
       {
         "id": "free-account-update-v3-0-26-server-costs",
         "type": "notice",
-        "enabled": false,
+        "enabled": true,
         "title": "An update for Free viewers ❤️",
         "message": "Watching The Cube will stay free ❤️. Signing in without Premium gives you much the same viewing access as a guest. Keeping and syncing Free accounts puts extra strain on our servers and costs money. Soon, Free lists and watch progress won't sync between devices, and Free accounts may close later. You can still watch as a guest. Premium keeps your account and cross-device sync.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
@@ -102,7 +102,7 @@
       {
         "id": "free-viewing-account-update-v3-0-26-costs-home",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "Free viewing stays ❤️",
         "message": "Free accounts watch much like guests. Syncing them strains costly servers. Free sync will end; guest viewing stays.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
