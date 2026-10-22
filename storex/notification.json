@@ -75,7 +75,8 @@
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
         "showOnce": true,
-        "priority": 10
+        "priority": 10,
+        "nonPremiumOnly": true
       },
       {
         "id": "playback-for-everyone-window-v3-0-19",
