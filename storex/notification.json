@@ -69,9 +69,9 @@
       },
 
       {
-        "id": "cube-news-v3-0-26-improvements",
+        "id": "premium-news-v3-0-26-improvements",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "What's new in 3.0.26",
         "message": "Smoother playback, faster Premium checks, and better library sync.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
@@ -80,7 +80,7 @@
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
-        "nonPremiumOnly": false
+        "premiumOnly": true
       },
 
       {
@@ -102,7 +102,7 @@
       {
         "id": "free-viewing-account-update-v3-0-26-costs-home",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "Join Premium ",
         "message": "upgrade or send a support message on how to get premium",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
@@ -118,7 +118,7 @@
       {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
-        "enabled": true,
+        "enabled": false,
         "title": "Premium Playback Gift ❤️",
         "message": "Premium playback is temporarily open to everyone until {endsAt}. Download limits still apply.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEYMv8Fu8J-i0aaOR8hM7Pp08AyiS4wawvn-2XnlwGA&s=10",
@@ -133,26 +133,26 @@
       },
 
       {
-        "id": "support-development-v2-0-80",
-        "type": "support",
+        "id": "get-premium-v3-0-26-home",
+        "type": "news",
         "enabled": true,
-        "title": "Join The Cube Community",
-        "message": "Join our Discord for updates and help. Premium support starts from $6.",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpDdFPFLO9ycSQIog0EHWdmr1gZWYBUcMZtFki1a-9w&s=10",
-        "actionLabel": "Join Discord",
-        "actionUrl": "https://discord.gg/XY6YtzQrdZ",
+        "title": "Enjoy more with Premium ❤️",
+        "message": "More servers, full player controls, and no Support Break. Passes start at $6.",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
+        "actionLabel": "See Premium passes",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
         "showOnce": true,
         "priority": 5,
         "minVersionCode": 20077,
         "nonPremiumOnly": true,
-        "hideWhenPremiumExpired": true
+        "hideWhenPremiumExpired": false
       },
 
       {
         "id": "premium-expired-renew-v3-0-12",
         "type": "support",
-        "enabled": true,
+        "enabled": false,
         "title": "Your Premium Has Ended",
         "message": "Your Premium period has ended and your account is now on Free. Renew using the same signed-in email.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOO0WCoB-GQtwH48PeLt8Zpr5Ig59vHvOPN5AxH83hw&s=10",
@@ -166,11 +166,11 @@
       },
 
       {
-        "id": "premium-active-home-v3-0-26",
+        "id": "premium-active-home-v3-0-26-short",
         "type": "news",
         "enabled": true,
-        "title": "You're Premium ❤️",
-        "message": "Premium is active on your account. Enjoy ",
+        "title": "Premium is active ❤️",
+        "message": "Enjoy more servers, full player controls, cloud sync, and no Support Break.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7OlSwv2L_7IvJ2vlhoqSOExH7L2P5PpZ9IkSk0cWwQ&s=10",
         "actionLabel": "",
         "actionUrl": "",
