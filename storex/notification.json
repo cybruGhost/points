@@ -6,15 +6,16 @@
     "environment": "production",
     "configEnabled": true,
     "maintenanceMode": false,
-    "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again later.",
+    "maintenanceMessage": "The Cube is temporarily under maintenance while I work on the servers. Please try again shortly.",
     "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
       "a6b1bfe7efcbe01218f9e32939dde6247ff7cea9f7fb9cb338219c2d15d28eb1"
     ],
     "blockedVersionCodes": [],
-    "blockedMessage": "This version of The Cube is no longer supported. Please install the official version."
+    "blockedMessage": "This version of The Cube is no longer supported. Please install the latest official release."
   },
+
   "update": {
     "enabled": true,
     "checkOnLaunch": true,
@@ -23,10 +24,11 @@
     "minimumSupportedVersionCode": 20067,
     "latestVersionName": "3.0.26",
     "forceUpdate": true,
-    "title": "The Cube 3.0.26 — Performance and security update",
-    "message": "Update to the latest signed release for smoother Premium status, home notices, and app stability.",
+    "title": "The Cube 3.0.26 — Update Required",
+    "message": "Install the latest official version for improved Premium status, account handling, playback, notices, and overall stability.",
     "releaseNotes": [
       "Improved Premium status and account refresh",
+      "Improved account and cloud sync handling",
       "Smoother player, library, and TV behavior",
       "Additional security and stability fixes"
     ],
@@ -45,118 +47,126 @@
       }
     }
   },
+
   "notifications": {
     "enabled": true,
     "showOnLaunch": true,
     "systemDonationNotificationsEnabled": false,
     "items": [
       {
-        "id": "legacy-update-bridge-v2-0-101",
+        "id": "legacy-update-bridge-v3-0-26",
         "type": "notice",
         "enabled": true,
-        "title": "IMPORTANT UPDATE REQUIRED",
-        "message": "You are using an old or broken The Cube build. Install the latest official app so updates, account sync, subtitles, and playback work correctly.",
+        "title": "Important Update Required",
+        "message": "You're using an outdated The Cube build. Update now so playback, subtitles, Premium status, account sync, and future updates continue working correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.25/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
         "maxVersionCode": 20076
       },
+
       {
         "id": "cube-news-v3-0-26-library",
         "type": "news",
         "enabled": true,
-        "title": "The Cube is ready",
-        "message": "Watch free, or sign in to keep your library across devices. ❤️ You Keep Us Alive!.",
+        "title": "The Cube is Ready ❤️",
+        "message": "You can keep watching for free as a guest. Sign in when you want Premium features and cloud account sync. Your support helps keep The Cube running.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
-        "actionLabel": "Support Here",
+        "actionLabel": "Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
         "nonPremiumOnly": false
       },
+
       {
-    "id": "active-development-notice-v3-0-10",
-    "type": "notice",
-    "enabled": true,
-    "title": "Free Account Changes",
-    "message": "Non-Premium accounts will no longer keep cloud sync. To reduce server and database load, inactive Free accounts may be removed. You can still use The Cube for free as a guest. Premium accounts keep full account sync.",
-    "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
-    "actionLabel": "Support The Cube",
-    "actionUrl": "https://cyberghost-shop.fourthwall.com",
-    "dismissible": true,
-    "showOnce": true,
-    "priority": 20,
-    "minVersionCode": 20077,
-    "nonPremiumOnly": true
-  },
+        "id": "free-account-changes-v3-0-26",
+        "type": "notice",
+        "enabled": true,
+        "title": "Free Account Changes",
+        "message": "Free signed-in accounts use server and database resources even without Premium. Cloud sync for non-Premium accounts will be stopped, and Free accounts may be removed. You can still watch The Cube for free as a guest. Premium accounts keep account access and cloud sync.",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
+        "actionLabel": "Keep My Account",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": true,
+        "priority": 20,
+        "minVersionCode": 20077,
+        "nonPremiumOnly": true
+      },
+
       {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
         "enabled": true,
-        "title": "Premium playback for all",
-        "message": "I give everyone Premium gift Break until {endsAt}. Downloads keep their quota.",
+        "title": "Premium Playback Gift ❤️",
+        "message": "Premium playback is temporarily open to everyone until {endsAt}. Download limits still apply. If you enjoy The Cube, consider supporting its servers and development.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEYMv8Fu8J-i0aaOR8hM7Pp08AyiS4wawvn-2XnlwGA&s=10",
         "actionLabel": "❤️ Support The Cube",
         "actionUrl": "https://cyberghost-shop.fourthwall.com/",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 30,
         "minVersionCode": 30019,
         "nonPremiumOnly": true,
         "promotionOnly": true
       },
+
       {
         "id": "support-development-v2-0-80",
         "type": "support",
         "enabled": true,
-        "title": "Join our Discord",
-        "message": "Join our Discord for updates and support. Premium starts at $6.",
+        "title": "Join The Cube Community",
+        "message": "Join our Discord for updates, support, announcements, and community help. Premium support starts from $6.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpDdFPFLO9ycSQIog0EHWdmr1gZWYBUcMZtFki1a-9w&s=10",
         "actionLabel": "Join Discord",
         "actionUrl": "https://discord.gg/XY6YtzQrdZ",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 5,
         "minVersionCode": 20077,
         "nonPremiumOnly": true,
         "hideWhenPremiumExpired": true
       },
+
       {
         "id": "premium-expired-renew-v3-0-12",
         "type": "support",
         "enabled": true,
-        "title": "Your Premium has expired",
-        "message": "Your Premium time has ended, so your account is now on Free. Renew with the same signed-in email to restore Premium.",
+        "title": "Your Premium Has Ended",
+        "message": "Your Premium period has ended and your account is now on Free. Renew using the same signed-in email to restore Premium features and cloud sync.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOO0WCoB-GQtwH48PeLt8Zpr5Ig59vHvOPN5AxH83hw&s=10",
         "actionLabel": "Renew Premium",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 15,
         "minVersionCode": 30012,
         "expiredPremiumOnly": true
       },
+
       {
         "id": "premium-active-home-v3-0-26",
         "type": "news",
         "enabled": true,
         "title": "You're Premium ❤️",
-        "message": "Your Premium is active. Enjoy more stream choices, full player controls, and no Support Break.",
+        "message": "Premium is active on your account. Enjoy more stream choices, full player controls, cloud sync, and no Support Break.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7OlSwv2L_7IvJ2vlhoqSOExH7L2P5PpZ9IkSk0cWwQ&s=10",
         "actionLabel": "",
         "actionUrl": "",
         "dismissible": true,
-        "showOnce": false,
+        "showOnce": true,
         "priority": 40,
         "minVersionCode": 20077,
         "premiumOnly": true
       }
     ]
   },
+
   "ads": {
     "enabled": true,
     "provider": "admob",
