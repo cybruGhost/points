@@ -84,7 +84,7 @@
       },
 
       {
-        "id": "free-account-changes-v3-0-26",
+        "id": "free-account-changes-v3-0-26-all-viewers",
         "type": "notice",
         "enabled": true,
         "title": "Free Account Changes",
@@ -96,7 +96,7 @@
         "showOnce": false,
         "priority": 40,
         "minVersionCode": 20077,
-        "nonPremiumOnly": true
+        "nonPremiumOnly": false
       },
 
       {
