@@ -93,7 +93,7 @@
         "actionLabel": "Keep My Account",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
-        "showOnce": true,
+        "showOnce": false,
         "priority": 20,
         "minVersionCode": 20077,
         "nonPremiumOnly": true
