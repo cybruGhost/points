@@ -94,7 +94,7 @@
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
         "showOnce": false,
-        "priority": 20,
+        "priority": 40,
         "minVersionCode": 20077,
         "nonPremiumOnly": true
       },
