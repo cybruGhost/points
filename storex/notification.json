@@ -84,11 +84,11 @@
       },
 
       {
-        "id": "free-account-changes-v3-0-26-all-viewers",
+        "id": "free-account-update-v3-0-26-clear-message",
         "type": "notice",
         "enabled": true,
-        "title": "Free Account Changes",
-        "message": "Free signed-in accounts use server and database resources even without Premium. Cloud sync for non-Premium accounts will be stopped, and Free accounts may be removed. You can still watch The Cube for free as a guest. Premium accounts keep account access and cloud sync.",
+        "title": "A quick update about Free accounts ❤️",
+        "message": "Watching The Cube will stay free. If you use a Free account, your library will stop syncing between devices in a future update. We may also remove Free accounts later. You can still watch as a guest. Premium members will keep their accounts and cloud sync.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
         "actionLabel": "Keep My Account",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
