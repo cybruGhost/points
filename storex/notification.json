@@ -96,7 +96,7 @@
         "showOnce": false,
         "priority": 40,
         "minVersionCode": 20077,
-        "nonPremiumOnly": true
+        "nonPremiumOnly": false
       },
 
       {
