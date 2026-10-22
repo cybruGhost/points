@@ -76,7 +76,7 @@
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
-        "nonPremiumOnly": true
+        "nonPremiumOnly": false
       },
       {
         "id": "playback-for-everyone-window-v3-0-19",
