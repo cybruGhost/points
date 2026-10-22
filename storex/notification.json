@@ -87,16 +87,16 @@
         "id": "free-account-update-v3-0-26-clear-message",
         "type": "notice",
         "enabled": true,
-        "title": "A quick update about Free accounts ❤️",
-        "message": "Watching The Cube will stay free. If you use a Free account, your library will stop syncing between devices in a future update. We may also remove Free accounts later. You can still watch as a guest. Premium members will keep their accounts and cloud sync.",
+        "title": "An update for Free viewers ❤️",
+        "message": "Hi! Watching The Cube will still be free. Soon, Free accounts won't carry your saved shows and watch progress to another device. We may also remove Free accounts later. You can always watch as a guest. Premium keeps your account and saved shows across your devices.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
-        "actionLabel": "Keep My Account",
+        "actionLabel": "See Premium options",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
         "dismissible": true,
         "showOnce": false,
         "priority": 40,
         "minVersionCode": 20077,
-        "nonPremiumOnly": false
+        "nonPremiumOnly": true
       },
 
       {
