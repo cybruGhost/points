@@ -100,6 +100,22 @@
       },
 
       {
+        "id": "free-viewing-account-update-v3-0-26-home",
+        "type": "news",
+        "enabled": true,
+        "title": "Free viewing stays ❤️",
+        "message": "Free account sync will end, and accounts may close later. You can keep watching as a guest. Premium keeps saved shows across devices.",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
+        "actionLabel": "See Premium options",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 45,
+        "minVersionCode": 20077,
+        "nonPremiumOnly": true
+      },
+
+      {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
         "enabled": true,
