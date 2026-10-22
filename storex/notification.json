@@ -78,6 +78,20 @@
         "priority": 10,
         "nonPremiumOnly": false
       },
+       {
+        "id": "active-development-notice-v3-0-10",
+        "type": "notice",
+        "enabled": true,
+        "title": "THE CUBE 3.0.10",
+        "message": "Support the app and its servers . Your support helps development moving.",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
+        "actionLabel": "keep cube alive",
+        "actionUrl": "https://cyberghost-shop.fourthwall.com",
+        "dismissible": true,
+        "showOnce": false,
+        "priority": 20,
+        "minVersionCode": 20077
+      },
       {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
