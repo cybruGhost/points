@@ -6,7 +6,7 @@
     "environment": "production",
     "configEnabled": true,
     "maintenanceMode": false,
-    "maintenanceMessage": "Critical server maintenance undergoing due to host policy changes. click this button to support/donate to server health .",
+    "maintenanceMessage": " server maintenance undergoing due to host policy changes. click this button to support/donate to server health .",
     "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
     "allowedSigningCertificateSha256": [
