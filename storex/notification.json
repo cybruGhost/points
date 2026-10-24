@@ -69,18 +69,18 @@
       },
 
       {
-        "id": "premium-news-v3-0-26-improvements",
+        "id": "news-v3-0-26-coming-soon",
         "type": "news",
-        "enabled": false,
-        "title": "What's new in 3.0.26",
-        "message": "Smoother playback, faster Premium checks, and better library sync.",
+        "enabled": true,
+        "title": "👀 I'm Cooking Something Good! 🔥",
+        "message": "Downloads fixed! ✅ Skip Intro and Auto Next Episode added! 🍿 Coming in the next update. Stay tuned! ❤️",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
         "actionLabel": "",
         "actionUrl": "",
         "dismissible": true,
         "showOnce": true,
         "priority": 10,
-        "premiumOnly": true
+        "premiumOnly": false
       },
 
       {
