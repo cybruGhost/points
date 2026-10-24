@@ -118,7 +118,7 @@
       {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
-        "enabled": false,
+        "enabled": true,
         "title": "Premium Playback Gift ❤️",
         "message": "Premium playback is temporarily open to everyone until {endsAt}. Download limits still apply.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEYMv8Fu8J-i0aaOR8hM7Pp08AyiS4wawvn-2XnlwGA&s=10",
@@ -152,7 +152,7 @@
       {
         "id": "premium-expired-renew-v3-0-12",
         "type": "support",
-        "enabled": false,
+        "enabled": true,
         "title": "Your Premium Has Ended",
         "message": "Your Premium period has ended and your account is now on Free. Renew using the same signed-in email.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOO0WCoB-GQtwH48PeLt8Zpr5Ig59vHvOPN5AxH83hw&s=10",
