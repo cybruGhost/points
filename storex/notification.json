@@ -20,30 +20,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30026,
+    "latestVersionCode": 30027,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.26",
+    "latestVersionName": "3.0.27",
     "forceUpdate": true,
-    "title": "The Cube 3.0.26 — Update Required",
-    "message": "Install the latest official version for improved Premium status, account handling, playback, notices, and overall stability.",
+    "title": "The Cube 3.0.27 — Update Required",
+    "message": "Install the latest official version for improved downloads, playback, Shorts, and overall stability.",
     "releaseNotes": [
-      "Improved Premium status and account refresh",
-      "Improved account and cloud sync handling",
-      "Smoother player, library, and TV behavior",
-      "Additional security and stability fixes"
+      "Improved download size and progress reporting",
+      "Refreshed stream choices",
+      "Shorts and playback polish",
+      "Additional stability fixes"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/the-cube-v3.0.26.apk",
-        "sha256": "36e3f639beaf56f942037d6b5cb3d4c3cff6a80b05f6327fbdf60fb7652c9788"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.27/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.27/the-cube-v3.0.27.apk",
+        "sha256": "591ecffc519098b0128cef28dbbee3655644a1529b95b82c538a6f379b69dee7"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/the-cube-v3.0.26.apk",
-        "sha256": "36e3f639beaf56f942037d6b5cb3d4c3cff6a80b05f6327fbdf60fb7652c9788"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.27/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.27/the-cube-v3.0.27.apk",
+        "sha256": "591ecffc519098b0128cef28dbbee3655644a1529b95b82c538a6f379b69dee7"
       }
     }
   },
@@ -61,7 +61,7 @@
         "message": "You're using an outdated The Cube build. Update now so playback, subtitles, Premium status, account sync, and future updates continue working correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.26/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.27/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
@@ -69,11 +69,11 @@
       },
 
       {
-        "id": "news-v3-0-26-coming-soon",
+        "id": "news-v3-0-27-now-live",
         "type": "news",
         "enabled": true,
         "title": "👀 Cooking Something 🔥",
-        "message": "Downloads fixed! ✅ Skip Intro and Auto Next Episode added! 🍿 Coming in the next update. Stay tuned! ❤️",
+        "message": "Downloads fixed! ✅ Skip Intro and Auto Next Episode added! 🍿 Available now. ❤️",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
         "actionLabel": "",
         "actionUrl": "",
