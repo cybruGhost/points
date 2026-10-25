@@ -27,9 +27,9 @@
     "title": "The Cube 3.0.27 — Update Required",
     "message": "Install the latest official version for improved downloads, playback, skipintro and nextupdate, and overall stability.",
     "releaseNotes": [
-      "Improved download size and progress reporting",
+      "fixed downloading and progress reporting",
       "Refreshed stream choices",
-      "Shorts and playback polish",
+      "playback polish and skip intro",
       "Additional stability fixes"
     ],
     "platforms": {
