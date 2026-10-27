@@ -71,7 +71,7 @@
       {
         "id": "news-v3-0-27-now-live",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "👀 Cooked Something 🔥",
         "message": "Downloads fixed! ✅ Skip Intro and Auto Next Episode added! 🍿 Available now. ❤️",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
@@ -102,9 +102,9 @@
       {
         "id": "free-viewing-account-update-v3-0-26-costs-home",
         "type": "news",
-        "enabled": false,
+        "enabled": true,
         "title": "Join Premium ",
-        "message": "upgrade or send a support message on how to get premium",
+        "message": "some Servers not working? Becoz you are not on premium.",
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/eFzDP4gpMLiwsJd56wghVH.jpg",
         "actionLabel": "See Premium options",
         "actionUrl": "https://cyberghost-shop.fourthwall.com",
