@@ -135,7 +135,7 @@
       {
         "id": "get-premium-v3-0-26-home",
         "type": "news",
-        "enabled": true,
+        "enabled": false,
         "title": "Join Premium now ❤️",
         "message": "sign in then upgrade to premium to avoid losing your data",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2jsfB-dHuc1yklefAlJrQCyRCjGs7zGyeANLEWDeRg&s=10",
