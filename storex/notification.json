@@ -136,7 +136,7 @@
         "id": "get-premium-v3-0-26-home",
         "type": "news",
         "enabled": true,
-        "title": "Join Our Discord Community! 💬",
+        "title": "Join Our Discord! 💬",
         "message": "Discover more, report issues, share feedback ,ask questions",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpDdFPFLO9ycSQIog0EHWdmr1gZWYBUcMZtFki1a-9w&s=10",
         "actionLabel": "Join Discord",
