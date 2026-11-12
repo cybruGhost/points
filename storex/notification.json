@@ -5,7 +5,7 @@
     "packageName": "com.thecube",
     "environment": "production",
     "configEnabled": true,
-    "maintenanceMode": true,
+    "maintenanceMode": false,
     "maintenanceMessage": "The Cube is temporarily under maintenance. Please try again shortly. You may also opt to support the servers with a donation.",
     "maintenanceUrl": "https://cyberghost-shop.fourthwall.com/",
     "blockUnauthorizedBuilds": true,
