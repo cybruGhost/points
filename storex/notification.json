@@ -23,13 +23,10 @@
     "minimumSupportedVersionCode": 20067,
     "latestVersionName": "3.0.30",
     "forceUpdate": true,
-    "title": "The Cube 3.0.30 — Update Required",
-    "message": "Install the latest official version for improved TV trailer quality, playback stability, downloads, subtitles, navigation, and profile handling.",
+    "title": "The Cube 3.0.30 — Major Fix and Upgrade",
+    "message": "Major fixes and upgrades. Update now.",
     "releaseNotes": [
-      "HD TV trailer startup keeps detail artwork visible while buffering",
-      "Improved TV and phone navigation and detail-page focus",
-      "Playback, subtitle, download, and resolver reliability improvements",
-      "Polish language support and stability fixes"
+      "Major fixes and upgrades."
     ],
     "platforms": {
       "androidPhone": {
