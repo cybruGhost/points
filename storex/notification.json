@@ -15,6 +15,7 @@
     "blockedVersionCodes": [],
     "blockedMessage": "This version of The Cube is no longer supported. Please install the latest official release."
   },
+
   "update": {
     "enabled": true,
     "checkOnLaunch": true,
@@ -23,26 +24,30 @@
     "minimumSupportedVersionCode": 20067,
     "latestVersionName": "3.0.28",
     "forceUpdate": true,
-    "title": "The Cube 3.0.30 — Major Fix and Upgrade",
-    "message": "Major fixes and upgrades. Update now.",
+    "title": "The Cube 3.0.28 — Update Required",
+    "message": "Install the latest official version for improved downloads, playback, skipintro and nextupdate, and overall stability.",
     "releaseNotes": [
-      "Major fixes and upgrades."
+      "fixed downloading and progress reporting",
+      "Refreshed stream choices",
+      "playback polish and ui",
+      "Additional stability fixes"
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/the-cube-v3.0.30.apk",
-        "sha256": "ff1b1e40ea6fde9e77a03fbf8b4dc3658cfc6db93bf2cd8667d0ceeccddd0f3b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.28/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.28/the-cube-v3.0.28.apk",
+        "sha256": "00ed2299636d987f95b89d20256746aa3bd9f23164e44c23658a240cd2a500d8"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/the-cube-v3.0.30.apk",
-        "sha256": "ff1b1e40ea6fde9e77a03fbf8b4dc3658cfc6db93bf2cd8667d0ceeccddd0f3b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.28/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.28/the-cube-v3.0.28.apk",
+        "sha256": "00ed2299636d987f95b89d20256746aa3bd9f23164e44c23658a240cd2a500d8"
       }
     }
   },
+
   "notifications": {
     "enabled": true,
     "showOnLaunch": true,
@@ -62,6 +67,7 @@
         "priority": 100,
         "maxVersionCode": 20076
       },
+
       {
         "id": "news-v3-0-27-now-live",
         "type": "news",
@@ -76,6 +82,7 @@
         "priority": 10,
         "premiumOnly": false
       },
+
       {
         "id": "free-account-update-v3-0-26-all-viewers-2",
         "type": "notice",
@@ -91,6 +98,7 @@
         "minVersionCode": 20077,
         "nonPremiumOnly": false
       },
+
       {
         "id": "free-viewing-account-update-v3-0-26-costs-home",
         "type": "news",
@@ -106,6 +114,7 @@
         "minVersionCode": 20077,
         "nonPremiumOnly": true
       },
+
       {
         "id": "playback-for-everyone-window-v3-0-19",
         "type": "support",
@@ -122,6 +131,7 @@
         "nonPremiumOnly": true,
         "promotionOnly": true
       },
+
       {
         "id": "get-premium-v3-0-26-home",
         "type": "news",
@@ -138,6 +148,7 @@
         "nonPremiumOnly": true,
         "hideWhenPremiumExpired": false
       },
+
       {
         "id": "premium-expired-renew-v3-0-12",
         "type": "support",
@@ -153,6 +164,7 @@
         "minVersionCode": 30012,
         "expiredPremiumOnly": true
       },
+
       {
         "id": "premium-active-home-v3-0-26-short",
         "type": "news",
@@ -170,6 +182,7 @@
       }
     ]
   },
+
   "ads": {
     "enabled": true,
     "provider": "admob",
