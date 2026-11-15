@@ -24,11 +24,9 @@
     "latestVersionName": "3.0.31",
     "forceUpdate": true,
     "title": "The Cube 3.0.31 — Hot Fix & Major Update",
-    "message": "Hot fix and major update: fixed the TV updater, redesigned search, and corrected metadata and result navigation. If TV auto-install fails, reinstall from https://thecub.netlify.app/tv.",
+    "message": "Hot fix and major update.",
     "releaseNotes": [
-      "Fixed TV updater checks, offline startup, and Back navigation.",
-      "Redesigned TV search with improved D-pad navigation.",
-      "Fixed metadata and search-result disorientation.",
+      "Fixed TV updater checks, offline startup, Tv search, and Back navigation.",
       "If TV auto-install fails, reinstall from https://thecub.netlify.app/tv."
     ],
     "platforms": {
