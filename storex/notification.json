@@ -19,27 +19,30 @@
     "enabled": true,
     "checkOnLaunch": true,
     "checkIntervalHours": 1,
-    "latestVersionCode": 30028,
+    "latestVersionCode": 30031,
     "minimumSupportedVersionCode": 20067,
-    "latestVersionName": "3.0.28",
+    "latestVersionName": "3.0.31",
     "forceUpdate": true,
-    "title": "The Cube 3.0.30 — Major Fix and Upgrade",
-    "message": "Major fixes and upgrades. Update now.",
+    "title": "The Cube 3.0.31 — Hot Fix & Major Update",
+    "message": "Hot fix and major update: fixed the TV updater, redesigned search, and corrected metadata and result navigation. If TV auto-install fails, reinstall from https://thecub.netlify.app/tv.",
     "releaseNotes": [
-      "Major fixes and upgrades."
+      "Fixed TV updater checks, offline startup, and Back navigation.",
+      "Redesigned TV search with improved D-pad navigation.",
+      "Fixed metadata and search-result disorientation.",
+      "If TV auto-install fails, reinstall from https://thecub.netlify.app/tv."
     ],
     "platforms": {
       "androidPhone": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/the-cube-v3.0.30.apk",
-        "sha256": "ff1b1e40ea6fde9e77a03fbf8b4dc3658cfc6db93bf2cd8667d0ceeccddd0f3b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.31/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.31/the-cube-v3.0.31.apk",
+        "sha256": "d788654a739ca0544b310c31fd04d7941f6ffe6e6408df206bdcb6c7421f6ebc"
       },
       "androidTv": {
         "enabled": true,
-        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/app-release.apk",
-        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.30/the-cube-v3.0.30.apk",
-        "sha256": "ff1b1e40ea6fde9e77a03fbf8b4dc3658cfc6db93bf2cd8667d0ceeccddd0f3b"
+        "apkUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.31/app-release.apk",
+        "fallbackUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.31/the-cube-v3.0.31.apk",
+        "sha256": "d788654a739ca0544b310c31fd04d7941f6ffe6e6408df206bdcb6c7421f6ebc"
       }
     }
   },
@@ -56,7 +59,7 @@
         "message": "You're using an outdated The Cube build. Update now so playback, subtitles, Premium status, account sync, and future updates continue working correctly.",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZQ5-bw5hHyhdsfAx8zIUTXPkCZ0kaYSaILMv0wgYQw&s=10",
         "actionLabel": "Update Now",
-        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.28/app-release.apk",
+        "actionUrl": "https://github.com/cybruGhost/cube/releases/download/v3.0.31/app-release.apk",
         "dismissible": true,
         "showOnce": false,
         "priority": 100,
