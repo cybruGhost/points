@@ -26,7 +26,7 @@
     "title": "The Cube 3.0.34 — Fire TV Stability Fix",
     "message": "Improves Fire TV stability when browsing episodes. Please update.",
     "releaseNotes": [
-      "Improves episode browsing stability on Fire TV and other low-memory TVs.",
+      "Improves episodeviewing low-memory TVs.",
       "Existing TV details UI is preserved. If TV auto-install fails, reinstall from https://thecub.netlify.app/tv."
     ],
     "platforms": {
