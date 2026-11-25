@@ -23,7 +23,7 @@
     "minimumSupportedVersionCode": 20067,
     "latestVersionName": "3.0.35",
     "forceUpdate": true,
-    "title": "The Cube 3.0.35 — Playback & TV Improvements",
+    "title": "The Cube 3.0.35 — Playback & stablity fix",
     "message": "preferred playback servers, and TV navigation improvements. Please update.",
     "releaseNotes": [
       "fixed servers showing diff movies.",
