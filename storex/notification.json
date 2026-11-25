@@ -24,9 +24,9 @@
     "latestVersionName": "3.0.35",
     "forceUpdate": true,
     "title": "The Cube 3.0.35 — Playback & TV Improvements",
-    "message": "M-Pesa pass option, preferred playback servers, and TV navigation improvements. Please update.",
+    "message": "preferred playback servers, and TV navigation improvements. Please update.",
     "releaseNotes": [
-      "Added M-Pesa to the Support Break premium pass chooser.",
+      "fixed servers showing diff movies.",
       "Added preferred playback server and optional TV Movies/TV Shows tabs.",
       "Improved TV navigation, Kids restart playback, device management, and Support reply notifications."
     ],
